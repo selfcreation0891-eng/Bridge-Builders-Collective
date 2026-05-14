@@ -1,2 +1,2 @@
 # Bridge-Builders-Collective
-human regulation infrastructure, stewardship system, living archives, and institutional-grade continuity architecture.
+Human Regulation Infrastructure, Stewardship System, Living Archives, and Institutional-Grade Continuity Architecture.
