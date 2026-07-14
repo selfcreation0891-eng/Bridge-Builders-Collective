@@ -26,4 +26,9 @@ jobs:
         uses: actions/dependency-review-action@v4
         with:
           fail-on-severity: moderate
-          deny-licenses: GPL-2.0, GPL-3.0, AGPL-3.0
+          # License denial policy: not configured.
+          # A deny-licenses rule was removed because no formal licensing policy
+          # has been documented for this repository. Add a deny-licenses entry
+          # here once the Bridge Builders Collective licensing governance is
+          # defined and documented in docs/DEPLOYMENT_CONFIGURATION_INVENTORY.md
+          # or a dedicated licensing policy document.

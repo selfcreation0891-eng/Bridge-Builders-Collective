@@ -3,11 +3,10 @@
 #
 # Ecosystems configured for this repository:
 #   - github-actions: monitors workflow action versions
-#   - npm: pre-configured for when a Node.js package.json is added
 #
-# npm is included because the repository references Node.js tooling and a
-# frontend layer is planned. Remove or adjust the directory if the package
-# location changes when development begins.
+# npm Dependabot is intentionally omitted because no package.json exists in this
+# repository. Add an npm entry here when an npm project is introduced, pointing
+# to the correct package directory.
 
 version: 2
 
@@ -22,24 +21,3 @@ updates:
       - "dependencies"
       - "github-actions"
     open-pull-requests-limit: 5
-
-  # npm — pre-configured for the planned frontend package
-  # Adjust `directory` to match the actual package location when added.
-  # Major updates are separated to allow deliberate review.
-  - package-ecosystem: "npm"
-    directory: "/"
-    schedule:
-      interval: "weekly"
-      day: "monday"
-    labels:
-      - "dependencies"
-    open-pull-requests-limit: 10
-    groups:
-      minor-and-patch:
-        update-types:
-          - "minor"
-          - "patch"
-    ignore:
-      # Major version bumps reviewed manually
-      - dependency-name: "*"
-        update-types: ["version-update:semver-major"]

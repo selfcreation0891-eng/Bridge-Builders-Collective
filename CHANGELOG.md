@@ -14,8 +14,8 @@ from the first public release.
 
 - Security policy (`SECURITY.md`) covering vulnerability reporting, scope, and responsible
   disclosure.
-- Dependabot configuration (`.github/dependabot.yml`) for GitHub Actions and npm ecosystem
-  monitoring.
+- Dependabot configuration (`.github/dependabot.yml`) for GitHub Actions ecosystem
+  monitoring. npm ecosystem monitoring omitted until a `package.json` is introduced.
 - Dependency review workflow (`.github/workflows/dependency-review.yml`) to block
   vulnerable or license-incompatible dependencies in pull requests.
 - Deployment configuration inventory (`docs/DEPLOYMENT_CONFIGURATION_INVENTORY.md`)

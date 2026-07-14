@@ -114,7 +114,7 @@ Complete all items before publishing any production release.
 - [ ] Staging deployment verified successful
 - [ ] Critical user flows tested in staging
 - [ ] Accessibility verified (see `ACCESSIBILITY_STANDARD.md`)
-- [ ] Governance documentation reviewed (see `docs/GOVERNANCE.md`)
+- [ ] Governance documentation reviewed (see `doc/GOVERNANCE.md`)
 
 ### Documentation
 
