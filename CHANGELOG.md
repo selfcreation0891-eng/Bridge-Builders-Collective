@@ -17,7 +17,7 @@ from the first public release.
 - Dependabot configuration (`.github/dependabot.yml`) for GitHub Actions ecosystem
   monitoring. npm ecosystem monitoring omitted until a `package.json` is introduced.
 - Dependency review workflow (`.github/workflows/dependency-review.yml`) to block
-  vulnerable or license-incompatible dependencies in pull requests.
+  pull requests that introduce dependencies with known vulnerabilities rated moderate or higher.
 - Deployment configuration inventory (`docs/DEPLOYMENT_CONFIGURATION_INVENTORY.md`)
   documenting all environment variables with classification, scope, and storage guidance.
 - GitHub Environments setup guide (`docs/GITHUB_ENVIRONMENTS_SETUP.md`) with staging and
