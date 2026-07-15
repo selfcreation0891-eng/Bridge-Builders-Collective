@@ -11,11 +11,11 @@ const STEWARD_DIRECTIVE = 'Adopted steward decision — activation directive 202
 const OWNER = 'Bridge Builders Collective founding stewardship';
 
 /** Shared honest pathway for environments that exist only as adopted intentions. */
-const interestPathway = (label = 'Share interest via the Contribute pathway'): ParticipationPathway => ({
+const interestPathway = (label = 'See the current contribution pathways'): ParticipationPathway => ({
   label,
   orientation: 'participate',
   href: '/contribute/',
-  availableNow: true,
+  availableNow: true, // the orientation page exists and is truthful about what works
 });
 
 /** Helper for named branches adopted by steward decision with no implementation yet. */
@@ -80,14 +80,14 @@ export const ECOSYSTEM_REGISTRY: EcosystemEnvironment[] = [
     ],
     developing: [
       'Domain activation and public deployment',
-      'Public contact pathway (contact email pending steward decision)',
+      'Public contact pathway (no contact email or open submission channel exists yet; steward action pending)',
       'Downstream environments listed in the ecosystem overview',
     ],
     participationPathways: [
       { label: 'Explore the ecosystem', orientation: 'discover', href: '/ecosystem/', availableNow: true },
       { label: 'Read the principles', orientation: 'learn', href: '/principles/', availableNow: true },
       { label: 'Read the trust documents', orientation: 'discover', href: '/trust/', availableNow: true },
-      { label: 'Contribute or share interest', orientation: 'participate', href: '/contribute/', availableNow: true },
+      { label: 'See the current contribution pathways', orientation: 'participate', href: '/contribute/', availableNow: true },
     ],
     relatedEnvironmentIds: ['system-rosetta-stone', 'bridgebuilders-academy', 'living-archive', 'sophia'],
     parentEnvironmentId: null,
@@ -121,7 +121,7 @@ export const ECOSYSTEM_REGISTRY: EcosystemEnvironment[] = [
     developing: ['Public browsing experience for the vocabulary', 'Translation guides for institutional partners'],
     participationPathways: [
       { label: 'Read the canonical vocabulary source', orientation: 'learn', href: '/rosetta/', availableNow: true },
-      interestPathway('Propose a term or correction'),
+      interestPathway('See the current contribution pathways (vocabulary proposals)'),
     ],
     relatedEnvironmentIds: ['bridge-builders-collective', 'public-knowledge'],
     parentEnvironmentId: 'bridge-builders-collective',
@@ -151,7 +151,7 @@ export const ECOSYSTEM_REGISTRY: EcosystemEnvironment[] = [
     audiences: ['individuals', 'young-people', 'educators', 'stewards', 'communities'],
     capabilities: [],
     developing: ['Curriculum design', 'Orientation pathway for new participants', 'Stewardship formation track'],
-    participationPathways: [interestPathway('Share interest in learning programs')],
+    participationPathways: [interestPathway('See the current contribution pathways (learning interest)')],
     relatedEnvironmentIds: ['programs', 'public-knowledge', 'bridge-builders-collective'],
     parentEnvironmentId: 'bridge-builders-collective',
     publicOrder: 20,
@@ -182,7 +182,7 @@ export const ECOSYSTEM_REGISTRY: EcosystemEnvironment[] = [
       'Archive governance documented (doc/ARCHITECTURE.md §4, PRIVACY_POLICY.md, MEDIA_LICENSING_POLICY.md — committed)',
     ],
     developing: ['Archive software (Supabase backend planned)', 'Contribution and consent flows', 'Family and restricted-access permissions'],
-    participationPathways: [interestPathway('Share interest in contributing to the archive')],
+    participationPathways: [interestPathway('See the current contribution pathways (archive interest)')],
     relatedEnvironmentIds: ['story-circle', 'bridge-builders-collective'],
     parentEnvironmentId: 'bridge-builders-collective',
     publicOrder: 30,
@@ -279,12 +279,13 @@ export const ECOSYSTEM_REGISTRY: EcosystemEnvironment[] = [
       status: 'in-development',
       frontDoorPath: '/contribute/',
       publicOrder: 80,
-      capabilities: ['Contribution protections documented (MEDIA_LICENSING_POLICY.md, PRIVACY_POLICY.md — committed)', 'Public interest pathway via the project repository (working now)'],
-      developing: ['Contact email pathway (steward decision pending)', 'Structured contribution forms with consent capture'],
+      capabilities: ['Contribution protections documented (MEDIA_LICENSING_POLICY.md, PRIVACY_POLICY.md — committed)', 'The public repository is readable by anyone (verified 2026-07-15)'],
+      developing: ['A working public submission pathway (issue creation is currently restricted on the repository; opening it — or publishing a contact email — is a pending steward action)', 'Structured contribution forms with consent capture'],
       participationPathways: [
-        { label: 'Share interest or ask a question', orientation: 'participate', href: '/contribute/', availableNow: true },
+        { label: 'Read the public repository', orientation: 'discover', href: 'https://github.com/selfcreation0891-eng/Bridge-Builders-Collective', availableNow: true },
+        { label: 'Open a public conversation', orientation: 'participate', href: null, availableNow: false },
       ],
-      accessNotice: 'You can share interest today through the repository pathway. Structured contribution flows are still being built.',
+      accessNotice: 'Honest status: there is no open submission pathway yet. The repository is public and readable; posting to it is currently restricted, and no contact email is published. Opening a pathway is a named steward action.',
       relatedEnvironmentIds: ['living-archive', 'community-stewardship'],
       navLabel: 'Contribute',
       icon: '🤝',

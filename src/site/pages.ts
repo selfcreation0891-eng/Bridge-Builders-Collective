@@ -39,7 +39,7 @@ elders, communities, educators, creators, stewards, organizations, and instituti
 <p>
   <a class="cta" href="/ecosystem/">Explore the ecosystem</a>
   <a class="cta secondary" href="/principles/">Read the principles</a>
-  <a class="cta secondary" href="/contribute/">Share interest</a>
+  <a class="cta secondary" href="/trust/">Read the trust documents</a>
 </p>
 
 <h2>What you can do now</h2>
@@ -47,7 +47,7 @@ elders, communities, educators, creators, stewards, organizations, and instituti
   <li><a href="/ecosystem/">Explore every environment</a> and its honest status.</li>
   <li><a href="/principles/">Read the principles</a> the ecosystem is governed by.</li>
   <li><a href="/trust/">Read the trust documents</a> — privacy, consent, licensing, accessibility.</li>
-  <li><a href="/contribute/">Share interest or ask a question</a> through a pathway that works today.</li>
+  <li><a href="/contribute/">See the contribution pathways</a> — including the honest state of what is not open yet.</li>
 </ul>
 
 <h2>The ecosystem</h2>
@@ -145,7 +145,7 @@ ${[community, relationship].map(environmentCard).join('\n')}
 <h2>Becoming a steward</h2>
 <p>Stewardship formation will run through <a href="/academy/">BridgeBuilders Academy</a> (planned).
 ${steward && steward.pathways.length ? '' : 'There is no open stewardship application yet — that is stated plainly rather than hidden behind a form that goes nowhere.'}
-You can <a href="/contribute/">share interest now</a>; stewards will follow up as pathways open.</p>
+The <a href="/contribute/">Contribute page</a> states honestly which pathways are open.</p>
 <h2>How participation flows</h2>
 <ul>
 ${groups.map((g) => `<li><strong>${esc(g.label)}</strong>: ${g.pathways.filter((p) => p.availableNow && p.href).slice(0, 3).map((p) => `<a href="${esc(p.href as string)}">${esc(p.label)}</a>`).join(' · ') || 'pathways are being prepared'}</li>`).join('\n')}
@@ -156,18 +156,22 @@ ${groups.map((g) => `<li><strong>${esc(g.label)}</strong>: ${g.pathways.filter((
 
 function contributeExtra(): string {
   return `
-<h2>Share interest or ask a question — available now</h2>
+<h2>The honest state of contribution</h2>
 <p>Bridge Builders Collective does not yet publish a contact email or run submission forms:
-consent capture, data retention, and follow-up ownership are not in place yet, and we will not
-collect your information before they are (see the <a href="/trust/">Trust Center</a>).</p>
-<p>What works today is the public project conversation:</p>
+consent capture, data retention, spam protection, and follow-up ownership are not in place yet,
+and we will not collect your information before they are (see the <a href="/trust/">Trust Center</a>).
+We also will not show you a form that goes nowhere.</p>
+<p><strong>What works today:</strong> the project repository is public and fully readable —
+every governance document, standard, and line of this site's source.</p>
 <p>
-  <a class="cta" href="${REPOSITORY_URL}/issues" rel="external">Open a public conversation (GitHub)</a>
-  <a class="cta secondary" href="${REPOSITORY_URL}" rel="external">Read the public repository</a>
+  <a class="cta" href="${REPOSITORY_URL}" rel="external">Read the public repository</a>
 </p>
-<div class="notice" role="note"><strong>Before you post:</strong> conversations there are public.
-Please do not share sensitive personal, health, family, or cultural material through this pathway —
-the Living Archive's consent-protected intake is the future home for that, and it is not open yet.</div>
+<p><strong>What does not work yet:</strong> posting. Issue creation on the repository is currently
+restricted, and no contact email is published. Opening a public conversation channel is a named,
+pending steward action — when it opens, this page will link to it.</p>
+<div class="notice" role="note"><strong>When a pathway opens:</strong> it will be public.
+Sensitive personal, health, family, or cultural material will belong in the Living Archive's
+consent-protected intake — which is not open yet — never in a public thread.</div>
 `;
 }
 
@@ -205,10 +209,10 @@ function trustPage(): string {
 <p>Everything the ecosystem promises, in one place — what each protection covers, who it applies to,
 its honest current status, and the full source document. Effective dates and a public contact pathway
 are pending steward completion and are marked accordingly; nothing here hides that.</p>
-<div class="notice" role="note"><strong>Reporting pathway:</strong> a monitored contact email is pending
-steward decision. Until it exists, safety, privacy, and accessibility concerns can be raised through the
-<a href="${REPOSITORY_URL}/issues" rel="external">public repository conversation</a> (do not include
-sensitive personal details there — it is public).</div>
+<div class="notice" role="note"><strong>Reporting pathway:</strong> no monitored contact email or open
+conversation channel exists yet — establishing one is a pending steward action, tracked openly. Until it
+exists, the honest statement is that concerns cannot yet be submitted directly; the
+<a href="${REPOSITORY_URL}" rel="external">public repository</a> shows who stewards this work.</div>
 ${areas.map(trustAreaRow).join('\n')}
 `;
   return page({ path: '/trust/', title: 'Trust Center', description: 'Governance, privacy, consent, accessibility, and every public protection of Bridge Builders Collective.', body });
@@ -236,8 +240,9 @@ of this ecosystem, never a styling preference.</p>
   <li>A dedicated accessibility contact address is pending steward decision.</li>
 </ul>
 <h2>Reporting accessibility issues</h2>
-<p>Until a contact address exists, please use the
-<a href="${REPOSITORY_URL}/issues" rel="external">public repository conversation</a>.</p>
+<p>An accessibility contact pathway is a pending steward action (no contact email or open conversation
+channel exists yet). This gap is recorded honestly here and in the release review rather than hidden
+behind a dead link.</p>
 <p>The standard itself: <a href="${REPOSITORY_URL}/blob/main/ACCESSIBILITY_STANDARD.md" rel="external">Accessibility Standard</a> ·
 the current release review: <a href="${REPOSITORY_URL}/blob/main/docs/ACCESSIBILITY_RELEASE_REVIEW.md" rel="external">Accessibility Release Review</a>.</p>
 `;
