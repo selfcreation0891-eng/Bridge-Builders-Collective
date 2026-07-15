@@ -13,3 +13,16 @@ Maintained per `docs/canonical/CHANGE_AUTHORITY.md`. No conflict may simply disa
 | C-007 | `TERMS_OF_SERVICE.md`, `ACCESSIBILITY_STANDARD.md`, `DATA_RETENTION_POLICY.md`, others | `[INSERT DATE]`, `[INSERT CONTACT EMAIL]`, `[INSERT PERIOD]` placeholders in public policies | `PUBLIC_CLAIMS_STANDARD.md` | Policies presented in Trust Center as "draft — effective dates and contact pending steward completion"; placeholders are honest gaps, not hidden | Trust Center shows "current effective status: draft" for affected areas | Externally blocked (B-EXT-3: contact email is a steward decision) | Trust Center route; `docs/TRUST_CENTER_INDEX.md` |
 | C-008 | Steward directive suggested homepage identity wording vs `CLAUDE.md` identity wording | Two identity phrasings | Constitution §1 (consolidates both) | Constitution §1 adopts the directive wording as primary public identity and preserves the `CLAUDE.md` "not a conventional…" framing as clarifying language | Homepage uses Constitution §1 | Resolved | Constitution §1 |
 | C-009 | Upstream open PRs #1–#3 (Copilot branches) | Potentially overlapping audit/CI/security baselines not merged to main | Authority order §9 | Activation work is self-contained against main @ b9493786; PRs left to steward review; any overlap reconciles in favor of this branch's canonical documents | None in-repo; steward reviews PRs after activation merge | Deferred (steward review) | `docs/ACTIVATION_AUDIT.md` §1 |
+
+## Final sweep — 2026-07-15 (Phase 13)
+
+Searched the completed branch for duplicate ecosystem arrays, alternate public names, conflicting
+descriptions, alternate status labels, hardcoded destinations, handwritten footer/menu items,
+"production-ready"/outcome claims, old front-door or obsolete domain references, placeholder text,
+TODO/FIXME markers, empty routes, dead links, hidden internal routes, secret values, nested `.git`
+directories, multiple lockfiles, and duplicate deployment configurations.
+
+Result: **no new conflicts.** The only registry-shaped data lives in `src/ecosystem/ecosystem-registry.ts`;
+the only lockfile is `package-lock.json`; the built output contains no localhost/preview URLs, no
+unsupported claims, no placeholders, and no dead internal links (1,109 references validated).
+Open items remain exactly C-005, C-006, C-007 (deferred/blocked as recorded) and C-009 (steward review).
