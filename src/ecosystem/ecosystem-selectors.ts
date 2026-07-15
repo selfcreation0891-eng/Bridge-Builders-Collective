@@ -44,7 +44,7 @@ export function getPrimaryNavigation(): NavItem[] {
     return { label: e.navLabel ?? e.publicName, href: e.frontDoorPath, sourceEnvironmentId: e.id };
   };
   return [
-    { label: 'About', href: '/', sourceEnvironmentId: 'bridge-builders-collective' },
+    { label: 'About', href: '/', sourceEnvironmentId: null },
     { label: 'Ecosystem', href: '/ecosystem/', sourceEnvironmentId: null },
     envItem('programs'),
     envItem('bridgebuilders-academy'),
