@@ -1,0 +1,61 @@
+name: activation-verification
+
+on:
+  push:
+    branches: [main, 'activation/**']
+  pull_request:
+    branches: [main]
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node 22 (native TypeScript type-stripping)
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Clean dependency installation (zero-dependency project; validates lockfile integrity)
+        run: npm ci
+
+      - name: Typecheck (tsc, pinned; the only step that downloads a package)
+        run: npx -y -p typescript@5.9.3 tsc --noEmit
+
+      - name: Registry validation
+        run: npm run validate:registry
+
+      - name: Unit, navigation, route, and status-rule tests
+        run: npm test
+
+      - name: Production build
+        run: npm run build
+
+      - name: Internal link validation
+        run: npm run validate:links
+
+      - name: Upload built site artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: front-door-dist
+          path: dist/
+
+  accessibility-audit:
+    # Non-blocking supplemental audit (blocking checks live in tests/); see docs/ACCESSIBILITY_RELEASE_REVIEW.md
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm ci
+      - run: npm run build
+      - name: Start static server
+        run: node scripts/serve.ts &
+      - name: Run pa11y against key routes
+        run: |
+          sleep 1
+          npx -y pa11y-ci http://localhost:4173/ http://localhost:4173/ecosystem/ http://localhost:4173/trust/ http://localhost:4173/contribute/ http://localhost:4173/sitemap/
