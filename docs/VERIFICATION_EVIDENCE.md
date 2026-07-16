@@ -25,3 +25,14 @@ Commit SHAs are local-activation SHAs; the upstream base snapshot is `b9493786` 
 - CI run result (requires push — B-EXT-1)
 - Deployment, domain, HTTPS, mobile-device checks (B-EXT-4/5; see `docs/DOMAIN_ACTIVATION_CHECKLIST.md`)
 - Human screen-reader audit (accessibility review limitation #1)
+
+## Transfer verification — 2026-07-15 (post-completion, pre-push packaging)
+
+| # | Command / check | Result | Notes |
+|---|---|---|---|
+| 14 | `git status` / `git branch --show-current` / `git rev-parse HEAD` (work repo) | PASS | clean · `activation/canonical-front-door-v0.1` · `f6945fd7ebf7d85e811c4841903007a8c51e0e0d` (sandbox lineage, 8 commits) |
+| 15 | `git bundle verify` (initial bundle, sandbox lineage) | PASS | "is okay… records a complete history"; heads: main @ 408d890, activation @ f6945fd |
+| 16 | Baseline byte-faithfulness vs upstream tree listing | 18/19 blobs + 6/6 subtrees IDENTICAL | Single divergence: `.gitignore` reconstructed as blob `784c82a4` (2126 B) vs upstream `872d5f6c` (2165 B) — 39 bytes of whitespace-level difference introduced by text-mode retrieval |
+| 17 | Upstream base disambiguation | PASS | `b9493786` confirmed as a COMMIT (github .patch endpoint: "Create ACCESSIBILITY_STANDARD.md", 2026-05-14) — the head of upstream main at packaging time |
+| 18 | `.gitignore` correction | RESOLVED BY REFERENCE | Transfer branch trees reference upstream blob `872d5f6c` directly (`git mktree --missing`); the blob travels via the bundle prerequisite `b9493786`, so the branch introduces NO `.gitignore` change. Activation commits never modified `.gitignore`; the patch series is unaffected |
+| 19 | History reparenting for transfer | DONE (SHAs change, trees preserved) | The reconstruction-import commit is dropped; the 9 activation commits are re-created with identical messages, authors, and dates, parented on the true upstream head `b9493786`, so `git merge-base --is-ancestor b9493786 HEAD` holds and a PR can be opened. Final SHAs recorded in HOW_TO_PUSH.md |
