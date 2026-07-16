@@ -1,0 +1,90 @@
+/* Bridge Builders Collective front door — calm, accessible, dependency-free. */
+:root {
+  --ink: #24312e;
+  --ink-soft: #4c5a56;
+  --paper: #faf8f4;
+  --paper-raised: #ffffff;
+  --line: #d9d4c9;
+  --accent: #2f5d50;
+  --accent-ink: #ffffff;
+  --focus: #1d4ed8;
+  color-scheme: light;
+}
+* { box-sizing: border-box; }
+html { font-size: 100%; }
+body {
+  margin: 0;
+  font-family: Charter, Georgia, 'Times New Roman', serif;
+  background: var(--paper);
+  color: var(--ink);
+  line-height: 1.65;
+}
+h1, h2, h3, nav, .badge, footer, .card, button, .cta { font-family: system-ui, -apple-system, 'Segoe UI', sans-serif; }
+main { max-width: 46rem; margin: 0 auto; padding: 1.5rem 1.25rem 4rem; }
+h1 { font-size: 1.9rem; line-height: 1.25; margin: 1.2rem 0 0.6rem; }
+h2 { font-size: 1.35rem; margin-top: 2.2rem; }
+h3 { font-size: 1.05rem; }
+a { color: var(--accent); text-underline-offset: 3px; }
+a:focus-visible, button:focus-visible, summary:focus-visible {
+  outline: 3px solid var(--focus); outline-offset: 2px; border-radius: 2px;
+}
+.skip-link {
+  position: absolute; left: -999px; top: 0; background: var(--accent); color: var(--accent-ink);
+  padding: 0.6rem 1rem; z-index: 10;
+}
+.skip-link:focus { left: 0.5rem; top: 0.5rem; }
+header.site {
+  border-bottom: 1px solid var(--line); background: var(--paper-raised);
+}
+.header-inner { max-width: 62rem; margin: 0 auto; padding: 0.8rem 1.25rem; display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem 1.25rem; }
+.brand { font-weight: 650; text-decoration: none; color: var(--ink); font-size: 1.05rem; }
+nav.primary ul { list-style: none; display: flex; flex-wrap: wrap; gap: 0.25rem; margin: 0; padding: 0; }
+nav.primary a {
+  display: inline-block; padding: 0.55rem 0.7rem; min-height: 44px; text-decoration: none; color: var(--ink-soft); border-radius: 6px;
+}
+nav.primary a[aria-current="page"] { color: var(--ink); font-weight: 650; }
+nav.primary a:hover { background: var(--paper); color: var(--ink); }
+details.mobile-nav { display: none; }
+@media (max-width: 720px) {
+  nav.primary { display: none; }
+  details.mobile-nav { display: block; margin-left: auto; }
+  details.mobile-nav summary { list-style: none; cursor: pointer; padding: 0.6rem 0.9rem; min-height: 44px; border: 1px solid var(--line); border-radius: 6px; }
+  details.mobile-nav ul { list-style: none; padding: 0.4rem 0 0; margin: 0; }
+  details.mobile-nav a { display: block; padding: 0.7rem 0.5rem; min-height: 44px; text-decoration: none; color: var(--ink); }
+}
+.badge {
+  display: inline-block; border: 1px solid var(--line); border-radius: 999px;
+  padding: 0.1rem 0.65rem; font-size: 0.8rem; background: var(--paper-raised); color: var(--ink-soft); white-space: nowrap;
+}
+.badge::before { content: "● "; color: var(--accent); }
+.badge[data-status="planned"]::before, .badge[data-status="in-development"]::before { content: "◌ "; color: var(--ink-soft); }
+.notice {
+  border-left: 4px solid var(--accent); background: var(--paper-raised);
+  padding: 0.75rem 1rem; margin: 1rem 0; border-radius: 0 6px 6px 0;
+}
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr)); gap: 1rem; padding: 0; list-style: none; }
+.card { background: var(--paper-raised); border: 1px solid var(--line); border-radius: 10px; padding: 1rem 1.1rem; }
+.card h3 { margin: 0.2rem 0 0.4rem; }
+.card p { margin: 0.4rem 0; color: var(--ink-soft); font-size: 0.95rem; }
+.cta {
+  display: inline-block; background: var(--accent); color: var(--accent-ink); text-decoration: none;
+  padding: 0.7rem 1.2rem; min-height: 44px; border-radius: 8px; margin: 0.35rem 0.5rem 0.35rem 0;
+}
+.cta.secondary { background: transparent; color: var(--accent); border: 1.5px solid var(--accent); }
+.continuity { list-style: none; padding: 0; }
+.continuity li { padding: 0.35rem 0 0.35rem 1.4rem; position: relative; }
+.continuity li::before { content: "↓"; position: absolute; left: 0.2rem; color: var(--accent); }
+.continuity li:first-child::before { content: "•"; }
+footer.site { border-top: 1px solid var(--line); background: var(--paper-raised); margin-top: 3rem; }
+.footer-inner { max-width: 62rem; margin: 0 auto; padding: 2rem 1.25rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr)); gap: 1.5rem; font-size: 0.92rem; }
+footer.site h2 { font-size: 0.95rem; margin: 0 0 0.5rem; }
+footer.site ul { list-style: none; margin: 0; padding: 0; }
+footer.site li { margin: 0.35rem 0; }
+footer.site a { display: inline-block; padding: 0.25rem 0; min-height: 32px; }
+.footer-legal { max-width: 62rem; margin: 0 auto; padding: 0 1.25rem 1.5rem; color: var(--ink-soft); font-size: 0.85rem; }
+table { border-collapse: collapse; width: 100%; font-size: 0.95rem; }
+th, td { border: 1px solid var(--line); padding: 0.5rem 0.6rem; text-align: left; vertical-align: top; }
+img { max-width: 100%; height: auto; }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+}

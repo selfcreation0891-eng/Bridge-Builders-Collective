@@ -1,0 +1,231 @@
+{
+  "generatedFrom": "src/ecosystem/ecosystem-registry.ts",
+  "generatedAt": "2026-07-15",
+  "environments": [
+    {
+      "id": "bridge-builders-collective",
+      "publicName": "Bridge Builders Collective",
+      "slug": "bridge-builders-collective",
+      "status": "in-development",
+      "destination": null,
+      "frontDoorPath": "/",
+      "shortDescription": "A human-centered ecosystem supporting learning, regulation, stewardship, creativity, cultural continuity, shared knowledge, and meaningful participation."
+    },
+    {
+      "id": "system-rosetta-stone",
+      "publicName": "System Rosetta Stone",
+      "slug": "rosetta",
+      "status": "in-development",
+      "destination": null,
+      "frontDoorPath": "/rosetta/",
+      "shortDescription": "The shared dictionary that keeps every part of the ecosystem speaking the same language."
+    },
+    {
+      "id": "bridgebuilders-academy",
+      "publicName": "BridgeBuilders Academy",
+      "slug": "academy",
+      "status": "planned",
+      "destination": null,
+      "frontDoorPath": "/academy/",
+      "shortDescription": "Where the ecosystem teaches — courses, practices, and orientation."
+    },
+    {
+      "id": "living-archive",
+      "publicName": "The Living Archive",
+      "slug": "archive",
+      "status": "planned",
+      "destination": null,
+      "frontDoorPath": "/archive/",
+      "shortDescription": "A living, consent-based archive of community memory across generations."
+    },
+    {
+      "id": "sophia",
+      "publicName": "SOPHIA",
+      "slug": "sophia",
+      "status": "planned",
+      "destination": null,
+      "frontDoorPath": "/sophia/",
+      "shortDescription": "An advisory presence that supports stewards and participants; humans make the decisions."
+    },
+    {
+      "id": "programs",
+      "publicName": "Programs",
+      "slug": "programs",
+      "status": "planned",
+      "destination": null,
+      "frontDoorPath": "/programs/",
+      "shortDescription": "Structured offerings the ecosystem will run — each published only when its pathway truly works."
+    },
+    {
+      "id": "public-knowledge",
+      "publicName": "Public Knowledge",
+      "slug": "public-knowledge",
+      "status": "in-development",
+      "destination": null,
+      "frontDoorPath": "/public-knowledge/",
+      "shortDescription": "What the ecosystem knows, shared openly."
+    },
+    {
+      "id": "research",
+      "publicName": "Research",
+      "slug": "research",
+      "status": "planned",
+      "destination": null,
+      "frontDoorPath": "/research/",
+      "shortDescription": "Evidence-informed study of regulation, continuity, and stewardship outcomes."
+    },
+    {
+      "id": "contribution",
+      "publicName": "Contribution",
+      "slug": "contribution",
+      "status": "in-development",
+      "destination": null,
+      "frontDoorPath": "/contribute/",
+      "shortDescription": "The pathways by which people offer stories, media, effort, and stewardship to the ecosystem."
+    },
+    {
+      "id": "community-stewardship",
+      "publicName": "Community Stewardship",
+      "slug": "community-stewardship",
+      "status": "planned",
+      "destination": null,
+      "frontDoorPath": "/community/",
+      "shortDescription": "Communities caring for their own continuity."
+    },
+    {
+      "id": "relationship-stewardship",
+      "publicName": "Relationship Stewardship",
+      "slug": "relationship-stewardship",
+      "status": "planned",
+      "destination": null,
+      "frontDoorPath": "/ecosystem/relationship-stewardship/",
+      "shortDescription": "Tending relationships so they last."
+    },
+    {
+      "id": "institute-of-emotional-intelligence",
+      "publicName": "Institute of Emotional Intelligence",
+      "slug": "institute-of-emotional-intelligence",
+      "status": "planned",
+      "destination": null,
+      "frontDoorPath": "/ecosystem/institute-of-emotional-intelligence/",
+      "shortDescription": "Emotional intelligence as teachable, practicable infrastructure."
+    },
+    {
+      "id": "pattern-sync-for-self-build",
+      "publicName": "Pattern Sync for Self Build",
+      "slug": "pattern-sync-for-self-build",
+      "status": "planned",
+      "destination": null,
+      "frontDoorPath": "/ecosystem/pattern-sync-for-self-build/",
+      "shortDescription": "Learning your own patterns to build yourself deliberately."
+    },
+    {
+      "id": "presence-principle",
+      "publicName": "Presence Principle",
+      "slug": "presence-principle",
+      "status": "planned",
+      "destination": null,
+      "frontDoorPath": "/ecosystem/presence-principle/",
+      "shortDescription": "Showing up matters: every presence is a gift."
+    },
+    {
+      "id": "connective-dynamics",
+      "publicName": "Connective Dynamics",
+      "slug": "connective-dynamics",
+      "status": "planned",
+      "destination": null,
+      "frontDoorPath": "/ecosystem/connective-dynamics/",
+      "shortDescription": "How relationships actually connect and hold."
+    },
+    {
+      "id": "perspectouence",
+      "publicName": "Perspectouence",
+      "slug": "perspectouence",
+      "status": "planned",
+      "destination": null,
+      "frontDoorPath": "/ecosystem/perspectouence/",
+      "shortDescription": "A Bridge Builders original concept; its public articulation is being prepared."
+    },
+    {
+      "id": "story-circle",
+      "publicName": "Story Circle",
+      "slug": "story-circle",
+      "status": "planned",
+      "destination": null,
+      "frontDoorPath": "/ecosystem/story-circle/",
+      "shortDescription": "A structured circle for telling and preserving stories."
+    },
+    {
+      "id": "sun-reset",
+      "publicName": "Sun Reset",
+      "slug": "sun-reset",
+      "status": "planned",
+      "destination": null,
+      "frontDoorPath": "/ecosystem/sun-reset/",
+      "shortDescription": "An adopted branch of the ecosystem; public description is being prepared."
+    },
+    {
+      "id": "savage2steward",
+      "publicName": "Savage2Steward",
+      "slug": "savage2steward",
+      "status": "planned",
+      "destination": null,
+      "frontDoorPath": "/ecosystem/savage2steward/",
+      "shortDescription": "An adopted branch of the ecosystem; public description is being prepared."
+    },
+    {
+      "id": "equal-creative-opportunity",
+      "publicName": "Equal Creative Opportunity",
+      "slug": "equal-creative-opportunity",
+      "status": "planned",
+      "destination": null,
+      "frontDoorPath": "/ecosystem/equal-creative-opportunity/",
+      "shortDescription": "Everyone gets a real chance to create."
+    },
+    {
+      "id": "choice-creating-circumstances",
+      "publicName": "Choice-Creating Circumstances",
+      "slug": "choice-creating-circumstances",
+      "status": "planned",
+      "destination": null,
+      "frontDoorPath": "/ecosystem/choice-creating-circumstances/",
+      "shortDescription": "Building circumstances where genuine choices exist."
+    },
+    {
+      "id": "open-participation",
+      "publicName": "Open Participation",
+      "slug": "open-participation",
+      "status": "planned",
+      "destination": null,
+      "frontDoorPath": "/ecosystem/open-participation/",
+      "shortDescription": "Anyone may take part; authority is earned through stewardship, not access."
+    },
+    {
+      "id": "creative-lab",
+      "publicName": "Creative Lab",
+      "slug": "creative-lab",
+      "status": "planned",
+      "destination": null,
+      "frontDoorPath": "/ecosystem/creative-lab/",
+      "shortDescription": "An adopted branch of the ecosystem; public description is being prepared."
+    },
+    {
+      "id": "bridgeview-media",
+      "publicName": "BRIDGEview",
+      "slug": "bridgeview-media",
+      "status": "planned",
+      "destination": null,
+      "frontDoorPath": "/ecosystem/bridgeview-media/",
+      "shortDescription": "The media branch of the ecosystem; public description is being prepared."
+    },
+    {
+      "id": "resonate-touch",
+      "publicName": "Resonate Touch",
+      "slug": "resonate-touch",
+      "status": "planned",
+      "destination": null,
+      "frontDoorPath": "/ecosystem/resonate-touch/",
+      "shortDescription": "An adopted branch of the ecosystem; public description is being prepared."
+    }
+  ]
+}

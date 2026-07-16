@@ -1,0 +1,28 @@
+# Canonical Conflict Register
+
+Maintained per `docs/canonical/CHANGE_AUTHORITY.md`. No conflict may simply disappear: each is resolved, intentionally retained as historical, deferred with a named reason, or externally blocked.
+
+| ID | Locations | Conflicting language | Governing authority | Canonical resolution | Implementation action | Status | Evidence |
+|---|---|---|---|---|---|---|---|
+| C-001 | `doc/` vs `docs/` | Two documentation directories with one file set split between them | Authority order §6 | `docs/` is canonical for activation-era documents; `doc/ARCHITECTURE.md` and `doc/GOVERNANCE.md` retained in place as historical/operational elaborations, referenced from the Trust Center index | No file deletion; cross-references added | Retained as historical | This register; `docs/TRUST_CENTER_INDEX.md` |
+| C-002 | `frontend\README.md` (literal backslash filename at root) | Windows path artifact; describes an intended `frontend/` directory that does not exist | Authority order §6 | The canonical front-door implementation is `src/` in this repository (see `docs/FRONT_DOOR_BOUNDARY.md`); the file is retained unmodified as the historical statement of intended stack (Lovable + React + Node.js) | None (preserve; do not delete unfamiliar files) | Retained as historical | `docs/FRONT_DOOR_BOUNDARY.md` |
+| C-003 | `.env.example` (`NEXT_PUBLIC_APP_URL`) vs `doc/ARCHITECTURE.md` (Lovable/Vite + React) | Next.js naming convention vs Lovable stack declaration | Authority order §2 (steward directive), §6 | Front door v0.1.0 is dependency-free Node/TypeScript static generation; variable renamed in the activation-era `.env.example` to `PUBLIC_APP_URL` with the historical name noted | `.env.example` updated; documented in `docs/DEPLOYMENT_ENVIRONMENT_MATRIX.md` | Resolved | Commit history; matrix doc |
+| C-004 | Repository name `Bridge-Builders-Collective` vs canonical `Bridge Builders Collective` | Hyphenated repo slug vs public name | `CANONICAL_VOCABULARY.md` | Public name is "Bridge Builders Collective"; hyphenated form permitted only as repository/URL slug | Vocabulary entry records prohibition | Resolved | Vocabulary §Bridge Builders Collective |
+| C-005 | `BRIDGE_BUILDERS_LICENSE.md` line 1 | Stray fragment ` # use Bridge Builders License` above the license title | Authority order §6 | Fragment is an editing artifact; license body governs | Deferred: file left byte-identical to upstream to avoid touching license text without steward approval | Deferred (named reason: license edits are a steward decision) | Upstream file @ b9493786 |
+| C-006 | `doc/ARCHITECTURE.md`, `doc/GOVERNANCE.md` reference `CONSENT_SYSTEMS.md`, `MODERATION_ESCALATION.md` | Referenced documents do not exist | Authority order §3 | References recorded as planned documents; Trust Center consent section cites `PRIVACY_POLICY.md` (existing) as current consent authority | Trust Center index lists the gap | Deferred (planned documents; steward authorship required) | `docs/TRUST_CENTER_INDEX.md` |
+| C-007 | `TERMS_OF_SERVICE.md`, `ACCESSIBILITY_STANDARD.md`, `DATA_RETENTION_POLICY.md`, others | `[INSERT DATE]`, `[INSERT CONTACT EMAIL]`, `[INSERT PERIOD]` placeholders in public policies | `PUBLIC_CLAIMS_STANDARD.md` | Policies presented in Trust Center as "draft — effective dates and contact pending steward completion"; placeholders are honest gaps, not hidden | Trust Center shows "current effective status: draft" for affected areas | Externally blocked (B-EXT-3: contact email is a steward decision) | Trust Center route; `docs/TRUST_CENTER_INDEX.md` |
+| C-008 | Steward directive suggested homepage identity wording vs `CLAUDE.md` identity wording | Two identity phrasings | Constitution §1 (consolidates both) | Constitution §1 adopts the directive wording as primary public identity and preserves the `CLAUDE.md` "not a conventional…" framing as clarifying language | Homepage uses Constitution §1 | Resolved | Constitution §1 |
+| C-009 | Upstream open PRs #1–#3 (Copilot branches) | Potentially overlapping audit/CI/security baselines not merged to main | Authority order §9 | Activation work is self-contained against main @ b9493786; PRs left to steward review; any overlap reconciles in favor of this branch's canonical documents | None in-repo; steward reviews PRs after activation merge | Deferred (steward review) | `docs/ACTIVATION_AUDIT.md` §1 |
+
+## Final sweep — 2026-07-15 (Phase 13)
+
+Searched the completed branch for duplicate ecosystem arrays, alternate public names, conflicting
+descriptions, alternate status labels, hardcoded destinations, handwritten footer/menu items,
+"production-ready"/outcome claims, old front-door or obsolete domain references, placeholder text,
+TODO/FIXME markers, empty routes, dead links, hidden internal routes, secret values, nested `.git`
+directories, multiple lockfiles, and duplicate deployment configurations.
+
+Result: **no new conflicts.** The only registry-shaped data lives in `src/ecosystem/ecosystem-registry.ts`;
+the only lockfile is `package-lock.json`; the built output contains no localhost/preview URLs, no
+unsupported claims, no placeholders, and no dead internal links (1,109 references validated).
+Open items remain exactly C-005, C-006, C-007 (deferred/blocked as recorded) and C-009 (steward review).

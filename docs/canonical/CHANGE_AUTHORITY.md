@@ -1,0 +1,30 @@
+# Change Authority
+
+Version 1.0 — 2026-07-15. Authority level derives from position in `ECOSYSTEM_AUTHORITY_ORDER.md`.
+
+## Who may propose
+
+Anyone — stewards, contributors, participants, and advisory systems (including SOPHIA, advisory-only) — may propose changes via pull request or recorded steward note.
+
+## Who may approve
+
+- **Constitutional changes**: founding steward(s) only, recorded as adopted steward decisions with date and rationale. Protected principles may be strengthened, never weakened (Constitution §13).
+- **Vocabulary changes**: founding steward(s); the Rosetta Stone environment stewards once constituted.
+- **Public environment status changes**: founding steward(s), with the evidence class required by `ENVIRONMENT_STATUS_STANDARD.md`.
+- **Implementation changes**: reviewed via pull request against `main`; must keep CI green; merge requires steward approval.
+
+## Urgent corrections
+
+Truthfulness corrections (a public claim found false, a status found overstated) may be made immediately by any steward, recorded within 48 hours as a steward decision, and reconciled in the conflict register.
+
+## Conflicting downstream content
+
+When a downstream environment contradicts canonical truth: record the conflict in `docs/CANONICAL_CONFLICT_REGISTER.md`, correct the downstream surface, and note the resolution. The registry is never edited to match a downstream error.
+
+## Recording
+
+Changes are recorded through: git history on `main`, the conflict register, release notes (`docs/PUBLIC_RELEASE_NOTES_*.md`), and continuity notes per `docs/POST_RELEASE_CONTINUITY_PLAN.md`. Public change history is maintained through tagged releases and release notes.
+
+## SOPHIA boundary (restated)
+
+SOPHIA may draft proposals but may not approve, merge, publish, or change any status. Constitution §9 governs.

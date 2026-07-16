@@ -1,0 +1,23 @@
+{
+  "name": "bridge-builders-front-door",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Canonical public front door of Bridge Builders Collective, generated from the canonical ecosystem registry. Zero runtime and build dependencies (Node 22+).",
+  "license": "SEE LICENSE IN BRIDGE_BUILDERS_LICENSE.md",
+  "type": "module",
+  "engines": {
+    "node": ">=22.18"
+  },
+  "scripts": {
+    "build": "node scripts/build-site.ts",
+    "test": "node --test tests/*.test.ts",
+    "validate:registry": "node --input-type=module -e \"import('./src/ecosystem/index.ts').then(m=>{const e=m.validateRegistry(m.ECOSYSTEM_REGISTRY);if(e.length){console.error(e.join('\\n'));process.exit(1)}console.log('registry valid: '+m.ECOSYSTEM_REGISTRY.length+' environments')})\"",
+    "validate:links": "node scripts/validate-links.ts",
+    "typecheck": "tsc --noEmit",
+    "serve": "node scripts/serve.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^26.1.1",
+    "typescript": "^7.0.2"
+  }
+}
