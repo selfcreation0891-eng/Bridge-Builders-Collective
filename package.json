@@ -5,7 +5,9 @@
   "description": "Canonical public front door of Bridge Builders Collective, generated from the canonical ecosystem registry. Zero runtime and build dependencies (Node 22+).",
   "license": "SEE LICENSE IN BRIDGE_BUILDERS_LICENSE.md",
   "type": "module",
-  "engines": { "node": ">=22.18" },
+  "engines": {
+    "node": ">=22.18"
+  },
   "scripts": {
     "build": "node scripts/build-site.ts",
     "test": "node --test tests/*.test.ts",
@@ -13,5 +15,9 @@
     "validate:links": "node scripts/validate-links.ts",
     "typecheck": "tsc --noEmit",
     "serve": "node scripts/serve.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^26.1.1",
+    "typescript": "^7.0.2"
   }
 }
