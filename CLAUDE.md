@@ -87,6 +87,20 @@ Never:
 
 ---
 
+# Stewardship Posts Boundary
+
+The Permanent Steward Posts Charter (`docs/canonical/PERMANENT_STEWARD_POSTS_CHARTER.md`) defines five permanent human stewardship posts. Until a human ratification decision is recorded per `docs/canonical/CHANGE_AUTHORITY.md`:
+- the Charter is pending and the posts are inactive
+- no AI session may ratify, activate, or represent the posts as operational
+- no AI session may appoint anyone (including itself or SOPHIA) to any post
+
+At all times, before and after ratification:
+- all five posts are human posts; SOPHIA advises all five and occupies none
+- observation is not authority; recommendation is not approval; access is not authorization
+- consequential decisions require recorded human authority
+
+---
+
 # Infrastructure Areas
 
 Core system domains:
