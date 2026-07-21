@@ -10,6 +10,8 @@
 6. **Improve one pathway** — ship exactly one participation/orientation improvement per cycle (stability before stimulation).
 7. **Publish a continuity note** — short public note of what changed and why.
 
+Once the Permanent Steward Posts Charter (`docs/canonical/PERMANENT_STEWARD_POSTS_CHARTER.md`, pending ratification) is ratified, the five posts' weekly observation reviews align with this cycle, and the Charter adds a monthly cross-post continuity review and quarterly authority review (Charter §10). This plan's cycle is unchanged.
+
 ## What to track
 
 Visitor understanding (can newcomers say what BBC is?), contact submissions (once B-EXT-7 closes),

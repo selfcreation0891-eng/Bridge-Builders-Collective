@@ -35,4 +35,6 @@ Format per term: **Canonical spelling** — short definition / public-language d
 - **internal** — For stewards/operations only; never appears in public navigation. Source: `ENVIRONMENT_STATUS_STANDARD.md`.
 - **planned** — Adopted intention with no implementation yet. Prohibited: describing planned items as existing. Source: `ENVIRONMENT_STATUS_STANDARD.md`.
 
+- **Permanent Steward Post** *(pending ratification — becomes canonical upon adoption of the Permanent Steward Posts Charter)* — An enduring institutional responsibility occupied by a trained and recorded human steward, bounded by delegated authority, accountable through records and review, and transferable through documented succession. The post is permanent; the individual occupying it is not. All five posts (Orientation, Continuity, Vocabulary, Product, Institutional) are human posts; SOPHIA advises all five and occupies none. Public: "a lasting responsibility of care, held by an accountable human." Prohibited: "admin role", "moderator position", "AI steward", any framing implying unrestricted authority or SOPHIA occupancy. Related: steward, stewardship, continuity. Source: `PERMANENT_STEWARD_POSTS_CHARTER.md` (pending ratification per `CHANGE_AUTHORITY.md`).
+
 Terms not listed here have no canonical status. New terms enter through `CHANGE_AUTHORITY.md`.

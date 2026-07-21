@@ -98,12 +98,16 @@ Responsible for:
 - safety observation
 
 ### Advisory Participants
-May assist with:
+May support (advisory only, per Constitution §3 "Support, not help"):
 - ethics review
 - accessibility review
 - continuity strategy
 - governance recommendations
 - institutional partnerships
+
+### Permanent Steward Posts (pending ratification)
+
+Five permanent human stewardship posts — Orientation, Continuity, Vocabulary, Product, and Institutional Steward — are defined in `docs/canonical/PERMANENT_STEWARD_POSTS_CHARTER.md`, which awaits ratification under `docs/canonical/CHANGE_AUTHORITY.md`. All five are human posts; the Institutional Steward in particular is a human stewardship post that SOPHIA may never occupy. SOPHIA supports all five posts in an advisory capacity only and occupies none of them. After ratification, all posts begin in observation-only mode. This framework's role definitions above are unchanged; the Charter elaborates them without redefining them.
 
 ---
 

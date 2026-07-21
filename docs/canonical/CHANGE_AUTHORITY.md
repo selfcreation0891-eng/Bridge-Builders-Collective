@@ -13,6 +13,10 @@ Anyone — stewards, contributors, participants, and advisory systems (including
 - **Public environment status changes**: founding steward(s), with the evidence class required by `ENVIRONMENT_STATUS_STANDARD.md`.
 - **Implementation changes**: reviewed via pull request against `main`; must keep CI green; merge requires steward approval.
 
+## Steward posts (pending ratification)
+
+The Permanent Steward Posts Charter (`docs/canonical/PERMANENT_STEWARD_POSTS_CHARTER.md`) is drafted and awaits ratification. Its ratification, and any later amendment of it, requires an adopted steward decision by founding steward(s) under this document. Once ratified: steward post appointments and removals follow Charter §9 with recorded appointing authority; all posts begin observation-only; expanded post authority requires a separate adopted steward decision. This section grants no authority before that ratification decision is recorded, and nothing in the Charter changes the approval authorities listed above.
+
 ## Urgent corrections
 
 Truthfulness corrections (a public claim found false, a status found overstated) may be made immediately by any steward, recorded within 48 hours as a steward decision, and reconciled in the conflict register.
