@@ -1,6 +1,6 @@
 # Steward Handoff Record
 
-Template — Pending Ratification. Records created before ratification may exist only as drafts or test fixtures.
+Template — Active since ratification of the Permanent Steward Posts Charter, July 20, 2026 (decision SD-2026-07-20-01). Records created before that date exist only as drafts or test fixtures.
 Authority: `docs/stewardship/STEWARD_HANDOFF_AND_ESCALATION_PROTOCOL.md`.
 
 A handoff transfers a concern between posts with its context intact. The originating steward remains accountable for the completeness of this record; the receiving post gains no authority beyond its own mandate.

@@ -16,7 +16,7 @@ When sources conflict, the higher entry governs:
 
 ## Subordinate canonical standards
 
-`docs/canonical/PERMANENT_STEWARD_POSTS_CHARTER.md` (Permanent Steward Posts Charter, v1 — pending ratification) is a subordinate canonical governance standard. Once ratified by adopted steward decision, it operates at level 5 alongside the canonical vocabulary and public claims standard; it never outranks the Constitution, adopted steward decisions, or canonical principles. Until ratification it carries no operational authority. This note adds a reference only; it does not renumber or alter the order above.
+`docs/canonical/PERMANENT_STEWARD_POSTS_CHARTER.md` (Permanent Steward Posts Charter, v1 — ratified July 20, 2026 by adopted steward decision SD-2026-07-20-01) is a subordinate canonical governance standard operating at level 5 alongside the canonical vocabulary and public claims standard; it never outranks the Constitution, adopted steward decisions, or canonical principles. Its five posts operate observation-only and are vacant until separately appointed. This note adds a reference only; it does not renumber or alter the order above.
 
 ## Binding rule
 

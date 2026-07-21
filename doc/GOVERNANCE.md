@@ -105,9 +105,9 @@ May support (advisory only, per Constitution §3 "Support, not help"):
 - governance recommendations
 - institutional partnerships
 
-### Permanent Steward Posts (pending ratification)
+### Permanent Steward Posts (ratified — observation-only)
 
-Five permanent human stewardship posts — Orientation, Continuity, Vocabulary, Product, and Institutional Steward — are defined in `docs/canonical/PERMANENT_STEWARD_POSTS_CHARTER.md`, which awaits ratification under `docs/canonical/CHANGE_AUTHORITY.md`. All five are human posts; the Institutional Steward in particular is a human stewardship post that SOPHIA may never occupy. SOPHIA supports all five posts in an advisory capacity only and occupies none of them. After ratification, all posts begin in observation-only mode. This framework's role definitions above are unchanged; the Charter elaborates them without redefining them.
+Five permanent human stewardship posts — Orientation, Continuity, Vocabulary, Product, and Institutional Steward — are defined in `docs/canonical/PERMANENT_STEWARD_POSTS_CHARTER.md`, ratified July 20, 2026 by adopted steward decision SD-2026-07-20-01 under `docs/canonical/CHANGE_AUTHORITY.md`. All five are human posts; the Institutional Steward in particular is a human stewardship post that SOPHIA may never occupy. SOPHIA supports all five posts in an advisory capacity only and occupies none of them. All posts operate in observation-only mode and are vacant until separately appointed (status records: `docs/stewardship/posts/`); an unoccupied post exercises no authority. This framework's role definitions above are unchanged; the Charter elaborates them without redefining them.
 
 ---
 

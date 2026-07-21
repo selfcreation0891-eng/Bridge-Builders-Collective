@@ -6,7 +6,7 @@ Last Updated: [INSERT DATE]
 
 This document defines steward responsibilities, escalation authority, and operational response hierarchy.
 
-Cross-post handoff and escalation routes for the five Permanent Steward Posts are defined in `docs/stewardship/STEWARD_HANDOFF_AND_ESCALATION_PROTOCOL.md` (pending ratification with the Permanent Steward Posts Charter). The routes say *where* a concern goes; the tiers below say *how urgently*. The tiers below are unchanged by that protocol.
+Cross-post handoff and escalation routes for the five Permanent Steward Posts are defined in `docs/stewardship/STEWARD_HANDOFF_AND_ESCALATION_PROTOCOL.md` (active since the Charter's ratification, July 20, 2026; posts are observation-only and vacant until appointed). The routes say *where* a concern goes; the tiers below say *how urgently*. The tiers below are unchanged by that protocol.
 
 ---
 

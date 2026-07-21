@@ -1,6 +1,6 @@
 # Steward Handoff and Escalation Protocol
 
-Version 1.0 — Pending Ratification (activates with the Permanent Steward Posts Charter)
+Version 1.0 — Active (observation-only) since ratification of the Permanent Steward Posts Charter, July 20, 2026 (decision SD-2026-07-20-01)
 Authority: subordinate to `docs/canonical/PERMANENT_STEWARD_POSTS_CHARTER.md`; escalation tiers remain governed by `STEWARD_ESCALATION_MATRIX.md`; safety incidents remain governed by `INCIDENT_RESPONSE_PROTOCOL.md`.
 
 A handoff transfers a concern between posts with its context intact. An escalation moves a concern toward the authority able to decide it. Neither is a decision: escalation is not adjudication, and the receiving post gains no authority beyond its own mandate.

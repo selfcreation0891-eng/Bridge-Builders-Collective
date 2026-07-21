@@ -1,6 +1,6 @@
 # Continuity Certification Review
 
-Template — Pending Ratification. Records created before ratification may exist only as drafts or test fixtures.
+Template — Active since ratification of the Permanent Steward Posts Charter, July 20, 2026 (decision SD-2026-07-20-01). Records created before that date exist only as drafts or test fixtures.
 Authority: `docs/stewardship/CONTINUITY_CERTIFICATION_STANDARD.md`; `docs/canonical/PERMANENT_STEWARD_POSTS_CHARTER.md`.
 
 Continuity certification is an **internal Bridge Builders operational determination** that sufficient records, handoffs, access boundaries, and succession readiness exist for a post to continue responsibly. It is not an external professional accreditation, license, or credential of any kind, and must never be presented as one.

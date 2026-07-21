@@ -1,6 +1,6 @@
 # Steward Decision Record
 
-Template — Pending Ratification. Records created before ratification may exist only as drafts or test fixtures.
+Template — Active since ratification of the Permanent Steward Posts Charter, July 20, 2026 (decision SD-2026-07-20-01). Records created before that date exist only as drafts or test fixtures.
 Authority: `docs/canonical/CHANGE_AUTHORITY.md`; `docs/canonical/PERMANENT_STEWARD_POSTS_CHARTER.md`.
 
 **This record may only be used by a human with the required authority for the decision being recorded.** A decision recorded here without that authority is void and must be recorded as a conflict per `CHANGE_AUTHORITY.md`. SOPHIA may draft options and organize evidence for a decision; SOPHIA may never be listed as the decision authority.

@@ -1,5 +1,7 @@
 # Permanent Steward Posts — Ratification Packet
 
+> **Historical record.** This packet was prepared for founding-steward review and served its purpose: the decision it proposed was adopted on July 20, 2026 by Maurice Jackson, founding steward (`docs/stewardship/decisions/SD-2026-07-20-01-permanent-steward-posts-charter-v1.md`). The packet is preserved unmodified below as the historical record of what was reviewed. Where its text says "pending ratification," that described the pre-adoption state.
+
 Prepared for founding-steward review per `docs/canonical/CHANGE_AUTHORITY.md`. Nothing in this packet is a decision. The Charter and every document listed here remain **Pending Ratification** and **inactive** until a human ratification decision is recorded.
 
 ## Purpose of the decision

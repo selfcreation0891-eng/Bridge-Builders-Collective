@@ -1,6 +1,6 @@
 # Continuity Certification Standard
 
-Version 1.0 — Pending Ratification (activates with the Permanent Steward Posts Charter)
+Version 1.0 — Active (observation-only) since ratification of the Permanent Steward Posts Charter, July 20, 2026 (decision SD-2026-07-20-01)
 Authority: subordinate to `docs/canonical/PERMANENT_STEWARD_POSTS_CHARTER.md`.
 
 Continuity certification is an internal Bridge Builders operational determination that sufficient records, handoffs, access boundaries, and succession readiness exist for a Permanent Steward Post to continue responsibly. It is not, and must never be described as, a governmental, academic, medical, legal, or external professional accreditation. It certifies the *post's continuity condition*, not the person's credentials.
