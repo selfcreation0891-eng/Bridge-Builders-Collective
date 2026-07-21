@@ -38,7 +38,7 @@ Reading the columns:
 
 ## Appointment process reference
 
-The "Appoint a steward" row is elaborated by the Steward Eligibility, Orientation, and Appointment Process (`STEWARD_ELIGIBILITY_ORIENTATION_AND_APPOINTMENT_PROCESS.md`, pending ratification). That process changes nothing in this matrix: appointment remains a founding-steward decision, self-appointment and SOPHIA appointment remain prohibited, and appointment never expands a post's authority or changes its mode.
+The "Appoint a steward" row is elaborated by the Steward Eligibility, Orientation, and Appointment Process (`STEWARD_ELIGIBILITY_ORIENTATION_AND_APPOINTMENT_PROCESS.md`, ratified July 21, 2026, decision SD-2026-07-21-01). That process changes nothing in this matrix: appointment remains a founding-steward decision, self-appointment and SOPHIA appointment remain prohibited, and appointment never expands a post's authority or changes its mode.
 
 ## Standing prohibitions (all rows, all posts)
 

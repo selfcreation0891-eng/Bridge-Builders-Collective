@@ -1,13 +1,25 @@
 # Steward Eligibility, Orientation, and Appointment Process
 
-Version 1.0 — Pending Ratification
+Version 1.0 — Ratified and Active
 
 Authority:
 Subordinate to the Bridge Builders Constitution, Change Authority, and
 Permanent Steward Posts Charter.
 
 Operational state:
-Inactive until ratified.
+Active — adopted by recorded human steward decision.
+
+Ratification record:
+
+```text
+Adoption date: July 21, 2026
+Decision authority: Maurice Jackson, founding steward
+Decision record: docs/stewardship/decisions/SD-2026-07-21-01-steward-eligibility-orientation-appointment-process-v1.md
+Effect of adoption: the process is active; no candidacy was opened, no person
+appointed, no access granted; all five posts remain vacant in Observation-Only Mode.
+```
+
+This process was drafted and integrated as *Pending Ratification* (git history preserves that state) and was adopted by the recorded human steward decision above.
 
 Purpose:
 To establish an accessible, accountable, human-led process for determining
@@ -141,4 +153,4 @@ SOPHIA's support and its hard limits during this process are defined in the sect
 
 ## 7. Ratification and amendment
 
-This process takes effect only upon an adopted steward decision by founding steward(s) per `docs/canonical/CHANGE_AUTHORITY.md`. Until then it is inactive: no candidacy may be opened under it, no orientation completion recorded, no appointment made. Adoption of this process appoints no one; every future appointment requires its own recorded human appointment decision. Amendments follow `CHANGE_AUTHORITY.md` and may not weaken the Charter, the Constitution's protected principles, or SOPHIA's advisory boundaries.
+This process took effect upon the adopted steward decision recorded above (SD-2026-07-21-01, July 21, 2026, Maurice Jackson, founding steward), per `docs/canonical/CHANGE_AUTHORITY.md`. Adoption of this process appointed no one; every future appointment requires its own recorded human appointment decision and the appointee's recorded acceptance. Before the first candidacy opens, the operational prerequisites recorded in the ratification continuity note must be met: private candidate-record storage designated, human orientation facilitation designated, candidacy sequencing decided, and C-014 (age/safeguarding/legal capacity) resolved for any affected candidacy. Amendments follow `CHANGE_AUTHORITY.md` and may not weaken the Charter, the Constitution's protected principles, or SOPHIA's advisory boundaries.

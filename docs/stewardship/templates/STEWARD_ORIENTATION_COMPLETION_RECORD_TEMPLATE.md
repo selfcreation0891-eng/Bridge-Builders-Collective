@@ -1,6 +1,6 @@
 # Steward Orientation Completion Record
 
-Template — Pending Ratification (activates with the Steward Eligibility, Orientation, and Appointment Process).
+Template — Active since ratification of the Steward Eligibility, Orientation, and Appointment Process, July 21, 2026 (decision SD-2026-07-21-01).
 Authority: `docs/stewardship/STEWARD_ORIENTATION_CURRICULUM.md`. **Private candidate record; accommodation details are protected.**
 
 Orientation completion is not appointment. This record makes a candidate available for role-readiness review, nothing more.

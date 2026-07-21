@@ -18,12 +18,15 @@ import { STEWARD_POST_IDS } from './steward-posts.ts';
 export type AppointmentProcessStatus = 'pending-ratification' | 'ratified';
 
 /**
- * Pending ratification: no candidacy may be opened, no orientation completion
- * recorded, no appointment made under this process. Changing this value
- * requires a recorded adopted steward decision per CHANGE_AUTHORITY.md and is
- * a human act — never an automated one.
+ * Ratified: adopted by recorded human steward decision SD-2026-07-21-01
+ * (Maurice Jackson, founding steward, July 21, 2026 — see
+ * docs/stewardship/decisions/). Adoption opened no candidacy and appointed no
+ * one; all five posts remain vacant in Observation-Only Mode until separate
+ * recorded human decisions exist. Changing this value requires a recorded
+ * adopted steward decision per CHANGE_AUTHORITY.md and is a human act — never
+ * an automated one.
  */
-export const APPOINTMENT_PROCESS_STATUS: AppointmentProcessStatus = 'pending-ratification';
+export const APPOINTMENT_PROCESS_STATUS: AppointmentProcessStatus = 'ratified';
 
 /** Candidacy states, per the process standard's stages and outcomes. */
 export type CandidacyState =

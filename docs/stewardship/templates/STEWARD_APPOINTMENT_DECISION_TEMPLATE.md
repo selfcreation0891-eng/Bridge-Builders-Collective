@@ -1,6 +1,6 @@
 # Steward Appointment Decision
 
-Template — Pending Ratification (activates with the Steward Eligibility, Orientation, and Appointment Process).
+Template — Active since ratification of the Steward Eligibility, Orientation, and Appointment Process, July 21, 2026 (decision SD-2026-07-21-01).
 Authority: `docs/stewardship/STEWARD_APPOINTMENT_AND_ONBOARDING_PROTOCOL.md`; `docs/canonical/PERMANENT_STEWARD_POSTS_CHARTER.md` §9.2; `docs/canonical/CHANGE_AUTHORITY.md`.
 
 **This record becomes effective only when completed by the authorized human decision authority and accepted by the appointee.** Without both, no appointment exists. SOPHIA may never be the decision authority. No candidate may approve their own appointment.

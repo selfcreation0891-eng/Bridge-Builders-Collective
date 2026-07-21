@@ -1,5 +1,7 @@
 # Steward Eligibility, Orientation, and Appointment Process — Ratification Packet
 
+> **Historical record.** This packet was prepared for founding-steward review and served its purpose: the decision it proposed was adopted on July 21, 2026 by Maurice Jackson, founding steward (`docs/stewardship/decisions/SD-2026-07-21-01-steward-eligibility-orientation-appointment-process-v1.md`). The packet is preserved unmodified below as the historical record of what was reviewed. Where its text says "pending ratification," that described the pre-adoption state. Adoption opened no candidacy and appointed no one.
+
 Prepared for founding-steward review per `docs/canonical/CHANGE_AUTHORITY.md`. Nothing in this packet is a decision. Every document listed here remains **Pending Ratification** and **inactive** until a human ratification decision is recorded. Adoption of this process appoints no one.
 
 ## Decision purpose

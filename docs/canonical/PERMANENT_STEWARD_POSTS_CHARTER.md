@@ -549,7 +549,7 @@ Appointment to a post requires:
 
 This Charter does not determine who currently occupies any post. Occupancy is established only by separate, recorded appointment decisions. Until such a decision exists for a post, the post is vacant.
 
-The detailed candidate, eligibility, orientation, readiness, appointment, and onboarding process elaborating this section is `docs/stewardship/STEWARD_ELIGIBILITY_ORIENTATION_AND_APPOINTMENT_PROCESS.md` (pending ratification; operative only once ratified per `CHANGE_AUTHORITY.md`). That process is subordinate to this Charter and adds no appointment authority.
+The detailed candidate, eligibility, orientation, readiness, appointment, and onboarding process elaborating this section is `docs/stewardship/STEWARD_ELIGIBILITY_ORIENTATION_AND_APPOINTMENT_PROCESS.md` (ratified July 21, 2026, adopted steward decision SD-2026-07-21-01, per `CHANGE_AUTHORITY.md`). That process is subordinate to this Charter and adds no appointment authority; its adoption appointed no one.
 
 ### 9.3 Rotation
 

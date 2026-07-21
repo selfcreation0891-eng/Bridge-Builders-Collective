@@ -1,6 +1,6 @@
 # Steward Nomination or Application
 
-Template — Pending Ratification (activates with the Steward Eligibility, Orientation, and Appointment Process). No candidacy may be opened under this template before that process is ratified.
+Template — Active since ratification of the Steward Eligibility, Orientation, and Appointment Process, July 21, 2026 (decision SD-2026-07-21-01).
 Authority: `docs/stewardship/STEWARD_ELIGIBILITY_ORIENTATION_AND_APPOINTMENT_PROCESS.md` §3–4.
 
 Nomination is not selection. This record opens consideration, nothing more. It becomes an active candidacy only when the candidate's informed consent is separately recorded. **This is a private candidate record** — never exposed through public routes (see the privacy section of `STEWARD_APPOINTMENT_AND_ONBOARDING_PROTOCOL.md`).

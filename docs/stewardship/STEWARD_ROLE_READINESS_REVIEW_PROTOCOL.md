@@ -1,6 +1,6 @@
 # Steward Role-Readiness Review Protocol
 
-Version 1.0 — Pending Ratification (activates with the Steward Eligibility, Orientation, and Appointment Process)
+Version 1.0 — Active since ratification of the Steward Eligibility, Orientation, and Appointment Process, July 21, 2026 (decision SD-2026-07-21-01)
 Authority: subordinate to the Bridge Builders Constitution, `docs/canonical/PERMANENT_STEWARD_POSTS_CHARTER.md`, and `docs/stewardship/STEWARD_ELIGIBILITY_ORIENTATION_AND_APPOINTMENT_PROCESS.md`.
 
 Readiness is not authority, and a finding of readiness is not an appointment. The readiness review examines evidence, not personality preference: it asks whether the record shows a person prepared to carry a specific post's responsibilities, not whether reviewers like them, agree with them, or share their style.

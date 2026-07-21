@@ -64,7 +64,7 @@ Status meanings:
 
 ## Relationship to onboarding
 
-When a post gains an occupant, the onboarding continuity record (`templates/STEWARD_ONBOARDING_CONTINUITY_RECORD_TEMPLATE.md`, part of the appointment process, pending ratification) becomes part of the evidence this standard reviews. Appointment does not change a post's certification status; certification review continues to examine records, not occupancy.
+When a post gains an occupant, the onboarding continuity record (`templates/STEWARD_ONBOARDING_CONTINUITY_RECORD_TEMPLATE.md`, part of the appointment process ratified July 21, 2026, decision SD-2026-07-21-01) becomes part of the evidence this standard reviews. Appointment does not change a post's certification status; certification review continues to examine records, not occupancy.
 
 ## Revocation
 

@@ -1,6 +1,6 @@
 # Steward Conflict Disclosure
 
-Template — Pending Ratification (activates with the Steward Eligibility, Orientation, and Appointment Process).
+Template — Active since ratification of the Steward Eligibility, Orientation, and Appointment Process, July 21, 2026 (decision SD-2026-07-21-01).
 Authority: `docs/stewardship/STEWARD_ELIGIBILITY_STANDARD.md` §8; `docs/canonical/PERMANENT_STEWARD_POSTS_CHARTER.md` §3, §9. **Private candidate record — never exposed through public routes.**
 
 Disclosure protects everyone, including the discloser. A disclosed conflict is a fact to be managed, usually by recusal — not an accusation and not automatically disqualifying. An undisclosed material conflict is a governance violation.

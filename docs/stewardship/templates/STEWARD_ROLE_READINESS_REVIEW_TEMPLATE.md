@@ -1,6 +1,6 @@
 # Steward Role-Readiness Review
 
-Template — Pending Ratification (activates with the Steward Eligibility, Orientation, and Appointment Process).
+Template — Active since ratification of the Steward Eligibility, Orientation, and Appointment Process, July 21, 2026 (decision SD-2026-07-21-01).
 Authority: `docs/stewardship/STEWARD_ROLE_READINESS_REVIEW_PROTOCOL.md`. **Private candidate record — never exposed through public routes.**
 
 A finding of readiness is not an appointment. Findings are made by named human reviewers against evidence; anonymous or unexplained rejection is not permitted.
