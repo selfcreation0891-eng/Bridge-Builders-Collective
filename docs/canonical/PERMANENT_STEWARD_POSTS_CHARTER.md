@@ -1,9 +1,21 @@
 # Permanent Steward Posts Charter
 
-Version 1.0 — Pending Ratification
+Version 1.0 — Ratified — Observation-Only Activation
 Authority level: subordinate to the Bridge Builders Constitution and Change Authority
-Operational state: inactive until ratified
-Initial operating mode after ratification: observation-only
+Operational state: active — observation-only
+Current operating mode: observation-only (all five posts)
+
+Ratification record:
+
+```text
+Adoption date: July 20, 2026
+Decision authority: Maurice Jackson, founding steward
+Decision record: docs/stewardship/decisions/SD-2026-07-20-01-permanent-steward-posts-charter-v1.md
+Effective operating mode: observation-only, per docs/stewardship/OBSERVATION_ONLY_OPERATING_PROTOCOL.md
+Post occupancy at activation: all five posts vacant (see docs/stewardship/posts/)
+```
+
+This Charter was drafted and integrated as *Pending Ratification* (git history preserves that state) and was adopted by the recorded human steward decision above. Expanded authority for any post requires a separate adopted steward decision per `CHANGE_AUTHORITY.md`.
 
 This Charter is a subordinate canonical governance standard. It sits below the Bridge Builders Constitution (`BRIDGE_BUILDERS_CONSTITUTION.md`), adopted steward decisions, and the canonical principles in the authority order (`ECOSYSTEM_AUTHORITY_ORDER.md`). Where wording differs, the higher authority governs. Nothing in this Charter creates authority that `CHANGE_AUTHORITY.md` does not grant, and nothing in it weakens any protected principle (Constitution §3) or the boundaries of Constitution §5–§9.
 
@@ -663,8 +675,8 @@ Required after:
 
 ## Section 12 — Ratification and amendment
 
-This Charter takes effect only upon an adopted steward decision by founding steward(s), recorded per `CHANGE_AUTHORITY.md`. Until that decision is recorded, the Charter is inactive, all five posts are inactive and vacant, and no one — including any AI system or this document's author — may represent the posts as operational.
+This Charter takes effect only upon an adopted steward decision by founding steward(s), recorded per `CHANGE_AUTHORITY.md`. That decision was recorded on July 20, 2026 by Maurice Jackson, founding steward (`docs/stewardship/decisions/SD-2026-07-20-01-permanent-steward-posts-charter-v1.md`). The pre-ratification state — Charter inactive, posts inactive and vacant, no operational representation permitted — is preserved in git history and the decision record.
 
-Upon ratification, all five posts begin in observation-only mode per `docs/stewardship/OBSERVATION_ONLY_OPERATING_PROTOCOL.md`. Expanded authority requires a separate adopted steward decision.
+All five posts are in observation-only mode per `docs/stewardship/OBSERVATION_ONLY_OPERATING_PROTOCOL.md`, and all five are active as institutional responsibilities while remaining vacant until separate recorded appointment decisions exist (Section 9.2). An unoccupied post exercises no authority. Expanded authority requires a separate adopted steward decision.
 
 Amendments to this Charter follow `CHANGE_AUTHORITY.md`. No amendment may weaken protected principles, constitutional boundaries, or SOPHIA's advisory limits; those may only be strengthened (Constitution §13).

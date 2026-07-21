@@ -1,6 +1,6 @@
 # Observation-Only Operating Protocol
 
-Version 1.0 — Pending Ratification (activates with the Permanent Steward Posts Charter)
+Version 1.0 — Active (observation-only) since ratification of the Permanent Steward Posts Charter, July 20, 2026 (decision SD-2026-07-20-01)
 Authority: subordinate to `docs/canonical/PERMANENT_STEWARD_POSTS_CHARTER.md`.
 
 Observation-only mode is the initial, mandatory operating state of all five Permanent Steward Posts after ratification. It is the operational form of "stewardship before authority" and "observation before action": the posts build records, relationships, and judgment before any of them holds expanded authority.

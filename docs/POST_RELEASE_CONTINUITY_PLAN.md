@@ -10,7 +10,7 @@
 6. **Improve one pathway** — ship exactly one participation/orientation improvement per cycle (stability before stimulation).
 7. **Publish a continuity note** — short public note of what changed and why.
 
-Once the Permanent Steward Posts Charter (`docs/canonical/PERMANENT_STEWARD_POSTS_CHARTER.md`, pending ratification) is ratified, the five posts' weekly observation reviews align with this cycle, and the Charter adds a monthly cross-post continuity review and quarterly authority review (Charter §10). This plan's cycle is unchanged.
+The Permanent Steward Posts Charter (`docs/canonical/PERMANENT_STEWARD_POSTS_CHARTER.md`, ratified 2026-07-20) aligns the five posts' weekly observation reviews with this cycle and adds a monthly cross-post continuity review and quarterly authority review (Charter §10). While the posts are vacant, this plan's cycle continues under the founding steward. This plan's cycle is unchanged.
 
 ## What to track
 

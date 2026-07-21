@@ -1,6 +1,6 @@
 /**
  * Typed registry of the five Permanent Steward Posts.
- * Authority: docs/canonical/PERMANENT_STEWARD_POSTS_CHARTER.md (Pending Ratification),
+ * Authority: docs/canonical/PERMANENT_STEWARD_POSTS_CHARTER.md (ratified 2026-07-20, SD-2026-07-20-01),
  * subordinate to the Bridge Builders Constitution and docs/canonical/CHANGE_AUTHORITY.md.
  *
  * This module encodes the Charter's structural invariants so contradictory role
@@ -51,16 +51,22 @@ export interface StewardPost {
 }
 
 /**
- * Current Charter status. Pending ratification: the Charter is drafted but not
- * adopted; no post is active. Changing this value to 'ratified-observation-only'
- * requires a recorded adopted steward decision per CHANGE_AUTHORITY.md and is a
- * human act — never an automated one.
+ * Current Charter status. Ratified — observation-only activation: adopted by
+ * recorded human steward decision SD-2026-07-20-01 (Maurice Jackson, founding
+ * steward, July 20, 2026 — see docs/stewardship/decisions/). All five posts are
+ * active as institutional responsibilities, observation-only, and vacant.
+ * Changing this value requires a recorded adopted steward decision per
+ * CHANGE_AUTHORITY.md and is a human act — never an automated one.
  */
-export const CHARTER_STATUS: CharterStatus = 'pending-ratification';
+export const CHARTER_STATUS: CharterStatus = 'ratified-observation-only';
 
-/** Pre-ratification, every post is inactive and vacant. */
-export const CURRENT_POST_MODE: PostOperatingMode =
-  CHARTER_STATUS === 'pending-ratification' ? 'inactive' : 'observation-only';
+/** Derives the posts' operating mode from a Charter status. */
+export function postModeFor(status: CharterStatus): PostOperatingMode {
+  return status === 'pending-ratification' ? 'inactive' : 'observation-only';
+}
+
+/** Post-ratification, every post operates observation-only (vacant until appointed). */
+export const CURRENT_POST_MODE: PostOperatingMode = postModeFor(CHARTER_STATUS);
 
 const SHARED_PERMITTED: readonly string[] = [
   'observe',

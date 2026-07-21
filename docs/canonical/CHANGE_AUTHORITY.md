@@ -13,9 +13,9 @@ Anyone — stewards, contributors, participants, and advisory systems (including
 - **Public environment status changes**: founding steward(s), with the evidence class required by `ENVIRONMENT_STATUS_STANDARD.md`.
 - **Implementation changes**: reviewed via pull request against `main`; must keep CI green; merge requires steward approval.
 
-## Steward posts (pending ratification)
+## Steward posts
 
-The Permanent Steward Posts Charter (`docs/canonical/PERMANENT_STEWARD_POSTS_CHARTER.md`) is drafted and awaits ratification. Its ratification, and any later amendment of it, requires an adopted steward decision by founding steward(s) under this document. Once ratified: steward post appointments and removals follow Charter §9 with recorded appointing authority; all posts begin observation-only; expanded post authority requires a separate adopted steward decision. This section grants no authority before that ratification decision is recorded, and nothing in the Charter changes the approval authorities listed above.
+The Permanent Steward Posts Charter (`docs/canonical/PERMANENT_STEWARD_POSTS_CHARTER.md`) was ratified on July 20, 2026 by adopted steward decision SD-2026-07-20-01 (`docs/stewardship/decisions/`). Steward post appointments and removals follow Charter §9 with recorded appointing authority under this document; all five posts operate observation-only and are vacant until separately appointed; expanded post authority requires a separate adopted steward decision. Nothing in the Charter changes the approval authorities listed above.
 
 ## Urgent corrections
 

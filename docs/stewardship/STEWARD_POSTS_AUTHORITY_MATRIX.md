@@ -1,6 +1,6 @@
 # Steward Posts Authority Matrix
 
-Version 1.0 — Pending Ratification (activates with the Permanent Steward Posts Charter)
+Version 1.0 — Active (observation-only) since ratification of the Permanent Steward Posts Charter, July 20, 2026 (decision SD-2026-07-20-01)
 Authority: subordinate to `docs/canonical/PERMANENT_STEWARD_POSTS_CHARTER.md`, which is subordinate to the Bridge Builders Constitution and `docs/canonical/CHANGE_AUTHORITY.md`.
 
 This matrix states what a Permanent Steward Post may do in observation-only mode, what requires collaboration or review, and what is prohibited. It grants nothing beyond what `CHANGE_AUTHORITY.md` and the Constitution already allow. Where this matrix and a higher authority differ, the higher authority governs.

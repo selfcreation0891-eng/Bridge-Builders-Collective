@@ -1,6 +1,6 @@
 # Steward Succession Handoff
 
-Template — Pending Ratification. Records created before ratification may exist only as drafts or test fixtures.
+Template — Active since ratification of the Permanent Steward Posts Charter, July 20, 2026 (decision SD-2026-07-20-01). Records created before that date exist only as drafts or test fixtures.
 Authority: `docs/canonical/PERMANENT_STEWARD_POSTS_CHARTER.md` §9.3–9.6.
 
 The post is permanent; the individual occupying it is not. This record is how a post survives the change of the person holding it — with relationships, open work, access boundaries, and context intact.

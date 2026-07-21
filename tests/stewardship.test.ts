@@ -70,11 +70,12 @@ test('observation-only mode prohibits autonomous consequential execution', () =>
   }
 });
 
-test('pre-ratification: Charter is pending and all posts are inactive', () => {
-  // Phase 14 requirement: the build does not self-ratify. If this assertion
-  // fails, a ratification decision must exist per CHANGE_AUTHORITY.md.
-  assert.equal(CHARTER_STATUS, 'pending-ratification');
-  assert.equal(CURRENT_POST_MODE, 'inactive');
+test('post-ratification: Charter is ratified and all posts operate observation-only', () => {
+  // Ratified by recorded human decision SD-2026-07-20-01 (docs/stewardship/decisions/).
+  // Observation-only is the mandatory mode until a separate adopted steward
+  // decision expands a post's authority per CHANGE_AUTHORITY.md.
+  assert.equal(CHARTER_STATUS, 'ratified-observation-only');
+  assert.equal(CURRENT_POST_MODE, 'observation-only');
 });
 
 test('validator rejects contradictory role definitions', () => {

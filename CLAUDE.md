@@ -89,12 +89,12 @@ Never:
 
 # Stewardship Posts Boundary
 
-The Permanent Steward Posts Charter (`docs/canonical/PERMANENT_STEWARD_POSTS_CHARTER.md`) defines five permanent human stewardship posts. Until a human ratification decision is recorded per `docs/canonical/CHANGE_AUTHORITY.md`:
-- the Charter is pending and the posts are inactive
-- no AI session may ratify, activate, or represent the posts as operational
-- no AI session may appoint anyone (including itself or SOPHIA) to any post
+The Permanent Steward Posts Charter (`docs/canonical/PERMANENT_STEWARD_POSTS_CHARTER.md`) defines five permanent human stewardship posts. It was ratified on July 20, 2026 by adopted steward decision SD-2026-07-20-01 (`docs/stewardship/decisions/`). Current state:
+- all five posts are active as institutional responsibilities, observation-only, and vacant
+- no AI session may appoint anyone (including itself or SOPHIA) to any post, expand any post's authority, or represent a vacant post as staffed
+- changing a post's mode or occupancy requires a separate recorded human steward decision
 
-At all times, before and after ratification:
+At all times:
 - all five posts are human posts; SOPHIA advises all five and occupies none
 - observation is not authority; recommendation is not approval; access is not authorization
 - consequential decisions require recorded human authority
