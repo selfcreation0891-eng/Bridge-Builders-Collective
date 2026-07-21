@@ -549,6 +549,8 @@ Appointment to a post requires:
 
 This Charter does not determine who currently occupies any post. Occupancy is established only by separate, recorded appointment decisions. Until such a decision exists for a post, the post is vacant.
 
+The detailed candidate, eligibility, orientation, readiness, appointment, and onboarding process elaborating this section is `docs/stewardship/STEWARD_ELIGIBILITY_ORIENTATION_AND_APPOINTMENT_PROCESS.md` (pending ratification; operative only once ratified per `CHANGE_AUTHORITY.md`). That process is subordinate to this Charter and adds no appointment authority.
+
 ### 9.3 Rotation
 
 Rotation is a continuity practice, not automatic removal. Rotation requires:

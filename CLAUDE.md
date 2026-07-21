@@ -93,6 +93,7 @@ The Permanent Steward Posts Charter (`docs/canonical/PERMANENT_STEWARD_POSTS_CHA
 - all five posts are active as institutional responsibilities, observation-only, and vacant
 - no AI session may appoint anyone (including itself or SOPHIA) to any post, expand any post's authority, or represent a vacant post as staffed
 - changing a post's mode or occupancy requires a separate recorded human steward decision
+- the Steward Eligibility, Orientation, and Appointment Process (`docs/stewardship/STEWARD_ELIGIBILITY_ORIENTATION_AND_APPOINTMENT_PROCESS.md`) is pending ratification; until ratified no AI session may open a candidacy, record an orientation completion, make a readiness finding, or create an appointment record under it — and after ratification, eligibility, readiness, appointment, and access decisions remain human
 
 At all times:
 - all five posts are human posts; SOPHIA advises all five and occupies none
