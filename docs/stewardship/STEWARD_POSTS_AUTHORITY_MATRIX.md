@@ -36,6 +36,10 @@ Reading the columns:
 | Amend the Charter | No | — | Institutional Steward may consolidate proposals | Yes — adopted steward decision per `CHANGE_AUTHORITY.md` | Amendment by any single post acting alone; weakening protected principles |
 | Amend the Constitution | No | — | No — routes to founding steward(s) only | Yes — founding steward(s) only, per Constitution §13 | Any steward post or SOPHIA amending; weakening protected principles (prohibited even to founding stewards) |
 
+## Appointment process reference
+
+The "Appoint a steward" row is elaborated by the Steward Eligibility, Orientation, and Appointment Process (`STEWARD_ELIGIBILITY_ORIENTATION_AND_APPOINTMENT_PROCESS.md`, pending ratification). That process changes nothing in this matrix: appointment remains a founding-steward decision, self-appointment and SOPHIA appointment remain prohibited, and appointment never expands a post's authority or changes its mode.
+
 ## Standing prohibitions (all rows, all posts)
 
 - No post may override the Constitution, the authority order, consent requirements, archive protections, accessibility obligations, or public-claims boundaries.

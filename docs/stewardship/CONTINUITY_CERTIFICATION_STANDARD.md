@@ -62,6 +62,10 @@ Status meanings:
 - An **authorized human reviewer** — designated per `docs/canonical/CHANGE_AUTHORITY.md` — issues the determination. Certification of the Continuity Steward's own post is reviewed by the Institutional Steward or founding steward(s), never coordinated solely by itself.
 - **SOPHIA** may prepare the evidence packet, compare records, and surface gaps. SOPHIA may not issue, deny, suspend, or revoke certification, and a SOPHIA-prepared packet carries the required advisory notice.
 
+## Relationship to onboarding
+
+When a post gains an occupant, the onboarding continuity record (`templates/STEWARD_ONBOARDING_CONTINUITY_RECORD_TEMPLATE.md`, part of the appointment process, pending ratification) becomes part of the evidence this standard reviews. Appointment does not change a post's certification status; certification review continues to examine records, not occupancy.
+
 ## Revocation
 
 Certification is revoked or suspended by an authorized human when its evidence no longer holds — records lapse, access becomes undocumented, succession materials go stale, or a concealed conflict surfaces. Revocation is recorded with the same care as issuance.

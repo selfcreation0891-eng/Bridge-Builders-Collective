@@ -17,6 +17,8 @@ Anyone — stewards, contributors, participants, and advisory systems (including
 
 The Permanent Steward Posts Charter (`docs/canonical/PERMANENT_STEWARD_POSTS_CHARTER.md`) was ratified on July 20, 2026 by adopted steward decision SD-2026-07-20-01 (`docs/stewardship/decisions/`). Steward post appointments and removals follow Charter §9 with recorded appointing authority under this document; all five posts operate observation-only and are vacant until separately appointed; expanded post authority requires a separate adopted steward decision. Nothing in the Charter changes the approval authorities listed above.
 
+The Steward Eligibility, Orientation, and Appointment Process (`docs/stewardship/STEWARD_ELIGIBILITY_ORIENTATION_AND_APPOINTMENT_PROCESS.md`, pending ratification) elaborates how Charter §9.2 appointments are prepared and recorded once ratified. It creates no new approval authority: the founding steward remains the appointment decision authority; orientation completion, eligibility, and readiness findings are never appointments; every appointment requires its own recorded human decision and the appointee's recorded acceptance; SOPHIA may not select, rank, approve, reject, appoint, or grant access. This paragraph grants nothing before that process's ratification decision is recorded.
+
 ## Urgent corrections
 
 Truthfulness corrections (a public claim found false, a status found overstated) may be made immediately by any steward, recorded within 48 hours as a steward decision, and reconciled in the conflict register.

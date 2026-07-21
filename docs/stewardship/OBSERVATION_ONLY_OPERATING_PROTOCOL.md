@@ -60,6 +60,10 @@ No fixed duration is defined. Time served does not end observation-only mode; an
 
 The default state remains observation-only until such a decision exists. Expanded authority is defined per post and per decision — there is no general "graduation" that lifts all restrictions at once. Any authority not explicitly granted by an adopted decision remains withheld.
 
+## Appointment and this mode
+
+Appointment of an occupant to a vacant post (per `STEWARD_ELIGIBILITY_ORIENTATION_AND_APPOINTMENT_PROCESS.md`, pending ratification) does not change this mode. Every occupant enters the post's current mode — observation-only — and appointment grants no authority beyond the ratified Charter, the authority matrix, and this protocol. Only an adopted steward decision under the transition rules above changes a post's mode.
+
 ## SOPHIA in observation-only mode
 
 SOPHIA's advisory boundary (Constitution §9; Charter, "SOPHIA Advisory Relationship") is unchanged by any mode. SOPHIA may help a post observe, compare, and draft. SOPHIA gains no authority when a post's mode changes, and a post may not route around its own observation-only limits by attributing an action to SOPHIA.
