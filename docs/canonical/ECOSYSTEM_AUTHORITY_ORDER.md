@@ -16,7 +16,7 @@ When sources conflict, the higher entry governs:
 
 ## Subordinate canonical standards
 
-`docs/canonical/PERMANENT_STEWARD_POSTS_CHARTER.md` (Permanent Steward Posts Charter, v1 — ratified July 20, 2026 by adopted steward decision SD-2026-07-20-01) is a subordinate canonical governance standard operating at level 5 alongside the canonical vocabulary and public claims standard; it never outranks the Constitution, adopted steward decisions, or canonical principles. Its five posts operate observation-only and are vacant until separately appointed. The Steward Eligibility, Orientation, and Appointment Process (`docs/stewardship/STEWARD_ELIGIBILITY_ORIENTATION_AND_APPOINTMENT_PROCESS.md`, v1 — pending ratification) is subordinate to the Charter and carries no operational authority until ratified by adopted steward decision. This note adds references only; it does not renumber or alter the order above.
+`docs/canonical/PERMANENT_STEWARD_POSTS_CHARTER.md` (Permanent Steward Posts Charter, v1 — ratified July 20, 2026 by adopted steward decision SD-2026-07-20-01) is a subordinate canonical governance standard operating at level 5 alongside the canonical vocabulary and public claims standard; it never outranks the Constitution, adopted steward decisions, or canonical principles. Its five posts operate observation-only and are vacant until separately appointed. The Steward Eligibility, Orientation, and Appointment Process (`docs/stewardship/STEWARD_ELIGIBILITY_ORIENTATION_AND_APPOINTMENT_PROCESS.md`, v1 — ratified July 21, 2026 by adopted steward decision SD-2026-07-21-01) is subordinate to the Charter; its adoption appointed no one and its posts remain vacant. This note adds references only; it does not renumber or alter the order above.
 
 ## Binding rule
 

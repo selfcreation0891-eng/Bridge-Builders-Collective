@@ -1,6 +1,6 @@
 # Steward Appointment Acceptance
 
-Template — Pending Ratification (activates with the Steward Eligibility, Orientation, and Appointment Process).
+Template — Active since ratification of the Steward Eligibility, Orientation, and Appointment Process, July 21, 2026 (decision SD-2026-07-21-01).
 Authority: `docs/stewardship/STEWARD_APPOINTMENT_AND_ONBOARDING_PROTOCOL.md`; `docs/canonical/PERMANENT_STEWARD_POSTS_CHARTER.md` §2, §9.
 
 No person may be appointed without knowingly accepting the responsibility. An appointment decision is not effective until this acceptance is recorded. Acceptance may be recorded in any accessible format.

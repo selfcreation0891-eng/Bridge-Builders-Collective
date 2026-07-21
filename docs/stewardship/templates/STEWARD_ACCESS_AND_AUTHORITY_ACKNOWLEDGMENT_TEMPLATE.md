@@ -1,6 +1,6 @@
 # Steward Access and Authority Acknowledgment
 
-Template — Pending Ratification (activates with the Steward Eligibility, Orientation, and Appointment Process).
+Template — Active since ratification of the Steward Eligibility, Orientation, and Appointment Process, July 21, 2026 (decision SD-2026-07-21-01).
 Authority: `docs/stewardship/STEWARD_APPOINTMENT_AND_ONBOARDING_PROTOCOL.md` (access and onboarding section).
 
 Access is not authority, and access is not authorization. This acknowledgment records exactly what an occupant can reach and exactly what that reach does not permit. It is completed after appointment and acceptance, at the access review.

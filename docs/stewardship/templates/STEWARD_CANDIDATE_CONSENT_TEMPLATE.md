@@ -1,6 +1,6 @@
 # Steward Candidate Consent
 
-Template — Pending Ratification (activates with the Steward Eligibility, Orientation, and Appointment Process).
+Template — Active since ratification of the Steward Eligibility, Orientation, and Appointment Process, July 21, 2026 (decision SD-2026-07-21-01).
 Authority: `docs/stewardship/STEWARD_ELIGIBILITY_ORIENTATION_AND_APPOINTMENT_PROCESS.md` §3; Constitution §5; `PRIVACY_POLICY.md`.
 
 Consent must be informed, explicit, revocable, documented, and understandable. A person becomes an active candidate only when this record exists. **Private candidate record — never exposed through public routes.**

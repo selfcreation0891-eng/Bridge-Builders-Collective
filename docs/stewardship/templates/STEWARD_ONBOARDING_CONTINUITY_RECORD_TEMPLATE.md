@@ -1,6 +1,6 @@
 # Steward Onboarding Continuity Record
 
-Template — Pending Ratification (activates with the Steward Eligibility, Orientation, and Appointment Process).
+Template — Active since ratification of the Steward Eligibility, Orientation, and Appointment Process, July 21, 2026 (decision SD-2026-07-21-01).
 Authority: `docs/stewardship/STEWARD_APPOINTMENT_AND_ONBOARDING_PROTOCOL.md`; `docs/POST_RELEASE_CONTINUITY_PLAN.md`.
 
 This record opens the occupant's continuity thread: what they walked into, what they carry, and how the post remains transferable from day one. It completes process stages 13–15 (observation-only onboarding, continuity record opened, role review scheduled).

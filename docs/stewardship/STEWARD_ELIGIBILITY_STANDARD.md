@@ -1,6 +1,6 @@
 # Steward Eligibility Standard
 
-Version 1.0 — Pending Ratification (activates with the Steward Eligibility, Orientation, and Appointment Process)
+Version 1.0 — Active since ratification of the Steward Eligibility, Orientation, and Appointment Process, July 21, 2026 (decision SD-2026-07-21-01)
 Authority: subordinate to the Bridge Builders Constitution, `docs/canonical/CHANGE_AUTHORITY.md`, and `docs/canonical/PERMANENT_STEWARD_POSTS_CHARTER.md` (which sets baseline eligibility in §9.1; this standard elaborates it without weakening it).
 
 Eligibility is not appointment. Meeting every requirement in this standard entitles a candidate to consideration, not to a post. Eligibility findings are made by human reviewers against evidence; they are never scores, rankings, or judgments of human worth.

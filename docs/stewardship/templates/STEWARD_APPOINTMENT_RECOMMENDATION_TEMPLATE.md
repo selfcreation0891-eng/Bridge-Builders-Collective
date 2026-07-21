@@ -1,6 +1,6 @@
 # Steward Appointment Recommendation
 
-Template — Pending Ratification (activates with the Steward Eligibility, Orientation, and Appointment Process).
+Template — Active since ratification of the Steward Eligibility, Orientation, and Appointment Process, July 21, 2026 (decision SD-2026-07-21-01).
 Authority: `docs/stewardship/STEWARD_APPOINTMENT_AND_ONBOARDING_PROTOCOL.md`.
 
 **Recommendation only — not an appointment decision.** This record carries no authority. It becomes meaningful only as an input to a separate human appointment decision by the recorded decision authority. Communicating this recommendation as an appointment is prohibited.

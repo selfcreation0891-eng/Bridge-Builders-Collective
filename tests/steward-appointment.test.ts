@@ -26,13 +26,16 @@ const base: CandidacyRecord = {
   sophiaAppointmentAuthority: false,
 };
 
-test('pre-ratification: process pending, all five posts vacant, no candidacies', () => {
-  assert.equal(APPOINTMENT_PROCESS_STATUS, 'pending-ratification');
+test('post-ratification: process ratified (SD-2026-07-21-01), all five posts still vacant, no candidacies', () => {
+  // Ratification activated the process only. No candidacy was opened and no
+  // person was appointed; posts stay vacant until separate recorded human
+  // appointment decisions exist.
+  assert.equal(APPOINTMENT_PROCESS_STATUS, 'ratified');
   assert.equal(CURRENT_CANDIDACY_RECORDS.length, 5);
   for (const post of STEWARD_POST_IDS) {
     const rec = CURRENT_CANDIDACY_RECORDS.find((r) => r.post === post);
     assert.ok(rec, `missing record for ${post}`);
-    assert.equal(rec.state, 'vacant', `${post} must be vacant pre-ratification`);
+    assert.equal(rec.state, 'vacant', `${post} must remain vacant until a recorded appointment decision exists`);
   }
   assert.deepEqual(validateProcessStatus(APPOINTMENT_PROCESS_STATUS, CURRENT_CANDIDACY_RECORDS), []);
 });

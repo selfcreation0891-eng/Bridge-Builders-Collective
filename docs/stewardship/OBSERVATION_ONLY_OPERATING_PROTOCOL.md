@@ -62,7 +62,7 @@ The default state remains observation-only until such a decision exists. Expande
 
 ## Appointment and this mode
 
-Appointment of an occupant to a vacant post (per `STEWARD_ELIGIBILITY_ORIENTATION_AND_APPOINTMENT_PROCESS.md`, pending ratification) does not change this mode. Every occupant enters the post's current mode — observation-only — and appointment grants no authority beyond the ratified Charter, the authority matrix, and this protocol. Only an adopted steward decision under the transition rules above changes a post's mode.
+Appointment of an occupant to a vacant post (per `STEWARD_ELIGIBILITY_ORIENTATION_AND_APPOINTMENT_PROCESS.md`, ratified July 21, 2026, decision SD-2026-07-21-01) does not change this mode. Every occupant enters the post's current mode — observation-only — and appointment grants no authority beyond the ratified Charter, the authority matrix, and this protocol. Only an adopted steward decision under the transition rules above changes a post's mode.
 
 ## SOPHIA in observation-only mode
 
