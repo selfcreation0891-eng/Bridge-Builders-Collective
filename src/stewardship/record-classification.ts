@@ -58,6 +58,10 @@ export const PROHIBITED_PRIVATE_FIELD_FRAGMENTS: readonly string[] = [
 
 const EMAIL_VALUE = /[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}/;
 const PHONE_VALUE = /(?:\+?\d[\s().-]*){9,}/;
+/** Structural tokens whose digits are not personal data: record IDs and ISO dates. */
+const RECORD_ID_TOKEN =
+  /\b(?:OBS|EVD|FND|UNC|REC|HND|ESC|ACK|DSP|HDR|CTU|REV)-(?:ORI|CON|VOC|PRD|INS|FST|SOA)-\d{4}-\d{2}-\d{2}-\d{4}\b/g;
+const ISO_DATE_TOKEN = /\b\d{4}-\d{2}-\d{2}\b/g;
 
 /**
  * Detect prohibited private fields or values on any plain object (record,
@@ -67,8 +71,13 @@ export function detectProhibitedFields(value: unknown, path = 'record'): string[
   const errors: string[] = [];
   if (value === null || value === undefined) return errors;
   if (typeof value === 'string') {
-    if (EMAIL_VALUE.test(value)) errors.push(`${path}: contains an email address`);
-    else if (PHONE_VALUE.test(value)) errors.push(`${path}: contains a phone-number-like value`);
+    if (EMAIL_VALUE.test(value)) {
+      errors.push(`${path}: contains an email address`);
+      return errors;
+    }
+    // Digits inside record IDs and ISO dates are structural, not personal.
+    const scrubbed = value.replace(RECORD_ID_TOKEN, '').replace(ISO_DATE_TOKEN, '');
+    if (PHONE_VALUE.test(scrubbed)) errors.push(`${path}: contains a phone-number-like value`);
     return errors;
   }
   if (Array.isArray(value)) {
