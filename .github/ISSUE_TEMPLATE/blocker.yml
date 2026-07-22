@@ -1,0 +1,79 @@
+name: Blocker
+description: Record a blocker preventing progress on a project
+title: "BLOCKER: [project] — [brief description]"
+labels: ["blocker"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template to record a blocker. A blocker is an unresolved condition that prevents a project from advancing its truth-state. Complete all required fields.
+
+        **Note:** This issue form is for internal operational use. Do not record confidential steward information in public repositories.
+
+  - type: input
+    id: project
+    attributes:
+      label: Project
+      description: Canonical project name affected by this blocker.
+      placeholder: "Bridge Builders Portfolio Control Center"
+    validations:
+      required: true
+
+  - type: input
+    id: current-truth-state
+    attributes:
+      label: Current Truth-State
+      description: The current truth-state of the affected project (Idea / Designed / Documented / Implemented / Tested / Deployed / Proven).
+      placeholder: "Implemented"
+    validations:
+      required: true
+
+  - type: textarea
+    id: blocker-description
+    attributes:
+      label: Blocker Description
+      description: Describe what is blocked, not just that something is blocked.
+      placeholder: "The PCC cannot advance to Tested because the GitHub repository does not yet exist."
+    validations:
+      required: true
+
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impact
+      description: What cannot proceed until this blocker is resolved?
+    validations:
+      required: true
+
+  - type: textarea
+    id: resolution-path
+    attributes:
+      label: Resolution Path
+      description: What must happen to resolve this blocker? Be specific.
+    validations:
+      required: true
+
+  - type: input
+    id: responsible-tool
+    attributes:
+      label: Responsible Tool or Steward
+      description: Who or what can resolve this blocker?
+      placeholder: "Maurice Jackson / Lovable / GitHub"
+    validations:
+      required: true
+
+  - type: input
+    id: branch
+    attributes:
+      label: Branch
+      description: Git branch where this blocker was identified.
+    validations:
+      required: false
+
+  - type: input
+    id: commit
+    attributes:
+      label: Commit
+      description: Git SHA when this blocker was identified.
+    validations:
+      required: false
