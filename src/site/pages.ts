@@ -8,6 +8,7 @@ import {
 } from '../ecosystem/index.ts';
 import type { EcosystemEnvironment, EnvironmentStatus } from '../ecosystem/index.ts';
 import { page, environmentPage, environmentCard, esc, badgeHtml, REPOSITORY_URL } from './html.ts';
+import { renderStewardshipOperationsPages, OPERATIONS_PATH } from './stewardship-pages.ts';
 
 const PRINCIPLES: string[] = [
   'Stability before stimulation.',
@@ -146,6 +147,12 @@ ${[community, relationship].map(environmentCard).join('\n')}
 <p>Stewardship formation will run through <a href="/academy/">BridgeBuilders Academy</a> (planned).
 ${steward && steward.pathways.length ? '' : 'There is no open stewardship application yet — that is stated plainly rather than hidden behind a form that goes nowhere.'}
 The <a href="/contribute/">Contribute page</a> states honestly which pathways are open.</p>
+<h2>The Permanent Steward Posts</h2>
+<p>Five permanent human stewardship posts are established by ratified charter: Orientation,
+Continuity, Vocabulary, Product, and Institutional. All five are currently vacant and operate in
+Observation-Only Mode; no candidacy is open. Their live operational status — including what
+"vacant" and "observation only" mean — is published at the
+<a href="${OPERATIONS_PATH}">steward operations status page</a>.</p>
 <h2>How participation flows</h2>
 <ul>
 ${groups.map((g) => `<li><strong>${esc(g.label)}</strong>: ${g.pathways.filter((p) => p.availableNow && p.href).slice(0, 3).map((p) => `<a href="${esc(p.href as string)}">${esc(p.label)}</a>`).join(' · ') || 'pathways are being prepared'}</li>`).join('\n')}
@@ -271,6 +278,7 @@ export function renderAllPages(): Map<string, string> {
   out.set('/trust/', trustPage());
   out.set('/accessibility/', accessibilityPage());
   out.set('/sitemap/', sitemapPage());
+  for (const [path, html] of renderStewardshipOperationsPages()) out.set(path, html);
   // Environment-backed routes (registry-driven).
   for (const env of getPublicEnvironments()) {
     const path = env.frontDoorPath ?? `/ecosystem/${env.slug}/`;

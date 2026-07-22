@@ -5,6 +5,7 @@
 import { ECOSYSTEM_REGISTRY } from './ecosystem-registry.ts';
 import { STATUS_PRESENTATION } from './ecosystem-status.ts';
 import type { EcosystemEnvironment, Orientation } from './ecosystem-types.ts';
+import { STEWARD_POSTS } from '../stewardship/steward-posts.ts';
 
 export interface NavItem {
   label: string;
@@ -121,6 +122,12 @@ export function getAllPublicPaths(): { path: string; title: string }[] {
     { path: '/trust/', title: 'Trust Center' },
     { path: '/accessibility/', title: 'Accessibility' },
     { path: '/sitemap/', title: 'Sitemap' },
+    // Steward operations routes derive from the canonical post registry — never listed by hand.
+    { path: '/stewardship/operations/', title: 'Steward operations' },
+    ...STEWARD_POSTS.map((p) => ({
+      path: `/stewardship/operations/${p.id}/`,
+      title: `${p.canonicalName} — operations`,
+    })),
   ];
   const envPages = getPublicEnvironments()
     .map((e) => ({ path: e.frontDoorPath ?? `/ecosystem/${e.slug}/`, title: e.publicName }))
