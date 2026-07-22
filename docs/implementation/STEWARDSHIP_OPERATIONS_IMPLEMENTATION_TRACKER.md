@@ -84,8 +84,26 @@ depends on compiler version; `package.json` is unmodified.
 None blocking implementation. External setup still required for live operation
 is listed in the runbook (`docs/stewardship/STEWARD_OPERATIONS_IMPLEMENTATION_RUNBOOK.md`).
 
-## Verification evidence (final)
+## Verification evidence (final — 2026-07-22, branch head)
 
-Recorded after the final suite run — see the continuity record
-`docs/continuity/2026-07-22-steward-operations-v1-implementation.md` for the
-complete command outputs and the dry-run results table.
+| Command | Result |
+| --- | --- |
+| `npm run typecheck` | clean (no output, exit 0) |
+| `npm test` | 104 tests, 104 pass, 0 fail (45 pre-existing + 59 new, incl. 15 dry-run scenarios + fixture-privacy scan) |
+| `npm run validate:registry` | registry valid: 25 environments |
+| `npm run build` | Built 38 pages into dist/ (32 baseline + 6 steward-operations routes) |
+| `npm run validate:links` | 1302 internal references resolve |
+
+Targeted searches over all changed files: no TODO/FIXME; no "SOPHIA
+approved"/"SOPHIA decided"/"auto-appointed"; no production-readiness or
+fully-operational claims; no secrets or credential values; no hard-coded
+occupied/appointed states outside validators and negative tests; no personal
+names in fixtures. The only email-shaped strings are deliberate invalid
+inputs in negative tests (reserved `example.org` domain) proving the privacy
+detector rejects them.
+
+Dry-run results: all 15 scenarios of
+`docs/stewardship/STEWARD_OPERATIONS_DRY_RUN_PLAN.md` implemented in
+`tests/steward-dry-runs.test.ts`; each passes, with prohibited automated
+actions proven absent and required human actions asserted pending. See the
+continuity record `docs/continuity/2026-07-22-steward-operations-v1-implementation.md`.
