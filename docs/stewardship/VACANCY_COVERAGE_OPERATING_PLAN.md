@@ -24,7 +24,12 @@ Typed in `src/stewardship/vacancy-coverage.ts`:
 | `suspended` | Routing suspended by recorded human decision. |
 | `ended-by-appointment` | A recorded appointment ended the routing. |
 
-Current state for all five posts: **`awaiting-human-decision`**.
+Current state for all five posts: **`temporarily-routed`** — adopted by
+SD-2026-07-22-02 (July 22, 2026): Maurice Jackson, founding steward, is the
+temporary receiver of record. Routing, not occupancy; routed matters receive
+a documented weekly review; self-conflict matters enter
+independent-human-review-required; routing ends per post upon appointment or
+a later adopted decision.
 
 ## Rules
 
@@ -41,13 +46,15 @@ Current state for all five posts: **`awaiting-human-decision`**.
    preserve, and escalate — the same observation-mode acts as anyone else.
    Treating temporary routing as occupancy is prohibited and machine-rejected.
 
-## Until the decision is made
+## How incoming matters flow now
 
-Incoming matters are still safe: records enter the destination post's
-observation queue, remain open, appear in review packets as unresolved, and
-urgent safety escalation routes per the escalation engine regardless of
-coverage. What no one may do is pretend a receiver exists.
+Records enter the destination post's observation queue, the receiver of
+record acknowledges and routes them, they appear in weekly review packets,
+and urgent safety escalation routes per the escalation engine regardless of
+coverage. A missed review changes nothing about an open matter, and nothing
+the receiver does converts routing into post authority.
 
-The decision itself: see
+Decision history: proposal packet
 `docs/stewardship/decision-packets/VACANCY_COVERAGE_DECISION_PACKET.md`
-(DRAFT — HUMAN DECISION REQUIRED — NOT ADOPTED).
+(receiver-of-record option adopted); adopted decision
+`docs/stewardship/decisions/SD-2026-07-22-02-vacancy-coverage-receiver-of-record.md`.
