@@ -120,12 +120,14 @@ test('overdue items are surfaced without modifying their decision status', () =>
   assert.ok(packet.note.includes('None is a decision'));
 });
 
-test('vacant-post queue items remain unresolved while coverage awaits a human decision', () => {
+test('vacant-post queue items remain unresolved; temporary routing resolves nothing by itself', () => {
   const queue = queueFor('vocabulary', [
     makeRecord({ id: 'OBS-VOC-2026-07-22-0001', receivingAuthority: 'vocabulary' }),
   ]);
   const summary = summarizeQueue(queue, '2026-07-22');
-  assert.equal(summary.coverageAwaitingHumanDecision, true);
+  // Coverage is temporarily-routed (SD-2026-07-22-02), so it no longer awaits a decision —
+  // but routing is receipt, not resolution: the item stays open awaiting its human.
+  assert.equal(summary.coverageAwaitingHumanDecision, false);
   assert.equal(summary.openCount, 1);
 });
 

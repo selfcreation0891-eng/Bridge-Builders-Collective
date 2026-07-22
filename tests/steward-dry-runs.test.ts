@@ -26,6 +26,7 @@ import {
 import { validateCandidacyRecord } from '../src/stewardship/steward-appointment-process.ts';
 import { validateOperationalRecord } from '../src/stewardship/record-validation.ts';
 import { coverageStateFor } from '../src/stewardship/steward-operations-registry.ts';
+import { validateVacancyCoverage } from '../src/stewardship/vacancy-coverage.ts';
 
 function makeHandoff(overrides: Partial<HandoffRecord> = {}): HandoffRecord {
   return {
@@ -164,14 +165,29 @@ test('scenario 10: urgent safety escalation is allowed immediately, from any pos
   assert.ok(result.note.includes('always allowed'));
 });
 
-test('scenario 11: a vacant post receives an observation with no temporary receiver', () => {
+test('scenario 11: a vacant post receives an observation; queue holds it whatever the coverage state', () => {
   const record = makeRecord({ id: 'OBS-INS-2026-07-22-0011', receivingAuthority: 'institutional' });
   assert.ok(validateForQueue(record).accepted);
-  assert.equal(coverageStateFor('institutional'), 'awaiting-human-decision');
+  // Since SD-2026-07-22-02, coverage is temporarily-routed — routing, not occupancy.
+  assert.equal(coverageStateFor('institutional'), 'temporarily-routed');
   const summary = summarizeQueue(queueFor('institutional', [record]), '2026-07-22');
   assert.equal(summary.openCount, 1);
-  assert.equal(summary.coverageAwaitingHumanDecision, true);
-  // The record simply waits. No receiver was invented; continuity is the queue itself.
+  // The historical no-receiver state remains valid and receiver-free: a post whose
+  // coverage awaits a human decision holds its items without inventing a receiver.
+  const awaiting = validateVacancyCoverage({
+    post: 'institutional',
+    state: 'awaiting-human-decision',
+    temporaryReceiverRef: null,
+    humanDecisionRef: null,
+    scopeBoundaries: [],
+    recusalRequirements: [],
+    effectiveDate: null,
+    reviewDate: null,
+    terminatesUponAppointment: true,
+  });
+  assert.deepEqual(awaiting, []);
+  // Either way the record simply waits for a human; nothing closes or decides it.
+  assert.equal(record.status, 'open');
 });
 
 test('scenario 12: a candidate workflow without private storage is blocked', () => {
