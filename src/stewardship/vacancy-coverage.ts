@@ -120,22 +120,69 @@ export function validateVacancyCoverage(record: VacancyCoverageRecord): string[]
 }
 
 /**
- * The current real-world coverage: no temporary receiver is designated for any
- * post. A decision packet exists (docs/stewardship/decision-packets/
- * VACANCY_COVERAGE_DECISION_PACKET.md, DRAFT — NOT ADOPTED); until a human
- * adopts a decision, every post truthfully awaits one. This array changes only
- * alongside recorded human decisions.
+ * Documented review cadence for open vacancy-routed matters (SD-2026-07-22-02).
+ * The cadence is a human obligation the calendar can display; missing a
+ * scheduled review never closes, approves, rejects, or otherwise changes an
+ * open matter.
+ */
+export const VACANCY_ROUTED_MATTER_REVIEW_CADENCE = 'weekly';
+
+/**
+ * True when the temporary receiver of record is the subject of (or materially
+ * conflicted on) a matter. Such a matter can never be finally reviewed or
+ * closed by the receiver; it enters independent-human-review-required
+ * (escalation engine) until a human designates an independent reviewer.
+ */
+export function receiverSelfConflict(
+  coverage: VacancyCoverageRecord,
+  subjectRef: string | null,
+): boolean {
+  if (!coverage.temporaryReceiverRef || !subjectRef) return false;
+  const receiver = coverage.temporaryReceiverRef.toLowerCase();
+  const subject = subjectRef.toLowerCase();
+  return (
+    receiver === subject ||
+    receiver.includes(subject) ||
+    subject.includes(receiver) ||
+    (receiver.includes('founding-steward') && subject.includes('founding-steward'))
+  );
+}
+
+/**
+ * The current real-world coverage: adopted by recorded human steward decision
+ * SD-2026-07-22-02 (Maurice Jackson, founding steward, July 22, 2026 — see
+ * docs/stewardship/decisions/). Maurice Jackson, founding steward, is the
+ * temporary receiver of record for all five vacant posts. This is routing,
+ * not occupancy: every post remains vacant, human-only, observation-only,
+ * with no occupant and no expanded authority; routing ends per post upon
+ * appointment or a later adopted decision. This array changes only alongside
+ * recorded human decisions.
  */
 export const CURRENT_VACANCY_COVERAGE: readonly VacancyCoverageRecord[] = STEWARD_POST_IDS.map(
   (post) => ({
     post,
-    state: 'awaiting-human-decision' as const,
-    temporaryReceiverRef: null,
-    humanDecisionRef: null,
-    scopeBoundaries: [],
-    recusalRequirements: [],
-    effectiveDate: null,
-    reviewDate: null,
+    state: 'temporarily-routed' as const,
+    temporaryReceiverRef: 'founding-steward:maurice-jackson',
+    humanDecisionRef: 'SD-2026-07-22-02',
+    scopeBoundaries: [
+      'receive',
+      'acknowledge',
+      'preserve',
+      'classify',
+      'request-clarification',
+      'identify-human-review-route',
+      'initiate-handoff',
+      'initiate-escalation',
+      'place-on-review-agenda',
+      'preserve-continuity',
+      'record-decision-pending',
+    ],
+    recusalRequirements: [
+      'self-conflict-matters-enter-independent-human-review-required',
+      'no-final-review-or-closure-of-matters-concerning-the-receiver',
+    ],
+    effectiveDate: '2026-07-22',
+    reviewDate: '2026-10-20',
     terminatesUponAppointment: true,
   }),
 );
