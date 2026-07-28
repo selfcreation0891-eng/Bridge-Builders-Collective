@@ -34,6 +34,7 @@ verified 2026-07-27 unless noted.
 | Deployment / public availability (repo front door) | — | Blocked on architecture choice (a)/(b) | — | Front-door architecture decision; hosting evidence (checklist 2–15); contact pathway (B-EXT-7) | C-021 in reconciliation | FS chooses architecture per spec §4 | FS |
 | `docs/stewardship/decisions/SD-2026-07-27-02-…` (canonical domain & front door) | Canonical | Live (adopted 2026-07-27) | C G | Registrar evidence attachment | — | Review 2026-10-27 | FS |
 | `docs/FRONT_DOOR_RECONCILIATION_SPEC.md` | Operational | Integrated (spec complete; implementation not started) | C | Architecture choice; live-site work; verification evidence | C-021 | FS chooses (a)/(b); implement; evidence | FS |
+| `synaptic-bridge` registry entry (program under Programs) | Canonical (registry) | Live in preview (SD-2026-07-28-02; route verified) | C T G | C-021 conformance for full launch readiness | — | Steward review of contribution flow; review 2026-10-27 | FS |
 
 ## Trust and policy set (scope: legal-compliance / governance)
 
@@ -73,15 +74,13 @@ verified 2026-07-27 unless noted.
 | USvision (media property) | Proposed | Intake under BRIDGEview | FS |
 | "Bridge Builders Media" umbrella (vs registered BRIDGEview branch) | Proposed | FS decides: alias of BRIDGEview or new structure | FS |
 | Health and well-being curriculum; facilitator development | Proposed | Intake under Academy | FS |
-| Synaptic Bridge (program — 21-day journey) | Proposed — quarantined registry change (C-019); route verified live; registration packet prepared | FS countersigns `SYNAPTIC_BRIDGE_REGISTRATION_DECISION_PACKET.md` | FS |
-| Sun Reset status raise + Academy/Archive/Programs raises + description rewrites | Proposed — part of quarantined change (C-019) | Same packet, per-item countersign | FS |
+| Separated registry edits: Academy/Archive/Programs raises, Sun Reset raise + rewrite, umbrella & Rosetta rewrites + navLabel | Proposed — C-022, uncommitted, evidence preserved | FS per-item countersign (packet §"Also inside") | FS |
 | Live application at `bridgebuilderscollective.com` | In reconciliation (C-021) — front-door rule adopted; conformance spec prepared | FS chooses architecture (spec §4); implement §3 corrections | FS |
 | CloseOne Flow | Independent system — out of scope | Remains separate absent an adoption ADR | FS |
 
 ## Next milestone
 
-Ecosystem: founder decision on the Synaptic Bridge registration packet
-(C-019) — now unblocked by the domain decision (SD-2026-07-27-02, C-018
-resolved). Then: front-door architecture choice and live-site conformance
-per `docs/FRONT_DOOR_RECONCILIATION_SPEC.md` (C-021), then skill conversion
-from a clean committed base.
+Ecosystem: skill conversion of the Relational File Stewardship Standard
+(now unblocked — Synaptic Bridge registered by SD-2026-07-28-02). In
+parallel: C-022 per-item decisions, C-021 front-door architecture and
+conformance, mailbox verification.

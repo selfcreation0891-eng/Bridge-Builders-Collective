@@ -38,7 +38,9 @@ Constitution (docs/canonical/BRIDGE_BUILDERS_CONSTITUTION.md)
   their registry entry as parent and this repository's canon as governance.
 
 **G. Programs** — registry branches (`sun-reset`, `story-circle`,
-`resonate-touch`, `savage2steward`, …). No program-delivery artifacts in this
+`resonate-touch`, `savage2steward`, …) and the registered program
+**`synaptic-bridge`** (parented under `programs`, SD-2026-07-28-02; guarded
+by `tests/synaptic-bridge.test.ts`). No program-delivery artifacts in this
 repository yet. Proposed programs (Seed to Soup, STEAM) sit in intake
 (`docs/COMPLETION_LEDGER.md` §Proposed).
 

@@ -1,10 +1,12 @@
 # Synaptic Bridge Registration — Founder Decision Packet
 
-Status: DRAFT — prepared 2026-07-27 (Pacific) for founding-steward countersign.
-Nothing in this packet is adopted. Adoption requires a recorded founder
-decision per `docs/canonical/CHANGE_AUTHORITY.md`; upon countersign this
-becomes an adopted steward decision (SD-…) and conflict rows C-019 (and the
-affected parts of C-021) are updated.
+Status: ADOPTED IN PART — the Synaptic Bridge registration was countersigned
+2026-07-28 and recorded as
+`docs/stewardship/decisions/SD-2026-07-28-02-synaptic-bridge-program-registration-v1.md`
+(program within Programs; entry adopted verbatim; C-019 resolved). The six
+companion items in §"Also inside" were NOT adopted; they are separated into
+conflict row C-022 for per-item countersign and remain uncommitted. This
+packet is retained as decision source and evidence.
 
 ## Why this packet exists
 
