@@ -31,7 +31,7 @@ verified 2026-07-27 unless noted.
 | `src/ecosystem/` (registry, types, validation, selectors) | Canonical | Validated (25 environments; tests green 2026-07-22) | C T G | — | — | Keep validation green | FS |
 | `src/site/` + `scripts/` (static front door) | Operational | Validated; production ready pending domain | C D T | Canonical domain (C-018); host | — | Complete `DOMAIN_ACTIVATION_CHECKLIST.md` | FS |
 | `dist/` (build output, untracked) | Generated view | n/a — regenerated | — | `npm run build` | — | Never hand-edit | — |
-| Deployment / public availability | — | Blocked | — | Domain decision; hosting; contact pathway (B-EXT-3, B-EXT-7) | C-018 | FS confirms domain + host | FS |
+| Deployment / public availability (repo front door) | — | Blocked | — | Domain decision; front-door architecture decision; contact pathway (B-EXT-3, B-EXT-7) | C-018, C-021 (domain live, serving a non-repo application) | FS countersigns domain packet | FS |
 
 ## Trust and policy set (scope: legal-compliance / governance)
 
@@ -71,9 +71,14 @@ verified 2026-07-27 unless noted.
 | USvision (media property) | Proposed | Intake under BRIDGEview | FS |
 | "Bridge Builders Media" umbrella (vs registered BRIDGEview branch) | Proposed | FS decides: alias of BRIDGEview or new structure | FS |
 | Health and well-being curriculum; facilitator development | Proposed | Intake under Academy | FS |
+| Synaptic Bridge (program — 21-day journey) | Proposed — quarantined registry change (C-019); route verified live; registration packet prepared | FS countersigns `SYNAPTIC_BRIDGE_REGISTRATION_DECISION_PACKET.md` | FS |
+| Sun Reset status raise + Academy/Archive/Programs raises + description rewrites | Proposed — part of quarantined change (C-019) | Same packet, per-item countersign | FS |
+| Live application at `bridgebuilderscollective.com` | Quarantined (C-021) — front-door architecture decision | FS decides domain packet §3 | FS |
 | CloseOne Flow | Independent system — out of scope | Remains separate absent an adoption ADR | FS |
 
 ## Next milestone
 
-Ecosystem: founding-steward countersign of SD-2026-07-27-01, then the domain
-decision (C-018) — the single dependency gating all public-launch readiness.
+Ecosystem: founder countersign of the two decision packets (canonical domain
+C-018/C-021, and Synaptic Bridge registration C-019) — these gate registry
+truth and all public-launch readiness. SD-2026-07-27-01 is countersigned and
+committed (`7f1ec2b`, dates reconciled in `08d4df9`).
