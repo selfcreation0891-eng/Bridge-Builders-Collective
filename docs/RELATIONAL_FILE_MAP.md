@@ -2,13 +2,13 @@
 
 Proposed map per `docs/canonical/RELATIONAL_FILE_STEWARDSHIP_STANDARD.md`.
 Status: Operational (a view of canonical truth, not a source of it). This map
-adds references; it moves nothing. Last verified: 2026-07-28.
+adds references; it moves nothing. Last verified: 2026-07-27.
 
 ## Authority spine (who outranks whom)
 
 ```
 Constitution (docs/canonical/BRIDGE_BUILDERS_CONSTITUTION.md)
-└─ Adopted steward decisions (docs/stewardship/decisions/, incl. SD-2026-07-28-01)
+└─ Adopted steward decisions (docs/stewardship/decisions/, incl. SD-2026-07-27-01)
    └─ Canonical principles (CLAUDE.md, doc/GOVERNANCE.md — elaborations)
       └─ Ecosystem registry (src/ecosystem/ecosystem-registry.ts)  ← sole public ecosystem truth
          └─ Level-5 subordinate canonical standards:
@@ -60,11 +60,11 @@ repository yet. Proposed programs (Seed to Soup, STEAM) sit in intake
 (C-002), `.claude-transfer/` bundles (quarantined, F-3), upstream PRs #1–#3
 (C-009), `bbc-src.tar.gz` outside the repo (quarantined, F-4).
 
-## Reference edges added 2026-07-28
+## Reference edges added 2026-07-27
 
 - `ECOSYSTEM_AUTHORITY_ORDER.md` → lists the new standard among subordinate canonical standards
 - `CHANGE_AUTHORITY.md` → names the standard as the artifact-lifecycle authority
 - `CLAUDE.md` → binds AI sessions to the standard's §16 operating instructions
 - `CANONICAL_CONFLICT_REGISTER.md` → rows C-015…C-018
-- `docs/continuity/2026-07-28-relational-file-stewardship-standard-adoption.md` → adoption record
+- `docs/continuity/2026-07-27-relational-file-stewardship-standard-adoption.md` → adoption record
 - Standard ↔ template ↔ ledger ↔ initial audit cross-reference one another

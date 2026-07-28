@@ -9,10 +9,10 @@
 | Scope | Ecosystem-wide |
 | Authority | Governance — authority level 5 per `ECOSYSTEM_AUTHORITY_ORDER.md` |
 | Version | 1.0 |
-| Effective date | 2026-07-28 |
-| Last reviewed | 2026-07-28 |
-| Next review | 2026-10-28 (quarterly, or upon any structural change) |
-| Ratification | Adopted steward decision SD-2026-07-28-01 (`docs/stewardship/decisions/`), recording the founding steward's written directive of 2026-07-28 |
+| Effective date | 2026-07-27 |
+| Last reviewed | 2026-07-27 |
+| Next review | 2026-10-27 (quarterly, or upon any structural change) |
+| Ratification | Adopted steward decision SD-2026-07-27-01 (`docs/stewardship/decisions/`), recording the founding steward's written directive of 2026-07-27 |
 | Responsible steward | Founding steward (Maurice); Continuity Steward post advises when occupied |
 | Related canonical files | `BRIDGE_BUILDERS_CONSTITUTION.md`, `ECOSYSTEM_AUTHORITY_ORDER.md`, `CHANGE_AUTHORITY.md`, `CANONICAL_VOCABULARY.md`, `ECOSYSTEM_REGISTRY_STANDARD.md`, `ENVIRONMENT_STATUS_STANDARD.md`, `PUBLIC_CLAIMS_STANDARD.md`, `docs/CANONICAL_CONFLICT_REGISTER.md`, `docs/COMPLETION_LEDGER.md`, `docs/stewardship/templates/ARTIFACT_STEWARDSHIP_AUDIT_TEMPLATE.md` |
 

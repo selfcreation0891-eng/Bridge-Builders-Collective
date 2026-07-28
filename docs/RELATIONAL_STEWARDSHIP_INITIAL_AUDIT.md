@@ -3,7 +3,7 @@
 First evidence-based audit under
 `docs/canonical/RELATIONAL_FILE_STEWARDSHIP_STANDARD.md`.
 
-- Audit date: 2026-07-28
+- Audit date: 2026-07-27
 - Auditor context: Cowork implementation session under `CLAUDE.md`; all
   dispositions requiring judgment are routed to the founding steward
 - Scope: `Bridge-Builders-Collective` repository on `main` @ `8fedd8a`, plus
@@ -11,7 +11,7 @@ First evidence-based audit under
 - Method: full directory inventory (1,014 entries; 155 directories, 858
   files), reading of all canonical and governance documents, registry
   extraction (25 environments), git state inspection (`git status`,
-  `git ls-files`), and comparison of the 2026-07-28 founder directive against
+  `git ls-files`), and comparison of the 2026-07-27 founder directive against
   existing canon
 - No files were moved, renamed, or deleted during this audit
 
@@ -102,7 +102,7 @@ relational file map.
 
 All documents claiming canonical status appear in the authority order, the
 Trust Center index, or carry a recorded ratification decision. The new
-standard itself is supported by SD-2026-07-28-01 (countersign pending).
+standard itself is supported by SD-2026-07-27-01 (countersign pending).
 
 ### F-10 — Deprecated work still appearing active: one pre-existing item
 
@@ -138,7 +138,7 @@ C-009, C-014.
 
 ## 4. Founder decisions required
 
-1. **Countersign SD-2026-07-28-01** — commit the adoption to `main` (the
+1. **Countersign SD-2026-07-27-01** — commit the adoption to `main` (the
    decision record documents your written directive; the commit confirms it
    in git history).
 2. **Disposition of `.claude-transfer/` bundles** (F-3) and

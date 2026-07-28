@@ -104,7 +104,7 @@ At all times:
 
 # Relational File Stewardship
 
-Every artifact created or reviewed in any Bridge Builders session is governed by the Relational File Stewardship and Self-Audit Standard (`docs/canonical/RELATIONAL_FILE_STEWARDSHIP_STANDARD.md`, adopted 2026-07-28, SD-2026-07-28-01). In practice:
+Every artifact created or reviewed in any Bridge Builders session is governed by the Relational File Stewardship and Self-Audit Standard (`docs/canonical/RELATIONAL_FILE_STEWARDSHIP_STANDARD.md`, adopted 2026-07-27, SD-2026-07-27-01). In practice:
 - identify the canonical project that owns the work before creating anything new; reuse existing architecture; default new ideas into existing projects (intake rule, Standard §12)
 - every artifact gets a home, a relationship, an authority level, a completion status, and a next action; "built" is not "complete" (Standard §9, §18)
 - conflicts are recorded in `docs/CANONICAL_CONFLICT_REGISTER.md` with one disposition — never casually merged

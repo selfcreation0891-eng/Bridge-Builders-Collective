@@ -1,11 +1,11 @@
 # Continuity Record — Relational File Stewardship Standard Adoption
 
-Date: 2026-07-28
+Date: 2026-07-27
 Branch: prepared against `main` @ `8fedd8a` (working-tree delivery for
 founding-steward review and commit; not merged by automation)
 Author of record: Cowork implementation session under `CLAUDE.md` operational
 context; the adoption decision is the founding steward's written directive of
-2026-07-28, recorded as SD-2026-07-28-01.
+2026-07-27, recorded as SD-2026-07-27-01.
 
 ## What happened
 
@@ -29,7 +29,7 @@ recorded rather than silently resolved.
 
 ## Decision lineage
 
-- New: SD-2026-07-28-01 (adoption of this standard; founding-steward
+- New: SD-2026-07-27-01 (adoption of this standard; founding-steward
   countersign commit pending).
 - Relied upon, unchanged: SD-2026-07-20-01, SD-2026-07-21-01, the activation
   directive of 2026-07-15.
@@ -37,7 +37,7 @@ recorded rather than silently resolved.
 ## Where things live
 
 Standard: `docs/canonical/RELATIONAL_FILE_STEWARDSHIP_STANDARD.md`.
-Decision: `docs/stewardship/decisions/SD-2026-07-28-01-…`.
+Decision: `docs/stewardship/decisions/SD-2026-07-27-01-…`.
 Audit: `docs/RELATIONAL_STEWARDSHIP_INITIAL_AUDIT.md`.
 Ledger: `docs/COMPLETION_LEDGER.md`. Map: `docs/RELATIONAL_FILE_MAP.md`.
 Template: `docs/stewardship/templates/ARTIFACT_STEWARDSHIP_AUDIT_TEMPLATE.md`.
@@ -45,7 +45,7 @@ Template: `docs/stewardship/templates/ARTIFACT_STEWARDSHIP_AUDIT_TEMPLATE.md`.
 ## Founder countersign and validation evidence
 
 The founding steward countersigned adoption by written directive on
-2026-07-28 (recorded in SD-2026-07-28-01 §Founder countersign) and the
+2026-07-27 (recorded in SD-2026-07-27-01 §Founder countersign) and the
 increment was committed to `main` as
 `governance: adopt relational file stewardship standard` (base `8fedd8a`).
 Validation was run against the exact committed tree in a clean verification

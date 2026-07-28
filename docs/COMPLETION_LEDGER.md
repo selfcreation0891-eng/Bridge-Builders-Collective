@@ -8,7 +8,7 @@ Completion dimensions tracked: content (C), design (D), technical (T),
 operational (O), governance (G), public launch readiness (P).
 
 Steward abbreviation: FS = founding steward (Maurice). All entries last
-verified 2026-07-28 unless noted.
+verified 2026-07-27 unless noted.
 
 ## Canonical governance (scope: governance)
 
@@ -22,7 +22,7 @@ verified 2026-07-28 unless noted.
 | `docs/canonical/ENVIRONMENT_STATUS_STANDARD.md` | Canonical | Live | C G | — | — | Periodic review | FS |
 | `docs/canonical/PUBLIC_CLAIMS_STANDARD.md` | Canonical | Live | C G | — | — | Periodic review | FS |
 | `docs/canonical/PERMANENT_STEWARD_POSTS_CHARTER.md` | Canonical | Live (ratified SD-2026-07-20-01) | C G | Appointments pending | C-014 open | Human appointments when ready | FS |
-| `docs/canonical/RELATIONAL_FILE_STEWARDSHIP_STANDARD.md` | Canonical | Integrated → Validated pending FS countersign commit | C G | SD-2026-07-28-01 countersign | C-015…C-018 recorded | FS commits adoption on `main` | FS |
+| `docs/canonical/RELATIONAL_FILE_STEWARDSHIP_STANDARD.md` | Canonical | Live (adopted; commit `7f1ec2b`) | C G | — | C-015…C-019 recorded open | Quarterly review 2026-10-27 | FS |
 
 ## Front door and registry (scope: public website / technology)
 
@@ -75,5 +75,5 @@ verified 2026-07-28 unless noted.
 
 ## Next milestone
 
-Ecosystem: founding-steward countersign of SD-2026-07-28-01, then the domain
+Ecosystem: founding-steward countersign of SD-2026-07-27-01, then the domain
 decision (C-018) — the single dependency gating all public-launch readiness.

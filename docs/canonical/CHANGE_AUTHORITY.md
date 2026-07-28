@@ -21,7 +21,7 @@ The Steward Eligibility, Orientation, and Appointment Process (`docs/stewardship
 
 ## Artifact lifecycle standard
 
-The Relational File Stewardship and Self-Audit Standard (`docs/canonical/RELATIONAL_FILE_STEWARDSHIP_STANDARD.md`, ratified July 28, 2026 by adopted steward decision SD-2026-07-28-01) governs how artifacts are classified, placed, related, audited, merged, archived, deprecated, and declared complete, and requires stable conversation decisions to be converted into repository records. It creates no new approval authority: dispositions of quarantined artifacts, registry additions, vocabulary additions, domain confirmation, and adoption of independent systems remain steward decisions under this document.
+The Relational File Stewardship and Self-Audit Standard (`docs/canonical/RELATIONAL_FILE_STEWARDSHIP_STANDARD.md`, ratified July 27, 2026 by adopted steward decision SD-2026-07-27-01) governs how artifacts are classified, placed, related, audited, merged, archived, deprecated, and declared complete, and requires stable conversation decisions to be converted into repository records. It creates no new approval authority: dispositions of quarantined artifacts, registry additions, vocabulary additions, domain confirmation, and adoption of independent systems remain steward decisions under this document.
 
 ## Urgent corrections
 
