@@ -1,9 +1,12 @@
 # Canonical Domain — Founder Decision Packet (C-018)
 
-Status: DRAFT — prepared 2026-07-27 (Pacific) for founding-steward
-countersign. C-018 is **not resolved** by this packet. Upon countersign this
-becomes an adopted steward decision, `DOMAIN_ACTIVATION_CHECKLIST.md` step 1
-is satisfied, and C-018 is updated in the conflict register.
+Status: ADOPTED — countersigned by the founding steward 2026-07-27 and
+recorded as `docs/stewardship/decisions/SD-2026-07-27-02-canonical-domain-and-front-door-v1.md`,
+which is now the governing record (this packet is retained as the decision
+source and evidence). C-018 is resolved; the front-door question (§3) was
+decided as the front-door rule in SD-2026-07-27-02 §4, with the
+implementation architecture choice (a)/(b) remaining a separate approval —
+see `docs/FRONT_DOOR_RECONCILIATION_SPEC.md`.
 
 ## Evidence gathered 2026-07-27
 

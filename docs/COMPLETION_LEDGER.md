@@ -31,7 +31,9 @@ verified 2026-07-27 unless noted.
 | `src/ecosystem/` (registry, types, validation, selectors) | Canonical | Validated (25 environments; tests green 2026-07-22) | C T G | — | — | Keep validation green | FS |
 | `src/site/` + `scripts/` (static front door) | Operational | Validated; production ready pending domain | C D T | Canonical domain (C-018); host | — | Complete `DOMAIN_ACTIVATION_CHECKLIST.md` | FS |
 | `dist/` (build output, untracked) | Generated view | n/a — regenerated | — | `npm run build` | — | Never hand-edit | — |
-| Deployment / public availability (repo front door) | — | Blocked | — | Domain decision; front-door architecture decision; contact pathway (B-EXT-3, B-EXT-7) | C-018, C-021 (domain live, serving a non-repo application) | FS countersigns domain packet | FS |
+| Deployment / public availability (repo front door) | — | Blocked on architecture choice (a)/(b) | — | Front-door architecture decision; hosting evidence (checklist 2–15); contact pathway (B-EXT-7) | C-021 in reconciliation | FS chooses architecture per spec §4 | FS |
+| `docs/stewardship/decisions/SD-2026-07-27-02-…` (canonical domain & front door) | Canonical | Live (adopted 2026-07-27) | C G | Registrar evidence attachment | — | Review 2026-10-27 | FS |
+| `docs/FRONT_DOOR_RECONCILIATION_SPEC.md` | Operational | Integrated (spec complete; implementation not started) | C | Architecture choice; live-site work; verification evidence | C-021 | FS chooses (a)/(b); implement; evidence | FS |
 
 ## Trust and policy set (scope: legal-compliance / governance)
 
@@ -73,12 +75,13 @@ verified 2026-07-27 unless noted.
 | Health and well-being curriculum; facilitator development | Proposed | Intake under Academy | FS |
 | Synaptic Bridge (program — 21-day journey) | Proposed — quarantined registry change (C-019); route verified live; registration packet prepared | FS countersigns `SYNAPTIC_BRIDGE_REGISTRATION_DECISION_PACKET.md` | FS |
 | Sun Reset status raise + Academy/Archive/Programs raises + description rewrites | Proposed — part of quarantined change (C-019) | Same packet, per-item countersign | FS |
-| Live application at `bridgebuilderscollective.com` | Quarantined (C-021) — front-door architecture decision | FS decides domain packet §3 | FS |
+| Live application at `bridgebuilderscollective.com` | In reconciliation (C-021) — front-door rule adopted; conformance spec prepared | FS chooses architecture (spec §4); implement §3 corrections | FS |
 | CloseOne Flow | Independent system — out of scope | Remains separate absent an adoption ADR | FS |
 
 ## Next milestone
 
-Ecosystem: founder countersign of the two decision packets (canonical domain
-C-018/C-021, and Synaptic Bridge registration C-019) — these gate registry
-truth and all public-launch readiness. SD-2026-07-27-01 is countersigned and
-committed (`7f1ec2b`, dates reconciled in `08d4df9`).
+Ecosystem: founder decision on the Synaptic Bridge registration packet
+(C-019) — now unblocked by the domain decision (SD-2026-07-27-02, C-018
+resolved). Then: front-door architecture choice and live-site conformance
+per `docs/FRONT_DOOR_RECONCILIATION_SPEC.md` (C-021), then skill conversion
+from a clean committed base.

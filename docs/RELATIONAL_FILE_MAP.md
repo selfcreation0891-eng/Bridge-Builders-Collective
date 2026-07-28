@@ -29,6 +29,7 @@ Constitution (docs/canonical/BRIDGE_BUILDERS_CONSTITUTION.md)
 - Trust surface: `docs/TRUST_CENTER_INDEX.md` → root policy files (`PRIVACY_POLICY.md`, `TERMS_OF_SERVICE.md`, `DATA_RETENTION_POLICY.md`, `MEDIA_LICENSING_POLICY.md`, `ACCESSIBILITY_STANDARD.md`, `INCIDENT_RESPONSE_PROTOCOL.md`, `STEWARD_ESCALATION_MATRIX.md`, `BRIDGE_BUILDERS_LICENSE.md`)
 - Continuity: `docs/continuity/*` (dated records), `docs/POST_RELEASE_CONTINUITY_PLAN.md`
 - Audit & ledger instruments: `docs/CANONICAL_CONFLICT_REGISTER.md`, `docs/COMPLETION_LEDGER.md`, `docs/ACTIVATION_AUDIT.md` (historical), `docs/RELATIONAL_STEWARDSHIP_INITIAL_AUDIT.md`, `docs/VERIFICATION_EVIDENCE.md`
+- Domain & front door: `docs/stewardship/decisions/SD-2026-07-27-02-canonical-domain-and-front-door-v1.md` → `docs/FRONT_DOOR_RECONCILIATION_SPEC.md` (implementation spec); decision packets in `docs/stewardship/decision-packets/`
 
 **B–F. Environments (Academy, Living Archive, System Rosetta Stone, SOPHIA, BRIDGEview)**
 - Registry entries + front-door pages only, in this repository. No curriculum,
