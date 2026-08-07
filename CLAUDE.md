@@ -102,6 +102,18 @@ At all times:
 
 ---
 
+# Relational File Stewardship
+
+Every artifact created or reviewed in any Bridge Builders session is governed by the Relational File Stewardship and Self-Audit Standard (`docs/canonical/RELATIONAL_FILE_STEWARDSHIP_STANDARD.md`, adopted 2026-07-27, SD-2026-07-27-01). In practice:
+- identify the canonical project that owns the work before creating anything new; reuse existing architecture; default new ideas into existing projects (intake rule, Standard §12)
+- every artifact gets a home, a relationship, an authority level, a completion status, and a next action; "built" is not "complete" (Standard §9, §18)
+- conflicts are recorded in `docs/CANONICAL_CONFLICT_REGISTER.md` with one disposition — never casually merged
+- stable conversation decisions are converted into repository artifacts; conversation history is not a source of truth (Standard §13)
+- completion state is recorded in `docs/COMPLETION_LEDGER.md`; audits use `docs/stewardship/templates/ARTIFACT_STEWARDSHIP_AUDIT_TEMPLATE.md`
+- the full AI operating instructions are Standard §16; they elaborate and never override this file or the Constitution
+
+---
+
 # Infrastructure Areas
 
 Core system domains:

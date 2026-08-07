@@ -19,6 +19,10 @@ The Permanent Steward Posts Charter (`docs/canonical/PERMANENT_STEWARD_POSTS_CHA
 
 The Steward Eligibility, Orientation, and Appointment Process (`docs/stewardship/STEWARD_ELIGIBILITY_ORIENTATION_AND_APPOINTMENT_PROCESS.md`, ratified July 21, 2026 by adopted steward decision SD-2026-07-21-01) elaborates how Charter §9.2 appointments are prepared and recorded. It creates no new approval authority: the founding steward remains the appointment decision authority; orientation completion, eligibility, and readiness findings are never appointments; every appointment requires its own recorded human decision and the appointee's recorded acceptance; SOPHIA may not select, rank, approve, reject, appoint, or grant access. Its adoption appointed no one; all five posts remain vacant.
 
+## Artifact lifecycle standard
+
+The Relational File Stewardship and Self-Audit Standard (`docs/canonical/RELATIONAL_FILE_STEWARDSHIP_STANDARD.md`, ratified July 27, 2026 by adopted steward decision SD-2026-07-27-01) governs how artifacts are classified, placed, related, audited, merged, archived, deprecated, and declared complete, and requires stable conversation decisions to be converted into repository records. It creates no new approval authority: dispositions of quarantined artifacts, registry additions, vocabulary additions, domain confirmation, and adoption of independent systems remain steward decisions under this document.
+
 ## Urgent corrections
 
 Truthfulness corrections (a public claim found false, a status found overstated) may be made immediately by any steward, recorded within 48 hours as a steward decision, and reconciled in the conflict register.

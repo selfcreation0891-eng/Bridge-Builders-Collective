@@ -402,4 +402,57 @@ export const ECOSYSTEM_REGISTRY: EcosystemEnvironment[] = [
     'An adopted branch of the ecosystem; public description is being prepared.',
     'Resonate Touch is a named branch adopted by steward decision. Its public description is being prepared; nothing further is claimed yet.',
   ),
+  {
+    // Registered per founder decision F-1 (2026-07-27). Evidence: live public route
+    // on the current public application; no pricing, eligibility, or outcome claims exist there.
+    id: 'synaptic-bridge',
+    canonicalName: 'Synaptic Bridge',
+    publicName: 'Synaptic Bridge',
+    slug: 'synaptic-bridge',
+    shortDescription:
+      'A 21-day self-paced continuity journey — presence, pattern, and contribution across three seven-day arcs.',
+    fullDescription:
+      'Synaptic Bridge is a participant experience inside Programs: a 21-day continuity journey moving through three seven-day arcs (Return to Presence, Pattern Sync for Self Build, Bridge into Contribution). Days are untimed and may be entered in any order; progress is kept privately on the participant’s own device; contribution is optional and consent-based. It is free to use and makes no outcome promises.',
+    status: 'public-preview',
+    destination: 'https://bridgebuilderscollective.com/programs/synaptic-bridge',
+    frontDoorPath: '/ecosystem/synaptic-bridge/',
+    audiences: ['individuals', 'young-people', 'communities'],
+    capabilities: [
+      'A 21-day self-paced journey with daily orientation, practice, and reflection (live on the current public application)',
+      'Private on-device progress marking; no account required',
+      'An accessible entry session (Sun Reset) and an optional, consent-based contribution pathway',
+    ],
+    developing: [
+      'Steward review flow for offered contributions',
+      'Integration with the Living Archive for consented offerings',
+    ],
+    participationPathways: [
+      {
+        label: 'Enter the 21-day journey',
+        orientation: 'participate',
+        href: 'https://bridgebuilderscollective.com/programs/synaptic-bridge',
+        availableNow: true,
+      },
+      {
+        label: 'Begin with a Sun Reset session',
+        orientation: 'discover',
+        href: 'https://bridgebuilderscollective.com/programs/sun-reset',
+        availableNow: true,
+      },
+    ],
+    relatedEnvironmentIds: ['programs', 'sun-reset', 'contribution'],
+    parentEnvironmentId: 'programs',
+    publicOrder: 52,
+    featured: false,
+    accessNotice:
+      'First registration (founder decision F-1, 2026-07-27): status and wording are deliberately conservative and flagged for steward review.',
+    trustNotice:
+      'Journey progress is stored only on your own device. Contribution is optional and consent-based. Nothing is timed, scored, or sold.',
+    canonicalOwner: OWNER,
+    sourceAuthority: 'Founder decision F-1 — Synaptic Bridge registration (2026-07-27)',
+    lastReviewed: '2026-07-27',
+    visibility: 'public',
+    callToAction: { label: 'Enter Synaptic Bridge', href: 'https://bridgebuilderscollective.com/programs/synaptic-bridge' },
+    icon: null,
+  },
 ];
