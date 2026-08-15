@@ -1,8 +1,47 @@
 # Front Door Boundary
 
-## Canonical implementation location
+Version 2 — amended per SD-2026-08-06-01 (Canonical and Implementation
+Repository Architecture v1). Version 1 (2026-07-15) recorded a
+single-repository boundary; this amendment records the ratified
+two-repository architecture. Where v1 wording conflicts with §"Two-repository
+architecture" below, this amendment governs.
 
-The deployable Bridge Builders Collective public front door lives in **this repository**:
+## Two-repository architecture (SD-2026-08-06-01)
+
+- **Canonical authority**: `selfcreation0891-eng/Bridge-Builders-Collective`
+  — identity, governance, canonical registry, vocabulary, statuses, steward
+  decisions, public-claims standards, release requirements.
+- **Live Front Door implementation**:
+  `selfcreation0891-eng/bridgebuilderscollective` — the Lovable-connected
+  TanStack Start application serving `bridgebuilderscollective.com`
+  (connection and live-domain configuration untouched by this amendment).
+- The implementation repository **consumes generated canonical artifacts**
+  (registry export, identity export, status mapping, provenance) per
+  `CANONICAL_EXPORT_AND_DRIFT_DESIGN.md`; it maintains no independent
+  authority. Implementation claims exceeding canonical authorization are
+  defects; drift checks in both CIs enforce this.
+- Direct repository merge or framework migration is not authorized; any
+  future migration requires its own founder decision, technical plan,
+  rollback strategy, and verified release process.
+- The canonical repository's static/reference Front Door is **not** the live
+  production deployment; only `selfcreation0891-eng/bridgebuilderscollective`
+  currently serves the production Front Door, through Lovable. This
+  architecture authorizes **one canonical authority and one production
+  implementation** — not two competing public deployments. The reference
+  Front Door must not be published independently without a separate recorded
+  release decision.
+- Any third Front Door implementation or deployment requires a recorded
+  founder decision.
+- The public status mapping is a **display translation only** and never
+  replaces canonical status semantics (`ENVIRONMENT_STATUS_STANDARD.md`).
+- A stale canonical artifact **blocks production publication** whenever
+  identity, registry, status, route authority, or public claims are
+  affected; unrelated canonical documentation commits do not require an
+  artifact bump.
+
+## Canonical reference implementation location
+
+The reference (static) front door lives in **this repository**:
 
 - `src/ecosystem/` — canonical typed registry (single source of ecosystem truth)
 - `src/site/` — rendering layer (layout, pages, styles)
@@ -50,6 +89,10 @@ branch, and commit.
 
 ## Prohibited duplicate-front-door behavior
 
-No active front-door source may be maintained outside this repository. Any external deployment of a
-Bridge Builders front door not built from this repository is non-canonical and must be redirected or
-retired, with the conflict recorded in `docs/CANONICAL_CONFLICT_REGISTER.md`.
+No active front-door source may be maintained outside the **two repositories
+named in this document** (canonical authority + recorded live
+implementation). Any other deployment of a Bridge Builders front door is
+non-canonical and must be redirected or retired, with the conflict recorded
+in `docs/CANONICAL_CONFLICT_REGISTER.md`. Within the recorded architecture,
+the implementation repository must remain conformant to canonical artifacts;
+non-conformance is recorded and reconciled, never adopted silently.
