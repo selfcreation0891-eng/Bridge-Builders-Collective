@@ -1,6 +1,6 @@
 {
   "generatedFrom": "src/ecosystem/ecosystem-registry.ts",
-  "generatedAt": "2026-07-22",
+  "generatedAt": "2026-08-15",
   "environments": [
     {
       "id": "bridge-builders-collective",
@@ -226,6 +226,15 @@
       "destination": null,
       "frontDoorPath": "/ecosystem/resonate-touch/",
       "shortDescription": "An adopted branch of the ecosystem; public description is being prepared."
+    },
+    {
+      "id": "synaptic-bridge",
+      "publicName": "Synaptic Bridge",
+      "slug": "synaptic-bridge",
+      "status": "public-preview",
+      "destination": "https://bridgebuilderscollective.com/programs/synaptic-bridge",
+      "frontDoorPath": "/ecosystem/synaptic-bridge/",
+      "shortDescription": "A 21-day self-paced continuity journey — presence, pattern, and contribution across three seven-day arcs."
     }
   ]
 }

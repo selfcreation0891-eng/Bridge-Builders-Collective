@@ -6,7 +6,7 @@ Release date: pending steward push, CI verification, and deployment (prepared 20
 
 - **The canonical public front door** — one static, accessible, dependency-free site built from this repository.
 - **Constitutional authority** — the Bridge Builders Constitution v1.0, with a single ecosystem authority order.
-- **The canonical ecosystem registry** — one typed registry (25 environments) as the sole source of public names, descriptions, statuses, relationships, and destinations.
+- **The canonical ecosystem registry** — one typed registry (26 environments) as the sole source of public names, descriptions, statuses, relationships, and destinations.
 - **Universal navigation** — header, mobile menu, footer, cards, related links, and sitemap all generated from the registry and enforced by tests.
 - **Initial environment representation** — Bridge Builders Collective, System Rosetta Stone, BridgeBuilders Academy, The Living Archive, SOPHIA, and twenty adopted branches, each with an honest status page.
 - **Truthful status declarations** — a public Environment Status Standard; nothing is described as operational without evidence.
