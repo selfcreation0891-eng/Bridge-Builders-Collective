@@ -108,11 +108,12 @@ export const ECOSYSTEM_REGISTRY: EcosystemEnvironment[] = [
     id: 'system-rosetta-stone',
     canonicalName: 'System Rosetta Stone',
     publicName: 'System Rosetta Stone',
+    navLabel: 'Rosetta',
     slug: 'rosetta',
     shortDescription:
-      'The shared dictionary that keeps every part of the ecosystem speaking the same language.',
+      'The human-meaning and relationship interpretation layer of Bridge Builders — understandable language, culturally aware interpretation, and guided pathways through complex knowledge.',
     fullDescription:
-      'The System Rosetta Stone is the canonical translation layer between ecosystem vocabulary, outside terminology, and implementation language. Its first committed artifact is the Canonical Vocabulary, which every environment and surface must follow.',
+      'Rosetta is Bridge Builders Collective’s human-meaning and relationship interpretation layer. It supports understandable language, multilingual and culturally aware interpretation, context, nuance, lineage, relationships among principles, programs, practices, knowledge, and symbols, steward-reviewed mappings, and guided pathways through complex knowledge. Vocabulary and terminology explanation are functions of Rosetta — its first committed artifact is the Canonical Vocabulary — but Rosetta is not reduced to a vocabulary layer alone. Rosetta does not replace cultural authority, community interpretation, human relationship, or steward review.',
     status: 'in-development',
     destination: null,
     frontDoorPath: '/rosetta/',
@@ -233,8 +234,19 @@ export const ECOSYSTEM_REGISTRY: EcosystemEnvironment[] = [
     'programs',
     'Programs',
     'Structured offerings the ecosystem will run — each published only when its pathway truly works.',
-    'Programs are the structured, time-bounded offerings of the ecosystem (learning, practice, preservation). No program is currently open for enrollment; program titles listed in the ecosystem are adopted intentions unless their status says otherwise.',
-    { frontDoorPath: '/programs/', publicOrder: 50, relatedEnvironmentIds: ['bridgebuilders-academy'], icon: '🧭' },
+    'Programs are the structured, time-bounded offerings of the ecosystem (learning, practice, preservation). No program is currently open for paid enrollment; program titles listed in the ecosystem are adopted intentions unless their status says otherwise.',
+    {
+      status: 'in-development',
+      frontDoorPath: '/programs/',
+      publicOrder: 50,
+      relatedEnvironmentIds: ['bridgebuilders-academy', 'synaptic-bridge', 'sun-reset'],
+      capabilities: [
+        'Two free public-preview participant experiences (Sun Reset, Synaptic Bridge) usable now on the current public application',
+      ],
+      accessNotice:
+        'Programs are in development (status raised from planned on 2026-07-28 — evidence: two participant experiences are publicly usable in preview). No other program is open.',
+      icon: '🧭',
+    },
   ),
   plannedBranch(
     'public-knowledge',
@@ -352,8 +364,32 @@ export const ECOSYSTEM_REGISTRY: EcosystemEnvironment[] = [
   plannedBranch(
     'sun-reset',
     'Sun Reset',
-    'An adopted branch of the ecosystem; public description is being prepared.',
-    'Sun Reset is a named branch adopted by steward decision. Its public description and program design are being prepared; nothing further is claimed yet.',
+    'A short guided reset session — the accessible entry environment for Synaptic Bridge.',
+    'Sun Reset is a guided reset session inside Programs: eight calm, self-paced stages (arrival, grounding, breath, gentle activation, release, rhythm, downshift, reintegration). It is free, untimed, and requires no account; it also serves as the accessible entry environment for the Synaptic Bridge journey. It makes no therapeutic or outcome claims.',
+    {
+      status: 'public-preview',
+      destination: 'https://bridgebuilderscollective.com/programs/sun-reset',
+      capabilities: [
+        'A public orientation page and guided session experience on the current public application',
+        'Free, no account required, self-paced',
+      ],
+      developing: ['Steward review of the session content', 'Accessibility review of the guided experience'],
+      participationPathways: [
+        {
+          label: 'Begin a Sun Reset session',
+          orientation: 'participate',
+          href: 'https://bridgebuilderscollective.com/programs/sun-reset',
+          availableNow: true,
+        },
+      ],
+      relatedEnvironmentIds: ['programs', 'synaptic-bridge'],
+      parentEnvironmentId: 'programs',
+      accessNotice:
+        'Status raised from planned to public-preview on 2026-07-28 — evidence: the session route is live and publicly reachable on the current public application. Wording is conservative and flagged for steward review.',
+      trustNotice: 'Nothing is timed, scored, or sold. This is a practice aid, not professional or medical care.',
+      lastReviewed: '2026-07-28',
+      sourceAuthority: 'Steward evidence review 2026-07-28 (route verified live) under founder revision directive',
+    },
   ),
   plannedBranch(
     'savage2steward',
