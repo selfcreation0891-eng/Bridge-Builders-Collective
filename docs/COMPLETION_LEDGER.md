@@ -62,7 +62,7 @@ verified 2026-07-27 unless noted.
 |---|---|---|---|---|---|---|---|
 | `doc/ARCHITECTURE.md`, `doc/GOVERNANCE.md` | Operational (historical elaborations) | Live | C | — | C-001 retained | Keep cross-referenced | FS |
 | `frontend\README.md` | Reference (historical) | Archived-in-place | — | — | C-002 retained | None | — |
-| `.claude-transfer/` git bundles (untracked) | Quarantined | Proposed disposition: archive outside repo or gitignore | — | FS disposition | Initial audit F-3 | FS decides keep/move/ignore | FS |
+| `.claude-transfer/` git bundles (untracked) | Quarantined | Disposition recorded 2026-08-17: `bbc-main-update.bundle` verified redundant and deleted; `bbc-adoption.bundle` retained untracked for provenance | — | `bbc-adoption.bundle` provenance retention | Initial audit F-3 | Retain provenance bundle unless FS later approves archival outside repo | FS |
 | `~/BridgeBuildersActivation/bbc-src.tar.gz` (outside repo) | Quarantined | Proposed disposition: verify then archive or delete | — | FS verification | Initial audit F-4 | FS verifies snapshot redundancy | FS |
 | `supabase/` (README + docs README) | Supporting | Scoped (backend intent documented; no implementation) | C | Backend decision | — | Classify when backend work begins | FS |
 | Upstream PRs #1–#3 (Copilot) | Reference | Superseded pending review | — | FS review | C-009 | FS closes or salvages | FS |
