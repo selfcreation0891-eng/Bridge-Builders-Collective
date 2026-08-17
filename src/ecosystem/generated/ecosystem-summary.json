@@ -1,6 +1,6 @@
 {
   "generatedFrom": "src/ecosystem/ecosystem-registry.ts",
-  "generatedAt": "2026-08-15",
+  "generatedAt": "2026-08-17",
   "environments": [
     {
       "id": "bridge-builders-collective",
@@ -18,7 +18,7 @@
       "status": "in-development",
       "destination": null,
       "frontDoorPath": "/rosetta/",
-      "shortDescription": "The shared dictionary that keeps every part of the ecosystem speaking the same language."
+      "shortDescription": "The human-meaning and relationship interpretation layer of Bridge Builders — understandable language, culturally aware interpretation, and guided pathways through complex knowledge."
     },
     {
       "id": "bridgebuilders-academy",
@@ -51,7 +51,7 @@
       "id": "programs",
       "publicName": "Programs",
       "slug": "programs",
-      "status": "planned",
+      "status": "in-development",
       "destination": null,
       "frontDoorPath": "/programs/",
       "shortDescription": "Structured offerings the ecosystem will run — each published only when its pathway truly works."
@@ -159,10 +159,10 @@
       "id": "sun-reset",
       "publicName": "Sun Reset",
       "slug": "sun-reset",
-      "status": "planned",
-      "destination": null,
+      "status": "public-preview",
+      "destination": "https://bridgebuilderscollective.com/programs/sun-reset",
       "frontDoorPath": "/ecosystem/sun-reset/",
-      "shortDescription": "An adopted branch of the ecosystem; public description is being prepared."
+      "shortDescription": "A short guided reset session — the accessible entry environment for Synaptic Bridge."
     },
     {
       "id": "savage2steward",
