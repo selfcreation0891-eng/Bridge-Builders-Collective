@@ -45,9 +45,11 @@ face.
 
 ## External setup still required before live operation
 
-- Human adoption of the four pending decision packets (vacancy coverage,
-  candidacy sequencing, private storage designation, orientation reviewer
-  designation) and resolution of C-014.
+- Human adoption of the remaining pending decision packets (candidacy
+  sequencing, private storage designation, orientation reviewer designation,
+  independent reviewer designation) and resolution of C-014. (Infrastructure
+  adoption and vacancy coverage were adopted 2026-07-22: SD-2026-07-22-01
+  and SD-2026-07-22-02.)
 - Designation and configuration of the private candidate-record system
   (outside this repository; only the adapter interface lives here).
 - Human appointment of stewards through the ratified process.

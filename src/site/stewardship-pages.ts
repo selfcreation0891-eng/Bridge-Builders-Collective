@@ -34,6 +34,8 @@ const HUMAN_MEANING: Readonly<Record<string, string>> = {
     '"Observation Only" means the post may notice, record, recommend, and escalate, but may not take consequential action.',
   'awaiting-human-decision':
     '"Awaiting Human Decision" means the system will not invent an answer or proceed automatically. The question rests with a named human process.',
+  'temporarily-routed':
+    '"Temporary receiver of record" means a named human receives, preserves, and routes matters while the post is vacant. It does not mean that person occupies the post or may exercise its authority.',
   active:
     '"Active" describes the institutional responsibility, not staffing: the duties are established even while no one is appointed to perform them.',
 };
@@ -47,15 +49,27 @@ No candidacy or appointment exists unless supported by an adopted decision.</div
 <div class="notice" role="note"><strong>SOPHIA advisory notice:</strong> ${esc(SOPHIA_ADVISORY_NOTICE)}</div>`;
 }
 
+function receiverLine(entry: StewardOperationsEntry): string {
+  const coverage = entry.vacancyCoverage;
+  if (coverage.state !== 'temporarily-routed' || !coverage.temporaryReceiverRef)
+    return 'Temporary receiver: none designated.';
+  // Derived from the registry's coverage record ("capacity:name" reference);
+  // no contact information is exposed.
+  const [capacity, name] = coverage.temporaryReceiverRef.split(':');
+  const title = (s: string) =>
+    s.split('-').map((w) => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+  return `Temporary receiver of record: ${title(name ?? capacity)}, ${(capacity ?? '').replace(/-/g, ' ')} (routing only, not occupancy — decision ${coverage.humanDecisionRef ?? ''}).`;
+}
+
 function postCard(entry: StewardOperationsEntry): string {
   return `<li class="card">
     <h3><a href="${OPERATIONS_PATH}${esc(entry.postId)}/">${esc(entry.canonicalName)}</a></h3>
     <span class="badge" data-status="steward-pilot">${esc(
       `${entry.institutionalState} · ${entry.occupancyState} · ${entry.operatingMode}`,
     )}</span>
-    <p>Vacancy coverage: ${esc(entry.vacancyCoverage.state)}. Temporary receiver: none designated.
+    <p>Vacancy coverage: ${esc(entry.vacancyCoverage.state)}. ${esc(receiverLine(entry))}
     Open observations: 0 · open handoffs: 0 · open escalations: 0.
-    Next review: not yet scheduled (convening is a human act).
+    Next review: weekly cadence for routed matters; meeting times are scheduled by humans.
     Authority: observation-only, no expansion (${esc(entry.authoritySource)}).</p>
   </li>`;
 }
@@ -67,7 +81,9 @@ function operationsOverviewPage(): string {
 <h1>Steward operations</h1>
 <p>The live operational status of the five Permanent Steward Posts, read directly from the canonical
 operational registry. This surface reports; it decides nothing. The posts and their boundaries are
-defined by the <a href="/trust/">Charter and governance documents</a>.</p>
+defined by the <a href="/trust/">Charter and governance documents</a>. The operational
+infrastructure itself was adopted by recorded human decision SD-2026-07-22-01; adoption changed no
+post's occupancy, mode, or authority.</p>
 ${boundaryNotices()}
 
 <h2>The five posts</h2>
@@ -80,8 +96,19 @@ ${STEWARD_OPERATIONS_REGISTRY.map(postCard).join('\n')}
   <li>${esc(HUMAN_MEANING.active)}</li>
   <li>${esc(HUMAN_MEANING.vacant)}</li>
   <li>${esc(HUMAN_MEANING['observation-only'])}</li>
+  <li>${esc(HUMAN_MEANING['temporarily-routed'])}</li>
   <li>${esc(HUMAN_MEANING['awaiting-human-decision'])}</li>
 </ul>
+
+<h2>Temporary vacancy coverage</h2>
+<p>By recorded human decision SD-2026-07-22-02, Maurice Jackson, founding steward, serves as the
+temporary receiver of record for matters directed to the five vacant posts. The receiver may
+receive, acknowledge, preserve, classify, route, hand off, escalate, and record that a decision
+remains pending — and may not approve, reject, publish, merge, certify, appoint, close a serious
+escalation unilaterally, or exercise any vacant post's authority. Routed matters receive a
+documented weekly review; a missed review changes nothing about an open matter. A concern
+involving the receiver enters independent human review; it is never self-reviewed. Routing ends
+per post upon appointment or a later adopted decision.</p>
 
 <h2>Cross-post review, honestly empty</h2>
 <p>No observations, handoffs, or escalations have been recorded yet: operations begin with nothing
@@ -103,10 +130,10 @@ never treated as proof of continuity.</p>
 
 <h2>Decisions currently awaiting humans</h2>
 <ul>
-  <li>Vacancy coverage routing — who, if anyone, temporarily receives matters for each vacant post.</li>
   <li>Candidacy sequencing — whether candidacies open together or one at a time.</li>
   <li>Private candidate-record storage designation.</li>
   <li>Orientation facilitator and readiness reviewer designation.</li>
+  <li>Independent human reviewer designation — for matters the receiver of record cannot impartially review.</li>
   <li>Resolution of open question C-014 (age, safeguarding, and legal capacity in candidacies).</li>
 </ul>
 <p>Each has a prepared decision packet in the public repository, clearly marked as a draft awaiting

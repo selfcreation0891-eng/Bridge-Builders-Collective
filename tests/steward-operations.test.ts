@@ -86,11 +86,16 @@ test('registry validation rejects an occupant reference on a vacant post, and SO
   assert.ok(errors2.some((e) => e.includes('SOPHIA may never occupy')));
 });
 
-test('vacancy coverage: current state is awaiting-human-decision for all five posts, validly', () => {
+test('vacancy coverage: temporarily-routed for all five posts per SD-2026-07-22-02, validly', () => {
   assert.equal(CURRENT_VACANCY_COVERAGE.length, 5);
   for (const record of CURRENT_VACANCY_COVERAGE) {
-    assert.equal(record.state, 'awaiting-human-decision', record.post);
-    assert.equal(record.temporaryReceiverRef, null, record.post);
+    assert.equal(record.state, 'temporarily-routed', record.post);
+    assert.equal(record.temporaryReceiverRef, 'founding-steward:maurice-jackson', record.post);
+    assert.equal(record.humanDecisionRef, 'SD-2026-07-22-02', record.post);
+    assert.equal(record.effectiveDate, '2026-07-22', record.post);
+    assert.ok(record.reviewDate, record.post);
+    assert.ok(record.scopeBoundaries.length > 0, record.post);
+    assert.equal(record.terminatesUponAppointment, true, record.post);
     assert.deepEqual(validateVacancyCoverage(record), [], record.post);
   }
 });
@@ -228,7 +233,7 @@ test('operational surfaces consume the registry — no duplicate operational tru
     assert.ok(overview.includes(entry.canonicalName), `overview missing ${entry.postId}`);
     const detail = pages.get(`${OPERATIONS_PATH}${entry.postId}/`) as string;
     assert.ok(detail.includes(`${entry.institutionalState} · ${entry.occupancyState} · ${entry.operatingMode}`));
-    assert.ok(detail.includes('awaiting-human-decision'), `${entry.postId} detail must show coverage state`);
+    assert.ok(detail.includes('temporarily-routed'), `${entry.postId} detail must show coverage state`);
   }
 });
 

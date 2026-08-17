@@ -17,6 +17,21 @@ import { CURRENT_POST_MODE, STEWARD_POSTS, STEWARD_POST_IDS } from './steward-po
 import type { VacancyCoverageRecord, VacancyCoverageState } from './vacancy-coverage.ts';
 import { CURRENT_VACANCY_COVERAGE, validateVacancyCoverage } from './vacancy-coverage.ts';
 
+/** Lifecycle of the operational infrastructure itself. */
+export type InfrastructureStatus = 'implemented-pending-adoption' | 'adopted-active';
+
+/**
+ * Adopted and active as operational infrastructure by recorded human steward
+ * decision SD-2026-07-22-01 (Maurice Jackson, founding steward, July 22,
+ * 2026 — see docs/stewardship/decisions/). Adoption changed no post's
+ * occupancy, mode, or authority; all five posts remain vacant, human-only,
+ * and observation-only. Changing this value requires a recorded adopted
+ * steward decision per CHANGE_AUTHORITY.md and is a human act — never an
+ * automated one.
+ */
+export const INFRASTRUCTURE_STATUS: InfrastructureStatus = 'adopted-active';
+export const INFRASTRUCTURE_ADOPTION_DECISION_REF = 'SD-2026-07-22-01';
+
 /** A post is an active institutional responsibility from ratification onward. */
 export type InstitutionalState = 'active';
 
@@ -165,6 +180,16 @@ export function validateOperationsRegistry(entries: readonly StewardOperationsEn
     errors.push(...validateVacancyCoverage(entry.vacancyCoverage));
     if (entry.occupancyState === 'vacant' && entry.vacancyCoverage.state === 'ended-by-appointment')
       errors.push(`${at} coverage cannot be ended-by-appointment while the post is vacant`);
+    // Routing terminates upon appointment: an occupied post cannot retain active
+    // temporary routing, and a temporary receiver reference is never an occupant.
+    if (entry.occupancyState === 'occupied' && entry.vacancyCoverage.state === 'temporarily-routed')
+      errors.push(`${at} an occupied post cannot retain temporary routing — routing terminates upon appointment`);
+    if (
+      entry.currentOccupantRef &&
+      entry.vacancyCoverage.temporaryReceiverRef &&
+      entry.currentOccupantRef === entry.vacancyCoverage.temporaryReceiverRef
+    )
+      errors.push(`${at} the temporary receiver of record reference is not an appointment — receiver of record is not occupant`);
   }
 
   return errors;

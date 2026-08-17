@@ -1,6 +1,22 @@
 # Decision Packet — Vacancy Coverage Routing
 
-**DRAFT — HUMAN DECISION REQUIRED — NOT ADOPTED**
+**ADOPTED — see adoption notice below** (original proposal text preserved
+unchanged for history)
+
+## Adoption notice (added 2026-07-22)
+
+The receiver-of-record option (a variant of options 1 and 3 below: one named
+human — the founding steward — receives matters for all five posts) was
+adopted on July 22, 2026 by Maurice Jackson, founding steward, in
+`docs/stewardship/decisions/SD-2026-07-22-02-vacancy-coverage-receiver-of-record.md`.
+Operational effect: all five posts' coverage transitioned
+awaiting-human-decision → temporarily-routed; every post remains vacant,
+human-only, and observation-only. No appointment occurred and no authority
+was expanded — receiving is not deciding, and routing is not occupancy.
+
+---
+
+Original packet as prepared (historical):
 
 This packet prepares a decision; it makes none. No temporary receiver exists
 until a recorded human decision adopts one. Prepared: 2026-07-22.

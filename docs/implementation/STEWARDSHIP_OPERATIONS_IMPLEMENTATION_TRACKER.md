@@ -102,6 +102,27 @@ names in fixtures. The only email-shaped strings are deliberate invalid
 inputs in negative tests (reserved `example.org` domain) proving the privacy
 detector rejects them.
 
+## Adoption phase (2026-07-22 — separate from the technical implementation above)
+
+Branch: `governance/adopt-steward-operations-and-vacancy-coverage-v1`, based
+on `main` @ `8fedd8a` (merge of implementation PR #10).
+
+| Step | Deliverable | Status |
+| --- | --- | --- |
+| Decision 1 | SD-2026-07-22-01 — infrastructure adopted; status implemented-pending-adoption → adopted-active (`INFRASTRUCTURE_STATUS`) | Done |
+| Decision 2 | SD-2026-07-22-02 — Maurice Jackson, founding steward, temporary receiver of record; coverage awaiting-human-decision → temporarily-routed ×5 | Done |
+| Independent-review safeguard | receiver self-conflict → independent-human-review-required, verified by tests; reviewer designation packet added (DRAFT) | Done |
+| Continuity | two continuity records (adoption; vacancy coverage), append-only; implementation entry untouched | Done |
+| Packet status | vacancy packet marked ADOPTED with history preserved; all other packets remain DRAFT — NOT ADOPTED | Done |
+| Surfaces & docs | overview, registry standard, coverage plan, runbook, post status records, public status surface updated | Done |
+| Tests | adoption/receiver boundary suite added; existing suites updated to the routed reality; all invariants preserved | Done |
+
+Boundaries preserved: no appointment, no occupancy, no candidacy, no access
+grant, no authority expansion, Observation-Only Mode unchanged, SOPHIA
+advisory-only, C-014 open, private storage unconfigured. Adoption-phase
+verification evidence is recorded in the two continuity records and the
+final pull-request report.
+
 Dry-run results: all 15 scenarios of
 `docs/stewardship/STEWARD_OPERATIONS_DRY_RUN_PLAN.md` implemented in
 `tests/steward-dry-runs.test.ts`; each passes, with prohibited automated

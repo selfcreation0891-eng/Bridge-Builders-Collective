@@ -1,12 +1,12 @@
 # Permanent Steward Posts — Operational Infrastructure v1
 
-Status: Implemented — Observation-Only Mode preserved
+Status: Adopted — active (SD-2026-07-22-01, July 22, 2026) — Observation-Only Mode preserved
 Authority: subordinate to the Bridge Builders Constitution,
 `docs/canonical/CHANGE_AUTHORITY.md`, the Permanent Steward Posts Charter
 (`docs/canonical/PERMANENT_STEWARD_POSTS_CHARTER.md`), and the ratified
 appointment process. Canonical governance documents outrank this document and
 all code where they differ.
-Last updated: 2026-07-22
+Last updated: 2026-07-22 (adoption recorded)
 
 ## What this infrastructure is
 
@@ -53,14 +53,25 @@ state with a prepared decision packet.
   schemas, empty templates, personal-data-free fixtures, and privacy-safe
   pointers. The export guard (`guardPublicExport`) machine-checks this.
 
+## Adoption and vacancy coverage
+
+The infrastructure was adopted as the canonical operational layer by
+SD-2026-07-22-01 (status transition implemented-pending-adoption →
+adopted-active, mirrored in `INFRASTRUCTURE_STATUS`). Separately,
+SD-2026-07-22-02 designated Maurice Jackson, founding steward, as temporary
+receiver of record for the five vacant posts — routing and preservation
+only, not appointment, not occupancy, not post authority; per-post
+termination upon appointment or later adopted decision; self-conflict
+matters enter independent-human-review-required.
+
 ## Human decisions represented as pending
 
-Five decisions are prepared, not made — each with a packet in
-`docs/stewardship/decision-packets/`, all marked DRAFT — HUMAN DECISION
-REQUIRED — NOT ADOPTED: vacancy coverage routing; candidacy sequencing;
-private storage designation; orientation facilitator / readiness reviewer
-designation; and (tracked in `docs/CANONICAL_CONFLICT_REGISTER.md`, not a
-packet here) the resolution of C-014.
+Decisions still prepared, not made — each with a packet in
+`docs/stewardship/decision-packets/` marked DRAFT — HUMAN DECISION
+REQUIRED — NOT ADOPTED: candidacy sequencing; private storage designation;
+orientation facilitator / readiness reviewer designation; independent human
+reviewer designation; and (tracked in `docs/CANONICAL_CONFLICT_REGISTER.md`,
+not a packet here) the resolution of C-014.
 
 ## Interface
 

@@ -43,6 +43,16 @@ export function validateEscalation(record: EscalationRecord): string[] {
   )
     errors.push(`${at} a concern about the Institutional Steward must enter independent-human-review-required`);
 
+  // Concerns about the founding steward — including in the capacity of temporary
+  // receiver of record (SD-2026-07-22-02) — likewise cannot be absorbed or
+  // self-reviewed; they wait for an independent human.
+  if (
+    record.concernsPost === 'founding-steward' &&
+    record.state !== 'independent-human-review-required' &&
+    record.state !== 'closed-by-human'
+  )
+    errors.push(`${at} a concern about the founding steward must enter independent-human-review-required`);
+
   // Closure discipline.
   const serious = (SERIOUS_OR_ABOVE as readonly string[]).includes(record.category);
   if (record.state === 'closed-by-human') {
@@ -62,6 +72,12 @@ export function validateEscalation(record: EscalationRecord): string[] {
       record.closedByRef.toLowerCase().includes('institutional')
     )
       errors.push(`${at} the Institutional Steward cannot close a concern about itself`);
+    if (
+      record.concernsPost === 'founding-steward' &&
+      record.closedByRef &&
+      /founding-steward|maurice/i.test(record.closedByRef)
+    )
+      errors.push(`${at} the receiver of record cannot finally review or close a matter concerning themself — independent human review is required`);
   } else if (record.closedByRef || (serious === false && record.state === ('auto-closed' as string))) {
     errors.push(`${at} only closed-by-human may carry a closer reference`);
   }

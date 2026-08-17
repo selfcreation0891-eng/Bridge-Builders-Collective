@@ -2,7 +2,7 @@
 
 Status: **Active — Observation Only — Vacant (no human occupant appointed)**
 Established: Permanent Steward Posts Charter v1 §4.2, ratified July 20, 2026 (decision record: `docs/stewardship/decisions/SD-2026-07-20-01-permanent-steward-posts-charter-v1.md`)
-Last updated: 2026-07-20
+Last updated: 2026-07-22
 
 - This post is constitutionally established as a permanent human stewardship responsibility, subordinate to the Bridge Builders Constitution.
 - The post is active only as an institutional responsibility. Its duties exist; no one currently performs them.
@@ -11,4 +11,4 @@ Last updated: 2026-07-20
 - SOPHIA may not occupy this post and may not exercise any of its responsibilities or authority. SOPHIA remains advisory only (Constitution §9).
 - Appointment requires a separate recorded human decision per Charter §9.2, with recorded appointing authority under `docs/canonical/CHANGE_AUTHORITY.md`. Vacancy must never be represented as active human staffing.
 
-Interim coverage: none designated. Concerns in this post's domain route per `docs/stewardship/STEWARD_HANDOFF_AND_ESCALATION_PROTOCOL.md`; matters requiring decision route to the founding steward.
+Interim coverage: temporary receiver of record designated — Maurice Jackson, founding steward, per adopted decision SD-2026-07-22-02 (`docs/stewardship/decisions/`). Routing and preservation only: the post remains vacant, no occupancy or post authority is conferred, and the designation ends for this post upon appointment or a later adopted decision. Concerns in this post's domain route per `docs/stewardship/STEWARD_HANDOFF_AND_ESCALATION_PROTOCOL.md`; matters requiring decision route to the founding steward.

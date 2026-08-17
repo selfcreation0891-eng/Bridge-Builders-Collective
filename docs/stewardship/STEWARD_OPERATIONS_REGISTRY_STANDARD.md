@@ -29,10 +29,12 @@ never stored as truth.
    registry (`steward-posts.ts`). Canonical names and authority sources are
    validated to match; a second hand-maintained copy of operational truth
    anywhere in the repository is a defect.
-2. **Truthful current state.** As of this version: institutional state
-   `active`; occupancy `vacant`; operating mode `observation-only`; occupant
-   `null`; authority expansion `none`; SOPHIA decision authority `false`;
-   vacancy coverage `awaiting-human-decision`.
+2. **Truthful current state.** As of SD-2026-07-22-01/-02: infrastructure
+   status `adopted-active`; institutional state `active`; occupancy `vacant`;
+   operating mode `observation-only`; occupant `null`; authority expansion
+   `none`; SOPHIA decision authority `false`; vacancy coverage
+   `temporarily-routed` to the founding steward as receiver of record
+   (routing, never occupancy).
 3. **Change requires recorded human decision.** Editing the registry's
    current-state values is a human act performed alongside an adopted steward
    decision per `CHANGE_AUTHORITY.md`. No automation, scheduled process, or
