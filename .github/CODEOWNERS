@@ -1,0 +1,28 @@
+# CODEOWNERS — Bridge Builders Collective
+
+# Default owner for all files
+* @selfcreation0891-eng
+
+# Canonical governance documents — require steward review
+docs/canonical/ @selfcreation0891-eng
+docs/stewardship/ @selfcreation0891-eng
+docs/stewardship/decisions/ @selfcreation0891-eng
+
+# Continuity records — require steward review
+docs/continuity/ @selfcreation0891-eng
+
+# Evidence records — require steward review
+docs/evidence/ @selfcreation0891-eng
+
+# Core policies
+BRIDGE_BUILDERS_LICENSE.md @selfcreation0891-eng
+PRIVACY_POLICY.md @selfcreation0891-eng
+TERMS_OF_SERVICE.md @selfcreation0891-eng
+DATA_RETENTION_POLICY.md @selfcreation0891-eng
+INCIDENT_RESPONSE_PROTOCOL.md @selfcreation0891-eng
+
+# Ecosystem registry — changes affect the public front door
+src/ecosystem/ @selfcreation0891-eng
+
+# GitHub configuration
+.github/ @selfcreation0891-eng

@@ -1,0 +1,81 @@
+name: Decision
+description: Record a steward decision required or made
+title: "DECISION: [project] — [brief description]"
+labels: ["decision"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template to record a decision that is required or has been made. Decisions that affect canonical vocabulary, truth-state, or project direction must be recorded here before being implemented.
+
+  - type: input
+    id: project
+    attributes:
+      label: Project
+      description: Canonical project name this decision affects.
+      placeholder: "Bridge Builders Portfolio Control Center"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: status
+    attributes:
+      label: Decision Status
+      options:
+        - Required — not yet made
+        - Made — pending implementation
+        - Made — implemented
+        - Deferred
+      default: 0
+    validations:
+      required: true
+
+  - type: textarea
+    id: decision-question
+    attributes:
+      label: Decision Question
+      description: What specific question requires a decision? State it precisely.
+      placeholder: "Should the PCC GitHub repository be named bridge-builders-portfolio-control-center?"
+    validations:
+      required: true
+
+  - type: textarea
+    id: options-considered
+    attributes:
+      label: Options Considered
+      description: List the options that were or should be considered.
+    validations:
+      required: false
+
+  - type: textarea
+    id: decision-made
+    attributes:
+      label: Decision Made
+      description: If a decision has been made, record it here exactly. If not yet made, leave blank.
+    validations:
+      required: false
+
+  - type: input
+    id: decision-maker
+    attributes:
+      label: Decision Maker
+      description: Who has authority to make this decision?
+      placeholder: "Maurice Jackson (primary steward)"
+    validations:
+      required: true
+
+  - type: input
+    id: date
+    attributes:
+      label: Date
+      description: Date the decision was made (YYYY-MM-DD), or leave blank if not yet made.
+    validations:
+      required: false
+
+  - type: textarea
+    id: consequences
+    attributes:
+      label: Consequences
+      description: What changes as a result of this decision?
+    validations:
+      required: false
