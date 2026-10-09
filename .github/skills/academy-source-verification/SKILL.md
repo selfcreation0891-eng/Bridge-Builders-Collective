@@ -25,11 +25,11 @@ source-of-truth records, edit files, or add integrations.
 - the deliverable list or package definition under review, if it differs from
   the current Academy source-of-truth index
 
-## Verification Matrix
+## Foundation Matrix
 
-Use the Academy source-of-truth index when accessible. At minimum, verify these
-nine Foundation deliverables from the Academy master index before accepting any
-claim that the Foundation suite is complete:
+Use the Academy source-of-truth index when accessible. Maintain a Foundation
+matrix with one row for each of these nine existing Foundation source
+deliverables before accepting any claim that the Foundation suite is complete:
 
 1. `FOUNDATION_CURRICULUM_COMPLETE.md`
 2. `FOUNDATION_FACILITATOR_GUIDE.md`
@@ -40,6 +40,61 @@ claim that the Foundation suite is complete:
 7. `FOUNDATION_MEDIA_PLAN.md`
 8. `FOUNDATION_CERTIFICATION_CRITERIA.md`
 9. `FOUNDATION_INSTITUTIONAL_EDITION.md`
+
+Each Foundation row must record:
+
+- exact source repository
+- exact source path
+- source branch
+- source commit SHA
+- evidence status: present, absent, partial, inaccessible, or conflicting
+- structural status
+- human-review status
+- notes on public-status, release-readiness, grading/ranking, accessibility,
+  cultural/community review, and qualified-review boundaries
+
+Foundation completion means only that these nine Foundation source deliverables
+are accounted for at the stated evidence status. Do not treat Foundation
+completion as completion of any other Academy package, delivery model, program,
+Challenge Library, research citation set, onboarding/assessment material, or
+release-readiness record.
+
+## Academy Delivery Matrix
+
+Maintain a separate Academy delivery matrix for non-Foundation Academy packages
+and delivery surfaces. Required rows are:
+
+1. Five-Day program
+2. Four-week cohort
+3. 12-lesson STEAM curriculum
+4. Facilitator package or packages
+5. Participant package or packages
+6. Challenge Library
+7. Research citations and evidence grading
+8. Sun Reset
+9. Synaptic Bridge
+10. Onboarding, assessments, and release readiness
+
+Each Academy delivery row must record:
+
+- exact source repository
+- exact source path or paths
+- source branch
+- source commit SHA
+- evidence status: present, absent, partial, inaccessible, or conflicting
+- package status: not started, authored, structurally verified, reviewed,
+  steward tested, pilot ready, release ready, or status unknown
+- human-review status, including reviewer type, date, scope, and outcome when
+  available
+- source-of-truth relationship to governance records and public website
+  implementation
+- notes on citations, evidence grade, safety boundaries, accessibility,
+  cultural/community review, qualified-professional review, public route status,
+  and release-readiness limits
+
+Do not infer that a package is missing merely because it is inaccessible. Record
+inaccessible evidence as inaccessible and identify what access or repository
+path would be needed to verify it.
 
 Also verify the broader Academy ownership categories named by canonical records:
 courses, curriculum, onboarding, learning pathways, cohort structures, STEAM
@@ -62,31 +117,37 @@ learning programs.
    Academy curriculum, facilitator materials, participant materials, review
    packets, Challenge Library material, program materials, and release-readiness
    records.
-5. Verify nine-deliverable coverage by checking existence, non-placeholder
-   content, current status wording, structural-verification evidence, and
-   release-readiness limits for each deliverable.
-6. Verify STEAM lessons and any STEAM program references against the canonical
+5. Complete the Foundation matrix by checking existence, non-placeholder
+   content, current status wording, structural-verification evidence,
+   human-review status, branch, commit SHA, and release-readiness limits for
+   each of the nine Foundation deliverables.
+6. Complete the Academy delivery matrix separately. Do not let Foundation
+   evidence satisfy delivery rows for the Five-Day program, four-week cohort,
+   STEAM curriculum, facilitator/participant packages, Challenge Library,
+   research citations/evidence grading, Sun Reset, Synaptic Bridge, or
+   onboarding/assessments/release readiness.
+7. Verify STEAM lessons and any STEAM program references against the canonical
    naming quarantine and intake status. Confirm lesson scope, learning
    objectives, materials, accessibility notes, participant-safety boundaries,
    no unsupported public-availability claim, and no use of prohibited public
    "BBC STEAM" naming unless recorded as quarantined evidence.
-7. Verify Challenge Library citations. Each challenge should cite its source or
+8. Verify Challenge Library citations. Each challenge should cite its source or
    program relationship, canonical vocabulary terms, applicable consent/archive
    boundary, accessibility/cultural review needs, and any research or
    evidence basis. Missing citations are findings; invented citations are
    defects.
-8. Grade research evidence without changing curriculum status. Use conservative
+9. Grade research evidence without changing curriculum status. Use conservative
    evidence labels: established evidence, emerging evidence, traditional or
    community knowledge, lived-experience observation, internal practice
    rationale, or unsupported claim. Flag health, finance, legal, clinical,
    educational-outcome, or youth claims that lack qualified human review.
-9. Verify human-review stages. Do not advance any material past authored or
+10. Verify human-review stages. Do not advance any material past authored or
    structurally verified unless repository evidence records the responsible
    human reviewer, review domain, date, scope, outcome, and follow-up.
    Required stages to check are accessibility review, cultural/community
    review, qualified professional review where relevant, steward testing,
    bounded pilot readiness, pilot evidence, and release-readiness decision.
-10. Classify each issue as verified fact, inference, suspected drift,
+11. Classify each issue as verified fact, inference, suspected drift,
     governance question, implementation defect, or inaccessible evidence.
 
 ## Academy Status Rules
@@ -110,7 +171,8 @@ Include:
 - scope reviewed
 - source-of-truth evidence
 - repository-boundary evidence
-- nine-deliverable coverage table
+- Foundation matrix
+- Academy delivery matrix
 - STEAM lesson verification
 - Challenge Library citation findings
 - research evidence grading findings

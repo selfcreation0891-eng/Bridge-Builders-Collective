@@ -24,33 +24,60 @@ systems, or add tools.
   curriculum, program materials, review packets, Challenge Library material, or
   learning-status claims are in scope
 
+## Repository Comparison Set
+
+When accessible, explicitly compare these repositories as separate evidence
+surfaces:
+
+| Repository | Evidence role |
+| --- | --- |
+| `Bridge-Builders-Collective` | Governance authority and static reference artifacts, including canonical records, continuity records, decision records, conflict records, stewardship templates, and source-of-truth boundary records. |
+| `bridgebuilderscollective` | Live website implementation, including navigation, content registries, public routes, live-facing copy, route manifests, content collections, and implementation-specific status displays. |
+| `Bridge-Builders-Academy` | Substantive Academy curriculum and program sources, including Foundation deliverables, delivery packages, STEAM material, Challenge Library material, research citation/evidence records, Sun Reset, Synaptic Bridge, onboarding, assessments, and release-readiness packets. |
+
+Do not collapse these repositories into one authority. The canonical repository
+can decide governance and public status; the website repository can reveal
+implementation discrepancies; the Academy repository can evidence substantive
+curriculum/program source state. Historical language is evidence of prior
+state, not automatically a current governance decision.
+
 ## Procedure
 
 1. Read `AGENTS.md`.
-2. Identify the relevant canonical governance source files, especially records
+2. Identify the relevant `Bridge-Builders-Collective` governance source files,
+   especially records
    under `docs/canonical/`, `docs/continuity/`,
    `docs/stewardship/decisions/`, `docs/stewardship/decision-packets/`,
    `docs/stewardship/templates/`, and the conflict register.
-3. Identify the website implementation surfaces that render or encode the same
-   claims, including `src/ecosystem/`, `src/site/`, `tests/`, generated
-   summaries, route copy, navigation labels, trust/status pages, and workflow
-   configuration.
-4. When Academy material is accessible, compare against Academy source files
-   without importing Academy authority into this repository. Use the Academy
-   repository only for substantive Academy curriculum, facilitator materials,
-   participant materials, review packets, Challenge Library material, program
-   manifests, release-readiness records, and source-of-truth audit evidence.
-5. Compare governance, website, and Academy sources in a three-way matrix:
-   canonical rule or decision; rendered or implemented website claim; Academy
-   source or absence of accessible Academy evidence.
-6. Flag drift when website or Academy material advances public status, release
+3. Identify the `bridgebuilderscollective` live website implementation surfaces
+   that render or encode the same claims, including navigation, content
+   registries, public routes, generated summaries, route copy, labels,
+   trust/status pages, tests, and workflow configuration.
+4. Identify the `Bridge-Builders-Academy` substantive source surfaces when
+   accessible, including curriculum, facilitator materials, participant
+   materials, program packages, STEAM material, Challenge Library material,
+   research citation/evidence records, Sun Reset, Synaptic Bridge, onboarding,
+   assessments, review packets, and release-readiness records.
+5. Compare all accessible sources in a three-repository matrix:
+   governance/static reference evidence; live website implementation evidence;
+   Academy substantive-source evidence.
+6. Distinguish implementation discrepancies from governance decisions and
+   historical language. A website mismatch may be an implementation defect, not
+   a governance change. Historical wording may be lineage evidence, not current
+   authority. Academy source status may evidence curriculum state, not public
+   status.
+7. Record inaccessible evidence without claiming the material is missing. For
+   each inaccessible source, identify repository, expected path or search
+   target, access limitation, and the claim that remains unverified.
+8. Flag drift when website or Academy material advances public status, release
    readiness, professional review, steward testing, pilot readiness,
    Challenge Library citation sufficiency, research-evidence grade, or
-   governance authority beyond recorded evidence.
-7. Classify each finding as verified fact, inference, suspected drift,
-   governance question, implementation defect, or inaccessible evidence.
-8. Cite exact repository paths for every finding and state when an Academy
-   source was not accessible.
+   governance authority beyond recorded governance evidence.
+9. Classify each finding as verified fact, inference, suspected drift,
+   governance question, implementation discrepancy, historical-language note,
+   implementation defect, or inaccessible evidence.
+10. Cite exact repository names, branches when known, commit SHAs when known,
+    and paths for every finding.
 
 ## Report Format
 
@@ -60,7 +87,10 @@ Include:
 - canonical evidence
 - website implementation or public-claim evidence
 - Academy-source evidence, or inaccessible-source note
-- three-way drift matrix
+- three-repository drift matrix
+- implementation discrepancies separated from governance decisions
+- historical-language notes, if any
+- inaccessible-evidence log
 - drift findings, if any
 - validation performed
 - remaining governance questions for steward review
