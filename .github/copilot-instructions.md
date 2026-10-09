@@ -32,6 +32,10 @@ surfaces. They may inspect files, search repository content, compare paths, and
 prepare findings. They must not request or use write-enabled tools, credentials,
 deployment authority, new MCP servers, or governance authority.
 
+The inspector profile uses GitHub Copilot-supported read/search tool names only:
+`read` and `search`. Do not replace these with local shorthand names or add
+write-enabled tools without explicit steward approval.
+
 ## Escalation
 
 Stop and report when:

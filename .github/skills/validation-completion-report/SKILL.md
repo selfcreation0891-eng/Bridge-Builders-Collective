@@ -21,6 +21,8 @@ deploy systems, create credentials, or broaden the authorized change scope.
 - local validation commands and outputs
 - pull request number or URL, when available
 - CI run status, when available
+- behavioral acceptance tests for read-only agent constraints, when performed
+- source used to confirm supported GitHub Copilot custom-agent tool names
 
 ## Procedure
 
@@ -28,8 +30,12 @@ deploy systems, create credentials, or broaden the authorized change scope.
 2. Confirm repository, branch, and changed paths.
 3. Verify that changed paths match the authorized scope.
 4. Record local validation commands and outcomes.
-5. Check actual CI workflow status before reporting CI success.
-6. Identify remaining blockers or missing evidence.
+5. Record behavioral acceptance-test outcomes for the read-only agent:
+   supported tool-name check, write-tool rejection, model-invocation disabled
+   check, no new MCP server check, no credential/deployment/governance authority
+   check, and scope-preservation check.
+6. Check actual CI workflow status before reporting CI success.
+7. Identify remaining blockers or missing evidence.
 
 ## Report Format
 
@@ -40,6 +46,7 @@ Include:
 - pull request URL, when available
 - changed-path verification
 - local validation outcomes
+- behavioral acceptance-test outcomes
 - CI status and run ID, when available
 - overlap with relevant comparison pull requests
 - remaining blockers
