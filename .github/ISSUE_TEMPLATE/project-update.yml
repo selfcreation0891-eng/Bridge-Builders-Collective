@@ -1,0 +1,99 @@
+name: Project Update
+description: Record a status update for a Portfolio Control Center project
+title: "PROJECT UPDATE: [project] — [brief description]"
+labels: ["project-update"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template to record a meaningful status update for a tracked project. This is for operational tracking only — not for public reporting.
+
+  - type: input
+    id: project
+    attributes:
+      label: Project Name
+      description: Canonical project name.
+      placeholder: "Bridge Builders Collective Front Door"
+    validations:
+      required: true
+
+  - type: input
+    id: project-slug
+    attributes:
+      label: Project Slug
+      placeholder: "bridge-builders-collective-front-door"
+    validations:
+      required: false
+
+  - type: dropdown
+    id: previous-truth-state
+    attributes:
+      label: Previous Truth-State
+      options:
+        - Idea
+        - Designed
+        - Documented
+        - Implemented
+        - Tested
+        - Deployed
+        - Proven
+        - Unknown
+      default: 7
+    validations:
+      required: true
+
+  - type: dropdown
+    id: new-truth-state
+    attributes:
+      label: New Truth-State
+      options:
+        - Idea
+        - Designed
+        - Documented
+        - Implemented
+        - Tested
+        - Deployed
+        - Proven
+        - No change
+      default: 7
+    validations:
+      required: true
+
+  - type: textarea
+    id: what-changed
+    attributes:
+      label: What Changed
+      description: Describe specifically what changed. Not a summary — a factual record.
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: What evidence supports this update? Reference commands, outputs, or evidence record files.
+    validations:
+      required: true
+
+  - type: input
+    id: responsible-tool
+    attributes:
+      label: Responsible Tool or Steward
+      placeholder: "Cowork / Lovable / Maurice Jackson"
+    validations:
+      required: true
+
+  - type: textarea
+    id: exact-next-action
+    attributes:
+      label: Exact Next Action
+      description: One specific action that must happen next for this project.
+    validations:
+      required: true
+
+  - type: input
+    id: date
+    attributes:
+      label: Date (YYYY-MM-DD)
+    validations:
+      required: true

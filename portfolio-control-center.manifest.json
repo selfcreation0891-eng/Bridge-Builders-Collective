@@ -1,0 +1,145 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectName": "Bridge Builders Portfolio Control Center",
+  "internalOnly": true,
+  "classification": "Private — not public-facing",
+  "lovable": {
+    "projectName": "Bridge Command",
+    "projectId": "2230cda3-847a-4bc2-acf8-fc9bd2c22b07",
+    "lastVerifiedCommit": "3b9c9f52af26d3fea8c33baf251eea34c11926a5",
+    "publishState": "private, unpublished"
+  },
+  "github": {
+    "owner": "selfcreation0891-eng",
+    "canonicalRepository": "bridge-builders-portfolio-control-center",
+    "expectedUrl": "https://github.com/selfcreation0891-eng/bridge-builders-portfolio-control-center",
+    "visibility": "private",
+    "status": "not-yet-created",
+    "statusAsOf": "2026-07-22",
+    "defaultBranch": "main",
+    "workingBranch": "pcc/github-cowork-foundation",
+    "currentVerifiedCommit": null,
+    "note": "GitHub repository does not yet exist. PCC code is in Lovable only."
+  },
+  "continuityWorkspace": {
+    "repository": "selfcreation0891-eng/Bridge-Builders-Collective",
+    "branch": "copilot/establish-github-as-code-record",
+    "commit": "df3c1ff97c917866df91ea3a86b91d4e5bacec87",
+    "purpose": "Governance, continuity documentation, and evidence records. Not the PCC application code."
+  },
+  "verificationDate": "2026-07-22",
+  "framework": {
+    "name": "React + TanStack Router + Vite",
+    "source": "Lovable-generated",
+    "status": "unverified-locally",
+    "note": "Framework identified from Lovable project description. Cannot be confirmed until GitHub repository is created and cloned."
+  },
+  "packageManager": {
+    "name": "npm",
+    "status": "unverified",
+    "note": "Assumed from Lovable defaults. Verify after GitHub repository creation."
+  },
+  "persistenceMode": "browser-localStorage-only",
+  "seededProjects": [
+    {
+      "id": "bridge-builders-collective-front-door",
+      "slug": "bridge-builders-collective-front-door",
+      "name": "Bridge Builders Collective Front Door"
+    },
+    {
+      "id": "bridge-builders-academy-founding-experience",
+      "slug": "bridge-builders-academy-founding-experience",
+      "name": "Bridge Builders Academy Founding Experience"
+    },
+    {
+      "id": "sun-reset",
+      "slug": "sun-reset",
+      "name": "Sun Reset"
+    },
+    {
+      "id": "bridgeview-vision",
+      "slug": "bridgeview-vision",
+      "name": "BridgeView Vision"
+    },
+    {
+      "id": "system-rosetta-stone",
+      "slug": "system-rosetta-stone",
+      "name": "System Rosetta Stone"
+    },
+    {
+      "id": "living-archive-sophia-governance",
+      "slug": "living-archive-sophia-governance",
+      "name": "Living Archive — SOPHIA Governance"
+    },
+    {
+      "id": "closeone-flow",
+      "slug": "closeone-flow",
+      "name": "CloseOne Flow"
+    }
+  ],
+  "canonicalRoutes": [
+    "/",
+    "/projects",
+    "/vocabulary",
+    "/evidence",
+    "/decisions",
+    "/dependencies",
+    "/handoffs",
+    "/reviews",
+    "/guide",
+    "/settings",
+    "/projects/:slug"
+  ],
+  "truthLadder": [
+    "Idea",
+    "Designed",
+    "Documented",
+    "Implemented",
+    "Tested",
+    "Deployed",
+    "Proven"
+  ],
+  "evidenceStates": [
+    "reported",
+    "inspected",
+    "reproduced",
+    "accepted"
+  ],
+  "responsibleTools": [
+    {
+      "name": "Lovable",
+      "role": "Primary code generation environment"
+    },
+    {
+      "name": "GitHub",
+      "role": "Durable code record (target — not yet connected)"
+    },
+    {
+      "name": "Cowork (GitHub Copilot Coding Agent)",
+      "role": "Verified implementation workspace, continuity documentation"
+    },
+    {
+      "name": "Mac local environment",
+      "role": "Development and verification execution"
+    }
+  ],
+  "primaryHumanSteward": "Maurice Jackson",
+  "knownLimitations": [
+    "localStorage-only persistence",
+    "no authenticated multi-user access",
+    "no GitHub evidence ingestion",
+    "no Lovable evidence ingestion",
+    "no Cowork evidence ingestion",
+    "no automated cross-project status synchronization",
+    "no role-based steward permissions",
+    "no server-side backup",
+    "no production deployment authorization",
+    "GitHub repository not yet created (as of 2026-07-22)"
+  ],
+  "currentPhase": "PCC-2",
+  "nextPhase": {
+    "name": "PCC-3",
+    "description": "Authenticated shared persistence, role-based stewardship, backups, and controlled automated evidence ingestion",
+    "precondition": "PCC-2 accepted by Maurice"
+  }
+}

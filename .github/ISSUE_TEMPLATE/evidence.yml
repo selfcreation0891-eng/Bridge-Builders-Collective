@@ -1,0 +1,87 @@
+name: Evidence
+description: Record or request evidence for a project truth-state claim
+title: "EVIDENCE: [project] — [brief description]"
+labels: ["evidence"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template to record evidence or request evidence verification. Evidence states: reported → inspected → reproduced → accepted. See `docs/continuity/EVIDENCE_STANDARD.md`.
+
+  - type: input
+    id: project
+    attributes:
+      label: Project
+      description: Canonical project name this evidence supports.
+      placeholder: "Bridge Builders Portfolio Control Center"
+    validations:
+      required: true
+
+  - type: input
+    id: truth-state-claimed
+    attributes:
+      label: Truth-State Claimed
+      description: What truth-state does this evidence support? (Idea / Designed / Documented / Implemented / Tested / Deployed / Proven)
+      placeholder: "Implemented"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: evidence-state
+    attributes:
+      label: Evidence State
+      description: Current state of this evidence.
+      options:
+        - reported
+        - inspected
+        - reproduced
+        - accepted
+      default: 0
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidence-description
+    attributes:
+      label: Evidence Description
+      description: Describe what was done, seen, or verified. Be specific. Record exact commands, exit codes, and outputs.
+    validations:
+      required: true
+
+  - type: input
+    id: responsible-tool
+    attributes:
+      label: Responsible Tool
+      description: Which tool or steward produced this evidence?
+      placeholder: "Cowork / Lovable / GitHub Actions / Maurice Jackson"
+    validations:
+      required: true
+
+  - type: input
+    id: branch
+    attributes:
+      label: Branch
+    validations:
+      required: false
+
+  - type: input
+    id: commit
+    attributes:
+      label: Commit SHA
+    validations:
+      required: false
+
+  - type: input
+    id: date
+    attributes:
+      label: Date (YYYY-MM-DD)
+    validations:
+      required: true
+
+  - type: textarea
+    id: limitations
+    attributes:
+      label: Limitations and Caveats
+      description: What does this evidence NOT prove? What conditions apply?
+    validations:
+      required: false
